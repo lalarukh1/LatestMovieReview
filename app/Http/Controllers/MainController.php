@@ -45,6 +45,7 @@ class MainController extends controller
         //Initiate Algolia client and index
         $client = new \AlgoliaSearch\Client('7VM1U74DCL', 'e4734fd0e355f789ce2067b33bbdb5d0');
         $index = $client->initIndex('reviews');
+        $tmpIndex = $client->initIndex('reviews_tmp');
 
         //First Api call with offset 20
         $curl = curl_init();
@@ -122,8 +123,18 @@ class MainController extends controller
         }
 
         //Get data from database table and send it to Algolia
-        $data = json_decode(DB::table('movies')->get());
-        $index->addObjects($data);
+        $client->scopedCopyIndex(
+            $index->indexName,
+            $tmpIndex->indexName,
+            ['settings', 'synonyms', 'rules']
+        );
+        $objects = json_decode(DB::table('movies')->get());
+        $chunks = array_chunk($objects, 1000);
+        foreach ($chunks as $batch) {
+            $tmpIndex->addObjects($batch);
+        }
+        $client->moveIndex($tmpIndex->indexName, $index->indexName);
+        //$index->addObjects($data);
         return view('search', compact('data'));
     }
 }
