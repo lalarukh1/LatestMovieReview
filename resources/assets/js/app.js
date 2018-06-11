@@ -1,4 +1,3 @@
-
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -6,18 +5,11 @@
  */
 
 import Vue from 'vue';
-
-
 require('./bootstrap');
-
 window.Vue = require('vue');
-
-
 import Carousel3d from 'vue-carousel-3d';
 Vue.use(Carousel3d);
-
 import InstantSearch from 'vue-instantsearch';
-
 Vue.use(InstantSearch);
 
 /**
@@ -28,12 +20,10 @@ Vue.use(InstantSearch);
 Vue.component('results', require('./components/results.vue'));
 Vue.component('carousal', require('./components/carousal.vue'));
 
-
-
 const app = new Vue({
     el: '#app',
     data: {
-        slides: 40
+        slides: 20
     },
     components: {
         'carousel-3d': Carousel3d.Carousel3d,

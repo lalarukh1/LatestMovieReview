@@ -14,9 +14,9 @@ use GuzzleHttp\Client;
 
 class MainController extends controller
 {
-    public function index() {
-
-        return view ('welcome', compact('data'));
+    public function index()
+    {
+        return view('search');
     }
 
     /**
@@ -25,9 +25,9 @@ class MainController extends controller
      * @throws \AlgoliaSearch\AlgoliaException
      * @throws \Exception
      */
-    public function show() {
-
-        return view ('search', compact('data'));
+    public function show()
+    {
+        //return view('search');
     }
 
     /**
@@ -36,13 +36,17 @@ class MainController extends controller
      * @throws \GuzzleHttp\Exception\GuzzleException
      * @throws \Exception
      */
-    public function store() {
+    public function store()
+    {
 
+        //Delete all records from DB table
         Movies::truncate();
 
+        //Initiate Algolia client and index
         $client = new \AlgoliaSearch\Client('7VM1U74DCL', 'e4734fd0e355f789ce2067b33bbdb5d0');
         $index = $client->initIndex('reviews');
 
+        //First Api call with offset 20
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
         $query = array(
@@ -54,10 +58,8 @@ class MainController extends controller
         );
         $response = json_decode(curl_exec($curl));
 
-
         for ($x = 0; $x <= 19; $x++) {
             $review = new Movies;
-            //$review->setAttribute('id', $x)->searchable();
             $review->setAttribute('display_title', $response->results[$x]->display_title)->searchable();
             $review->setAttribute('byline', $response->results[$x]->byline)->searchable();
             $review->setAttribute('headline', $response->results[$x]->headline)->searchable();
@@ -69,6 +71,7 @@ class MainController extends controller
             $review->save();
         }
 
+        //Second Api call with offset 40
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
         $query = array(
@@ -82,7 +85,6 @@ class MainController extends controller
 
         for ($x = 0; $x <= 19; $x++) {
             $review = new Movies;
-            //$review->setAttribute('id', $x)->searchable();
             $review->setAttribute('display_title', $response1->results[$x]->display_title)->searchable();
             $review->setAttribute('byline', $response1->results[$x]->byline)->searchable();
             $review->setAttribute('headline', $response1->results[$x]->headline)->searchable();
@@ -94,6 +96,7 @@ class MainController extends controller
             $review->save();
         }
 
+        //Third Api call with offset 60
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
         $query = array(
@@ -107,7 +110,6 @@ class MainController extends controller
 
         for ($x = 0; $x <= 19; $x++) {
             $review = new Movies;
-            //$review->setAttribute('id', $x)->searchable();
             $review->setAttribute('display_title', $response2->results[$x]->display_title)->searchable();
             $review->setAttribute('byline', $response2->results[$x]->byline)->searchable();
             $review->setAttribute('headline', $response2->results[$x]->headline)->searchable();
@@ -119,8 +121,9 @@ class MainController extends controller
             $review->save();
         }
 
+        //Get data from database table and send it to Algolia
         $data = json_decode(DB::table('movies')->get());
         $index->addObjects($data);
-        return view ('search', compact('data'));
+        return view('search', compact('data'));
     }
 }
