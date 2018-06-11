@@ -34248,7 +34248,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_carousel_3d__ = __webpack_require__(95);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_carousel_3d___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_carousel_3d__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_instantsearch__ = __webpack_require__(193);
-
 /**
  * First we will load all of this project's JavaScript dependencies which
  * includes Vue and other libraries. It is a great starting point when
@@ -34256,15 +34255,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
  */
 
 
-
 __webpack_require__(171);
-
 window.Vue = __webpack_require__(87);
 
-
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_1_vue_carousel_3d___default.a);
-
-
 
 __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vue_instantsearch__["a" /* default */]);
 
@@ -34279,7 +34273,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('carousal', __webpack_requ
 var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
     el: '#app',
     data: {
-        slides: 40
+        slides: 20
     },
     components: {
         'carousel-3d': __WEBPACK_IMPORTED_MODULE_1_vue_carousel_3d___default.a.Carousel3d,
@@ -70845,7 +70839,7 @@ exports = module.exports = __webpack_require__(163)(false);
 
 
 // module
-exports.push([module.i, "\n.checkbox {\n  padding-bottom: 10px;\n}\n.badge {\n  background-color: #b9bbbe;\n  padding: 4px;\n  border-radius: 40px;\n  margin-right: 6%;\n  float: right;\n  font-size: 12px;\n  color: #4d4d4d;\n}\n.form-control {\n  height: 24px;\n}\n.pagination {\n  margin-top: 60px;\n  margin-left: 100px;\n}\n.pagination ul {\n  font-size: 0;\n  list-style-type: none;\n  text-align: center;\n}\n.pagination li {\n  font-size: 14px;\n  display: inline;\n  background-color: #606f7b;\n  color: white;\n  padding-top: 6px;\n  padding-bottom: 6px;\n}\n.pagination a {\n  padding: 8px 12px;\n  text-decoration: none;\n  color: white;\n  border: 1px solid #eee;\n}\n.pagination a:hover {\n  background: #3d4852;\n}\n.pagination li:first-child a {\n  border-top-left-radius: 4px;\n  border-bottom-left-radius: 4px;\n}\n.pagination li:last-child a {\n  border-right: 1px solid #eee;\n  border-top-right-radius: 4px;\n  border-bottom-right-radius: 4px;\n}\n.pagination li.ais-pagination--item__active a {\n  color: white;\n  background: grey;\n}\n.pagination li.ais-pagination--item__active a:hover {\n  cursor: default;\n}\n.pagination li.ais-pagination--item__disabled a {\n  cursor: not-allowed;\n}\n.pagination li.ais-pagination--item__disabled a:hover {\n  background: none;\n}\n", ""]);
+exports.push([module.i, "\n.checkbox {\n  padding-bottom: 10px;\n}\n.badge {\n  background-color: #b9bbbe;\n  padding: 4px;\n  border-radius: 40px;\n  margin-right: 6%;\n  float: right;\n  font-size: 12px;\n  color: #4d4d4d;\n}\n.form-control {\n  height: 24px;\n}\n.pagination {\n  margin-top: 60px;\n  margin-left: 100px;\n}\n.pagination ul {\n  font-size: 0;\n  list-style-type: none;\n  text-align: center;\n}\n.pagination li {\n  font-size: 14px;\n  display: inline;\n  background-color: #606f7b;\n  color: white;\n  padding-top: 6px;\n  padding-bottom: 6px;\n}\n.pagination a {\n  padding: 8px 12px;\n  text-decoration: none;\n  color: white;\n  border: 1px solid #eee;\n}\n.pagination a:hover {\n  background: #3d4852;\n}\n.pagination li:first-child a {\n  border-top-left-radius: 4px;\n  border-bottom-left-radius: 4px;\n}\n.pagination li:last-child a {\n  border-right: 1px solid #eee;\n  border-top-right-radius: 4px;\n  border-bottom-right-radius: 4px;\n}\n.pagination li.ais-pagination--item__active a:hover {\n  cursor: default;\n}\n.pagination li.ais-pagination--item__disabled a:hover {\n  background: none;\n}\n", ""]);
 
 // exports
 
@@ -70981,15 +70975,15 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 //
 //
 //
+//
+//
 
-// export default {
-//     methods: {
-//         onPageChange(page) {
-//             window.scrollTo(0,0);
-//         }
-//     }
-// }
 /* harmony default export */ __webpack_exports__["default"] = ({
+    methods: {
+        onPageChange: function onPageChange(page) {
+            window.scrollTo(0, 520);
+        }
+    },
     created: function () {
         var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee() {
             var _this = this;
@@ -71009,7 +71003,6 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
                             }).then(function (response) {
                                 if (response.data.count !== 0) {
                                     _this.results = response.data;
-                                    console.log('hey');
                                 }
                             });
 
@@ -71913,7 +71906,7 @@ var render = function() {
                                 },
                                 [
                                   _vm._v(
-                                    "\r\n                                Release Date\r\n                            "
+                                    "\n                                        Release Date\n                                    "
                                   )
                                 ]
                               )
@@ -71952,7 +71945,7 @@ var render = function() {
                                 },
                                 [
                                   _vm._v(
-                                    "\r\n                                Reviewed By\r\n                            "
+                                    "\n                                        Reviewed By\n                                    "
                                   )
                                 ]
                               )
@@ -72087,7 +72080,8 @@ var render = function() {
                     "ais-pagination__item--active": "active",
                     "ais-pagination__item--disabled": "disabled"
                   }
-                }
+                },
+                on: { "page-change": _vm.onPageChange }
               })
             ],
             1
@@ -72238,17 +72232,19 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 //
 //
 //
+//
+//
+//
+//
 
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
-
         return {
             slides: 20,
             results: [],
             name: '',
-            currentIndex: 0,
             index: 0
         };
     },
@@ -72267,16 +72263,14 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
                         case 0:
                             _context.next = 2;
                             return axios.get('https://api.nytimes.com/svc/movies/v2/reviews/search.json', {
-
                                 params: {
                                     'api-key': "f2ba5949ff8e47939e3b551d1fc42af1",
-                                    'offset': 20,
+                                    'offset': 40,
                                     'critics-pick': "Y"
                                 }
                             }).then(function (response) {
                                 if (response.data.count !== 0) {
                                     _this.results = response.data;
-                                    console.log('hey');
                                 }
                             });
 
@@ -72295,7 +72289,6 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
         return created;
     }(),
 
-
     methods: {
         onMainSlideClick: function onMainSlideClick() {
             console.log('onMainSlideClick Callback Triggered');
@@ -72303,9 +72296,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
         onSlideChanged: function onSlideChanged(index) {
             this.index = index;
         }
-    },
-
-    computed: {}
+    }
 });
 
 /***/ }),

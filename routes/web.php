@@ -11,7 +11,6 @@
 |
 */
 
-Route::get('/', 'MainController@show');
+Route::get('/', 'MainController@index');
 Route::get('/store', 'MainController@store');
-Route::get('/search', 'MainController@show');
 

@@ -9,9 +9,6 @@ use Laravel\Scout\Searchable;
 class Movies extends Model
 {
     use Searchable;
-    //protected $guarded = [];
-
-
 
     public function movies()
     {
