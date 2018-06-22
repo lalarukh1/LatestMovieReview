@@ -1,86 +1,3 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> What's For Dinner </title>
-    <link href="https://fonts.googleapis.com/css?family=Acme|Cabin|Josefin+Sans" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Cabin', sans-serif;
-            width: 100%;
-            padding: 0px;
-            margin: 0px;
-            color: black;
-        }
-        #wrapper {
-            width: 100%;
-            margin: 0px;
-
-        }
-        #header {
-            height: 25%;
-            background-color: lightgray;
-            text-align: center;
-            margin: 0px;
-            padding-top: 30px;
-            padding-bottom: 30px;
-            padding-left: 20%;
-            padding-right: 20%;
-        }
-        h1, h2 {
-            margin: 0;
-            padding: 10px;
-            font-family: 'Acme', sans-serif;
-        }
-        main p {
-            text-align: justify;
-            line-height: 1.6;
-            font-size: 20px;
-        }
-
-        #header p {
-            line-height: 1.6;
-            font-size: 20px;
-        }
-        #header a {
-            text-decoration: none;
-            color: black;
-        }
-        #header #button  {
-            position: relative;
-            display: block;
-        }
-        #header #button a {
-            border-bottom: thin solid black;
-            padding: 6px;
-            margin: 16px;
-        }
-        main {
-            text-align: center;
-            padding: 10px;
-            padding-left: 20%;
-            padding-right: 20%;
-            text-justify: inter-word;
-        }
-
-        main img {
-            width: 100%;
-            opacity: 1;
-            border: thin solid grey;
-            margin-bottom: 10px;
-        }
-
-        footer {
-
-            background-color: lightgray;
-            height: 10%;
-            padding: 10px;
-            text-align: right;
-            font-size: 14px;
-        }
-    </style>
 </head>
 <body>
 <div id="wrapper">
@@ -107,10 +24,7 @@
     </main>
     <footer>
         <p>© Lala Rukh  </p>
-
     </footer>
 </div>
 </body>
 </html>
-
-
