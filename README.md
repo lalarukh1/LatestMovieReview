@@ -2,7 +2,7 @@
 <body>
 <div id="wrapper">
     <div id="header">
-        <h1> Movie Reviews App </h1>
+        <h1> Movies Review App </h1>
         <p> A movie reviews app made with laravel, vue.js and tailwind css while making use of The New York Times free Movie Reviews API. </p>
     </div>
     <main>
@@ -22,9 +22,6 @@
         <img src="https://user-images.githubusercontent.com/35193027/41241557-255b6a1e-6d95-11e8-94c4-5ec41aeebc24.png">
         <p>And that's it! Working on making it fully responsive now.</p>
     </main>
-    <footer>
-        <p>© Lala Rukh  </p>
-    </footer>
 </div>
 </body>
 </html>
