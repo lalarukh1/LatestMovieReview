@@ -18,9 +18,9 @@
         For the front-end, it is designed using only tailwind. <br>
         It also requires a database to be setup in order to store information collected from API call for the purpose of synchronizing the data with Algolia. It uses Algolia Instant Realtime Search for searching and filtering the results.</p>
         <h2>Some Screenshots </h2>
-        ![1](https://user-images.githubusercontent.com/35193027/46749132-08921500-ccad-11e8-9a65-866959af79f3.png)
-        ![2](https://user-images.githubusercontent.com/35193027/46749251-38d9b380-ccad-11e8-8a5d-47e917e5d626.png)
-        ![3](https://user-images.githubusercontent.com/35193027/46749357-73dbe700-ccad-11e8-8252-c4cd365b5a5f.png)
+        <img src="https://user-images.githubusercontent.com/35193027/46749132-08921500-ccad-11e8-9a65-866959af79f3.png">
+        <img src="https://user-images.githubusercontent.com/35193027/46749251-38d9b380-ccad-11e8-8a5d-47e917e5d626.png">
+        <img src="https://user-images.githubusercontent.com/35193027/46749357-73dbe700-ccad-11e8-8252-c4cd365b5a5f.png">
     </main>
 </div>
 </body>
