@@ -70975,8 +70975,6 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 //
 //
 //
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     methods: {
@@ -71819,20 +71817,20 @@ var render = function() {
         },
         [
           _c("div", { staticClass: "flex flex-row w-full" }, [
-            _c("div", { staticClass: "flex flex-wrap w-full mr-8" }, [
+            _c("div", { staticClass: "flex w-full mx-6 " }, [
               _c(
                 "div",
                 {
                   staticClass:
-                    "flex w-48 h-70 flex-no-wrap mt-2 border mr-8 shadow-sm bg-grey-darkest"
+                    "flex w-70 h-70 flex-no-wrap mt-2 border mr-8 shadow-sm bg-grey-darkest"
                 },
                 [
-                  _c("div", { staticClass: "flex flex-col p-2" }, [
+                  _c("div", { staticClass: "flex flex-col px-4" }, [
                     _c(
                       "div",
                       {
                         staticClass:
-                          "flex text-sm font-sans text-white w-8 h-8 mb-8 mt-4"
+                          "flex text-sm font-sans text-white w-auto h-8 my-8 px-2"
                       },
                       [
                         _c("ais-input", {
@@ -71975,7 +71973,7 @@ var render = function() {
                               "div",
                               {
                                 staticClass:
-                                  "inline-flex w-64 justify-start p-2 font-sans "
+                                  "inline-flex lg:w-1/4 md:w-1/3 sm:w-1/2 justify-start p-2 font-sans "
                               },
                               [
                                 _c("div", { staticClass: "shadow-md border" }, [
@@ -71989,14 +71987,14 @@ var render = function() {
                                     "div",
                                     {
                                       staticClass:
-                                        "p-2 pt-2 bg-grey-darker h-40"
+                                        "p-2 pt-2 bg-grey-darker lg:h-48 md:h-48 sm:h-64 xs:h-48"
                                     },
                                     [
                                       _c(
                                         "div",
                                         {
                                           staticClass:
-                                            "font-bold text-white text-xl mb-2"
+                                            "font-bold text-white text-xl mb-2 "
                                         },
                                         [
                                           _c("ais-highlight", {
@@ -72012,7 +72010,8 @@ var render = function() {
                                       _c(
                                         "p",
                                         {
-                                          staticClass: "text-grey-light text-sm"
+                                          staticClass:
+                                            "text-grey-light text-sm my-2"
                                         },
                                         [
                                           _c("ais-highlight", {
@@ -72233,10 +72232,6 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 //
 //
 //
-//
-//
-//
-
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -72349,7 +72344,7 @@ var render = function() {
             "div",
             {
               staticClass:
-                "p-2 bg-grey-darker items-center text-indigo-lightest leading-none lg:rounded-full flex lg:inline-flex ",
+                "p-2 bg-grey-darker items-center text-indigo-lightest leading-none lg:rounded-full flex lg:inline-flex",
               attrs: { role: "alert" }
             },
             [

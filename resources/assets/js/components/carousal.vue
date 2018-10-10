@@ -1,7 +1,6 @@
 <template>
     <div id="app">
-        <carousel-3d :controls-visible="true" :clickable="true" :on-slide-change="onSlideChanged"
-                     :on-main-slide-click="onMainSlideClick">
+        <carousel-3d :controls-visible="true" :clickable="true" :on-slide-change="onSlideChanged" :on-main-slide-click="onMainSlideClick">
             <slide v-for="(slide, i) in slides" :index="i">
                 <figure>
                     <img v-bind:src="results.results[i].multimedia.src">
@@ -12,10 +11,8 @@
                 </figure>
             </slide>
         </carousel-3d>
-
         <div class="bg-black text-center py-4 mt-8 lg:px-4 shadow-md">
-            <div class="p-2 bg-grey-darker items-center text-indigo-lightest leading-none lg:rounded-full flex lg:inline-flex "
-                 role="alert">
+            <div class="p-2 bg-grey-darker items-center text-indigo-lightest leading-none lg:rounded-full flex lg:inline-flex" role="alert">
                 <span class="flex font-sans rounded-full bg-pink-custom px-2 py-1 text-xs font-bold mr-3">{{results.results[this.index].byline}}</span>
                 <span class="font-semibold font-sans mr-2 text-left flex-auto animated lightSpeedIn">
                     <a :href="results.results[this.index].link.url" class="no-underline text-white">{{results.results[this.index].headline}}</a>
@@ -29,7 +26,6 @@
 </template>
 <script>
     import {Carousel3d, Slide} from 'vue-carousel-3d';
-
     export default {
         data() {
             return {

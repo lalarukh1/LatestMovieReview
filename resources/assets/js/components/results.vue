@@ -1,17 +1,15 @@
 <template>
     <div id="app">
-        <ais-index
-                app-id="7VM1U74DCL"
-                api-key="5af9433923da9f95516b8c7d6cfb3866"
-                indexName="reviews"
-        >
+        <ais-index app-id="7VM1U74DCL" api-key="5af9433923da9f95516b8c7d6cfb3866" indexName="reviews">
             <div class="flex flex-row w-full">
-                <div class="flex flex-wrap w-full mr-8">
-                    <div class="flex w-48 h-70 flex-no-wrap mt-2 border mr-8 shadow-sm bg-grey-darkest">
-                        <div class="flex flex-col p-2">
-                            <div class="flex text-sm font-sans text-white w-8 h-8 mb-8 mt-4">
+                <div class="flex w-full mx-6 ">
+
+                    <div class="flex w-70 h-70 flex-no-wrap mt-2 border mr-8 shadow-sm bg-grey-darkest">
+                        <div class="flex flex-col px-4">
+                            <div class="flex text-sm font-sans text-white w-auto h-8 my-8 px-2">
                                 <ais-input placeholder="Search"
-                                           :class-names="{'ais-input': 'form-control'}"></ais-input>
+                                           :class-names="{'ais-input': 'form-control'}">
+                                </ais-input>
                                 <ais-clear :class-names="{'ais-clear': 'bg-grey-dark h-6 text-white'}">
                             <span aria-hidden="true">
                                 <svg style="width:20px;height:20px" viewBox="0 0 24 24">
@@ -50,15 +48,15 @@
                     <div class="flex w-5/6">
                         <ais-results>
                             <template slot-scope="{ result }">
-                                <div class="inline-flex w-64 justify-start p-2 font-sans ">
+                                <div class="inline-flex lg:w-1/4 md:w-1/3 sm:w-1/2 justify-start p-2 font-sans ">
                                     <div class="shadow-md border">
                                         <img class="flex" :src="result.src" style="height: 200px">
-                                        <div class="p-2 pt-2 bg-grey-darker h-40">
-                                            <div class="font-bold text-white text-xl mb-2">
+                                        <div class="p-2 pt-2 bg-grey-darker lg:h-48 md:h-48 sm:h-64 xs:h-48">
+                                            <div class="font-bold text-white text-xl mb-2 ">
                                                 <ais-highlight :result="result"
                                                                attribute-name="display_title"></ais-highlight>
                                             </div>
-                                            <p class="text-grey-light text-sm">
+                                            <p class="text-grey-light text-sm my-2">
                                                 <ais-highlight :result="result"
                                                                attribute-name="summary_short"></ais-highlight>
                                             </p>
