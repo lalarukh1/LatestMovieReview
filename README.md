@@ -3,7 +3,7 @@
 <div id="wrapper">
     <div id="header">
         <h1> Movies Review App </h1>
-        <p> A movie reviews app made with laravel, vue.js and tailwind css while making use of The New York Times free Movie Reviews API. </p>
+        <p> A movie reviews app made with laravel, vue.js and tailwind css while experimenting with Algolia's Realtime Search. It makes use of The New York Times free Movie Reviews API. </p>
     </div>
     <main>
         <h2>Introduction</h2>
@@ -15,12 +15,11 @@
             The data is dynamic and comes from JSON API calls to The New york Times free API.</p>
         <h2> Technologies Used</h2>
         <p> The app was developed for the purpose of learning Tailwind css from scratch and to get a better understanding into laravel and vue.js frameworks.
-        For the front-end, it is designed using only tailwind, without any particular use of basic css or bootstrap. <br>
-        It also requires a database to be setup in order to store information collected from call for the purpose of synchronizing the data with Algolia.</p>
+        For the front-end, it is designed using only tailwind. <br>
+        It also requires a database to be setup in order to store information collected from API call for the purpose of synchronizing the data with Algolia. It uses Algolia Instant Realtime Search for searching and filtering the results.</p>
         <h2>Some Screenshots </h2>
         <img src="https://user-images.githubusercontent.com/35193027/41241556-25403cbc-6d95-11e8-80af-6c6339bb482c.png">
         <img src="https://user-images.githubusercontent.com/35193027/41241557-255b6a1e-6d95-11e8-94c4-5ec41aeebc24.png">
-        <p>And that's it! Working on making it fully responsive now.</p>
     </main>
 </div>
 </body>
