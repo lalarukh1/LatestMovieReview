@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Holtwood+One+SC|Raleway|Pacifico|Marmelad" rel="stylesheet">
     <link rel="stylesheet" href="/css/output.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ 'https://agile-waters-99493.herokuapp.com/js/app.js' }}" defer></script>
 </head>
 
 <body class="sans bg-grey-lighter">
