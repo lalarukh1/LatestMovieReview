@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\DB;
 use App\Movies;
 use GuzzleHttp\Client;
 
-class MainController extends controller
+class MainController extends Controller
 {
     public function index()
     {
