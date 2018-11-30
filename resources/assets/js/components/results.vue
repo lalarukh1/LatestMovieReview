@@ -42,7 +42,7 @@
                         </ais-no-results>
                         <ais-results>
                             <template slot-scope="{ result }">
-                                <div class="inline-flex lg:w-1/4 justify-start p-2 font-sans ">
+                                <div class="inline-flex lg:w-1/4 md:w-1/3 sm-w-1/2 xs:w-1/2 justify-start p-2 font-sans ">
                                     <div class="flex flex-col">
                                         <img class="flex" :src="result.src">
                                         <div class="p-2 pt-2 bg-grey-darker lg:h-40 md:h-48 sm:h-64 xs:h-48">
