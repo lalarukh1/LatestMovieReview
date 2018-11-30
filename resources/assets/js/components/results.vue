@@ -2,26 +2,17 @@
     <div id="app">
         <ais-index app-id="7VM1U74DCL" api-key="5af9433923da9f95516b8c7d6cfb3866" indexName="reviews">
             <div class="flex flex-row w-full">
-                <div class="flex w-full mx-6 ">
-
-                    <div class="flex w-70 h-70 flex-no-wrap mt-2 border mr-8 shadow-sm bg-grey-darkest">
-                        <div class="flex flex-col px-4">
-                            <div class="flex text-sm font-sans text-white w-auto h-8 my-8 px-2">
-                                <ais-input placeholder="Search"
+                    <div class="flex flex-col mt-2 border mx-4 px-3 bg-grey-darkest pb-3 h-full">
+                            <div class="flex my-2">
+                                <h2 class="w-full text-lg text-pink-custom pt-3">Search</h2>
+                                <ais-clear :class-names="{'ais-clear': 'bg-pink-custom h-6 text-white text-xs px-2 mt-3 font-bold'}" title="Clear search">Reset</ais-clear>
+                            </div>
+                            <div class="flex text-sm font-sans text-white mt-6 h-6 w-full">
+                                <ais-input placeholder=" Search"
                                            :class-names="{'ais-input': 'form-control'}">
                                 </ais-input>
-                                <ais-clear :class-names="{'ais-clear': 'bg-grey-dark h-6 text-white'}">
-                            <span aria-hidden="true">
-                                <svg style="width:20px;height:20px" viewBox="0 0 24 24">
-                                    <path fill="#000000"
-                                          d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z">
-                                    </path>
-                                </svg>
-                            </span>
-                                </ais-clear>
                             </div>
-
-                            <div class="text-sm font-sans pt-2 pb-2 no-underline text-white">
+                            <div class="text-sm font-sans pt-6 mt-6 pb-2 no-underline text-white">
                                 <ais-refinement-list attribute-name="opening_date"
                                                      :classNames="{'ais-refinement-list__count': 'badge','ais-refinement-list__item': 'checkbox'}">
                                     <template slot="header">
@@ -31,7 +22,6 @@
                                     </template>
                                 </ais-refinement-list>
                             </div>
-
                             <div class="text-sm font-sans pt-2 pb-2 no-underline lowercase capitalize text-white">
                                 <ais-refinement-list attribute-name="byline"
                                                      :classNames="{'ais-refinement-list__count': 'badge','ais-refinement-list__item': 'checkbox'}">
@@ -42,17 +32,21 @@
                                     </template>
                                 </ais-refinement-list>
                             </div>
-                        </div>
                     </div>
 
-                    <div class="flex w-5/6">
+                    <div class="flex flex-col mx-3">
+                        <ais-no-results>
+                            <template slot-scope="props">
+                                <p class="text-xl font-bold my-6 mx-4 text-grey-darkest">Sorry, No movies found for '<i>{{ props.query }}</i>'</p>.
+                            </template>
+                        </ais-no-results>
                         <ais-results>
                             <template slot-scope="{ result }">
                                 <div class="inline-flex lg:w-1/4 md:w-1/3 sm:w-1/2 justify-start p-2 font-sans ">
-                                    <div class="shadow-md border">
-                                        <img class="flex" :src="result.src" style="height: 200px">
-                                        <div class="p-2 pt-2 bg-grey-darker lg:h-48 md:h-48 sm:h-64 xs:h-48">
-                                            <div class="font-bold text-white text-xl mb-2 ">
+                                    <div class="flex flex-col">
+                                        <img class="flex" :src="result.src">
+                                        <div class="p-2 pt-2 bg-grey-darker lg:h-40 md:h-48 sm:h-64 xs:h-48">
+                                            <div class="font-bold text-white text-xl mb-2">
                                                 <ais-highlight :result="result"
                                                                attribute-name="display_title"></ais-highlight>
                                             </div>
@@ -72,15 +66,12 @@
                             </template>
                         </ais-results>
                     </div>
-                </div>
             </div>
-
             <div class="flex-col text-center">
                 <ais-pagination v-on:page-change="onPageChange" class="pagination"
                                 :classNames="{ 'ais-pagination': 'pagination ', 'ais-pagination__item--active': 'active','ais-pagination__item--disabled': 'disabled' }">
                 </ais-pagination>
             </div>
-
         </ais-index>
     </div>
 </template>
@@ -109,26 +100,32 @@
 </script>
 <style>
     .checkbox {
-        padding-bottom: 10px;
+        padding-bottom: 17px;
+        padding-right: 2px;
+    }
+
+    .ais-refinement-list__value {
+        padding-left : 10px;
     }
 
     .badge {
         background-color: #b9bbbe;
         padding: 4px;
-        border-radius: 40px;
+        border-radius: 6px;
         margin-right: 6%;
+        margin-left: 6%;
         float: right;
         font-size: 12px;
         color: #4d4d4d;
     }
 
     .form-control {
-        height: 24px;
+        /*height: 24px;*/
     }
 
     .pagination {
         margin-top: 60px;
-        margin-left: 100px;
+        margin-left: 150px;
     }
 
     .pagination ul {
@@ -140,6 +137,7 @@
     .pagination li {
         margin: 0px !important;
         font-size: 14px;
+        font-weight: bold;
         display: inline;
         background-color: #606f7b;
         color: white;

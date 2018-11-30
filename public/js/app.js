@@ -70839,7 +70839,7 @@ exports = module.exports = __webpack_require__(163)(false);
 
 
 // module
-exports.push([module.i, "\n.checkbox {\n  padding-bottom: 10px;\n}\n.badge {\n  background-color: #b9bbbe;\n  padding: 4px;\n  border-radius: 40px;\n  margin-right: 6%;\n  float: right;\n  font-size: 12px;\n  color: #4d4d4d;\n}\n.form-control {\n  height: 24px;\n}\n.pagination {\n  margin-top: 60px;\n  margin-left: 100px;\n}\n.pagination ul {\n  font-size: 0;\n  list-style-type: none;\n  text-align: center;\n}\n.pagination li {\n  margin: 0 !important;\n  font-size: 14px;\n  display: inline;\n  background-color: #606f7b;\n  color: white;\n  padding-top: 6px;\n  padding-bottom: 6px;\n}\n.pagination a {\n  padding: 8px 12px;\n  margin: 0 !important;\n  text-decoration: none;\n  color: white;\n  border: 1px solid #eee;\n}\n.pagination a:hover {\n  background: #3d4852;\n}\n.pagination li:first-child a {\n  border-top-left-radius: 4px;\n  border-bottom-left-radius: 4px;\n}\n.pagination li:last-child a {\n  border-right: 1px solid #eee;\n  border-top-right-radius: 4px;\n  border-bottom-right-radius: 4px;\n}\n.pagination li.ais-pagination--item__active a:hover {\n  cursor: default;\n}\n.pagination li.ais-pagination--item__disabled a:hover {\n  background: none;\n}\n", ""]);
+exports.push([module.i, "\n.checkbox {\n  padding-bottom: 17px;\n  padding-right: 2px;\n}\n.ais-refinement-list__value {\n  padding-left: 10px;\n}\n.badge {\n  background-color: #b9bbbe;\n  padding: 4px;\n  border-radius: 6px;\n  margin-right: 6%;\n  margin-left: 6%;\n  float: right;\n  font-size: 12px;\n  color: #4d4d4d;\n}\n.form-control {\n  /*height: 24px;*/\n}\n.pagination {\n  margin-top: 60px;\n  margin-left: 150px;\n}\n.pagination ul {\n  font-size: 0;\n  list-style-type: none;\n  text-align: center;\n}\n.pagination li {\n  margin: 0 !important;\n  font-size: 14px;\n  font-weight: bold;\n  display: inline;\n  background-color: #606f7b;\n  color: white;\n  padding-top: 6px;\n  padding-bottom: 6px;\n}\n.pagination a {\n  padding: 8px 12px;\n  margin: 0 !important;\n  text-decoration: none;\n  color: white;\n  border: 1px solid #eee;\n}\n.pagination a:hover {\n  background: #3d4852;\n}\n.pagination li:first-child a {\n  border-top-left-radius: 4px;\n  border-bottom-left-radius: 4px;\n}\n.pagination li:last-child a {\n  border-right: 1px solid #eee;\n  border-top-right-radius: 4px;\n  border-bottom-right-radius: 4px;\n}\n.pagination li.ais-pagination--item__active a:hover {\n  cursor: default;\n}\n.pagination li.ais-pagination--item__disabled a:hover {\n  background: none;\n}\n", ""]);
 
 // exports
 
@@ -70889,15 +70889,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
-//
-//
-//
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -71817,254 +71808,263 @@ var render = function() {
         },
         [
           _c("div", { staticClass: "flex flex-row w-full" }, [
-            _c("div", { staticClass: "flex w-full mx-6 " }, [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "flex w-70 h-70 flex-no-wrap mt-2 border mr-8 shadow-sm bg-grey-darkest"
-                },
-                [
-                  _c("div", { staticClass: "flex flex-col px-4" }, [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "flex flex-col mt-2 border mx-4 px-3 bg-grey-darkest pb-3 h-full"
+              },
+              [
+                _c(
+                  "div",
+                  { staticClass: "flex my-2" },
+                  [
                     _c(
-                      "div",
-                      {
-                        staticClass:
-                          "flex text-sm font-sans text-white w-auto h-8 my-8 px-2"
-                      },
-                      [
-                        _c("ais-input", {
-                          attrs: {
-                            placeholder: "Search",
-                            "class-names": { "ais-input": "form-control" }
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c(
-                          "ais-clear",
-                          {
-                            attrs: {
-                              "class-names": {
-                                "ais-clear": "bg-grey-dark h-6 text-white"
-                              }
-                            }
-                          },
-                          [
-                            _c("span", { attrs: { "aria-hidden": "true" } }, [
-                              _c(
-                                "svg",
-                                {
-                                  staticStyle: {
-                                    width: "20px",
-                                    height: "20px"
-                                  },
-                                  attrs: { viewBox: "0 0 24 24" }
-                                },
-                                [
-                                  _c("path", {
-                                    attrs: {
-                                      fill: "#000000",
-                                      d:
-                                        "M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"
-                                    }
-                                  })
-                                ]
-                              )
-                            ])
-                          ]
-                        )
-                      ],
-                      1
+                      "h2",
+                      { staticClass: "w-full text-lg text-pink-custom pt-3" },
+                      [_vm._v("Search")]
                     ),
                     _vm._v(" "),
                     _c(
-                      "div",
+                      "ais-clear",
                       {
-                        staticClass:
-                          "text-sm font-sans pt-2 pb-2 no-underline text-white"
-                      },
-                      [
-                        _c(
-                          "ais-refinement-list",
-                          {
-                            attrs: {
-                              "attribute-name": "opening_date",
-                              classNames: {
-                                "ais-refinement-list__count": "badge",
-                                "ais-refinement-list__item": "checkbox"
-                              }
-                            }
+                        attrs: {
+                          "class-names": {
+                            "ais-clear":
+                              "bg-pink-custom h-6 text-white text-xs px-2 mt-3 font-bold"
                           },
-                          [
-                            _c("template", { slot: "header" }, [
-                              _c(
-                                "h2",
-                                {
-                                  staticClass: "pb-4 text-lg text-pink-custom"
-                                },
-                                [
-                                  _vm._v(
-                                    "\n                                        Release Date\n                                    "
-                                  )
-                                ]
-                              )
-                            ])
-                          ],
-                          2
-                        )
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "text-sm font-sans pt-2 pb-2 no-underline lowercase capitalize text-white"
-                      },
-                      [
-                        _c(
-                          "ais-refinement-list",
-                          {
-                            attrs: {
-                              "attribute-name": "byline",
-                              classNames: {
-                                "ais-refinement-list__count": "badge",
-                                "ais-refinement-list__item": "checkbox"
-                              }
-                            }
-                          },
-                          [
-                            _c("template", { slot: "header" }, [
-                              _c(
-                                "h4",
-                                {
-                                  staticClass: "pb-4 text-lg text-pink-custom"
-                                },
-                                [
-                                  _vm._v(
-                                    "\n                                        Reviewed By\n                                    "
-                                  )
-                                ]
-                              )
-                            ])
-                          ],
-                          2
-                        )
-                      ],
-                      1
-                    )
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "flex w-5/6" },
-                [
-                  _c("ais-results", {
-                    scopedSlots: _vm._u([
-                      {
-                        key: "default",
-                        fn: function(ref) {
-                          var result = ref.result
-                          return [
-                            _c(
-                              "div",
-                              {
-                                staticClass:
-                                  "inline-flex lg:w-1/4 md:w-1/3 sm:w-1/2 justify-start p-2 font-sans "
-                              },
-                              [
-                                _c("div", { staticClass: "shadow-md border" }, [
-                                  _c("img", {
-                                    staticClass: "flex",
-                                    staticStyle: { height: "200px" },
-                                    attrs: { src: result.src }
-                                  }),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "p-2 pt-2 bg-grey-darker lg:h-48 md:h-48 sm:h-64 xs:h-48"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "font-bold text-white text-xl mb-2 "
-                                        },
-                                        [
-                                          _c("ais-highlight", {
-                                            attrs: {
-                                              result: result,
-                                              "attribute-name": "display_title"
-                                            }
-                                          })
-                                        ],
-                                        1
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "p",
-                                        {
-                                          staticClass:
-                                            "text-grey-light text-sm my-2"
-                                        },
-                                        [
-                                          _c("ais-highlight", {
-                                            attrs: {
-                                              result: result,
-                                              "attribute-name": "summary_short"
-                                            }
-                                          })
-                                        ],
-                                        1
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "bg-grey-darkest p-3 text-center"
-                                    },
-                                    [
-                                      _c(
-                                        "span",
-                                        {
-                                          staticClass:
-                                            "inline-block text-lg font-bold text-pink-custom mr-2 "
-                                        },
-                                        [
-                                          _c(
-                                            "a",
-                                            {
-                                              staticClass:
-                                                "no-underline text-pink-custom",
-                                              attrs: { href: result.url }
-                                            },
-                                            [_vm._v("Read Review")]
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ]
-                            )
-                          ]
+                          title: "Clear search"
                         }
+                      },
+                      [_vm._v("Reset")]
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "flex text-sm font-sans text-white mt-6 h-6 w-full"
+                  },
+                  [
+                    _c("ais-input", {
+                      attrs: {
+                        placeholder: " Search",
+                        "class-names": { "ais-input": "form-control" }
                       }
-                    ])
-                  })
-                ],
-                1
-              )
-            ])
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "text-sm font-sans pt-6 mt-6 pb-2 no-underline text-white"
+                  },
+                  [
+                    _c(
+                      "ais-refinement-list",
+                      {
+                        attrs: {
+                          "attribute-name": "opening_date",
+                          classNames: {
+                            "ais-refinement-list__count": "badge",
+                            "ais-refinement-list__item": "checkbox"
+                          }
+                        }
+                      },
+                      [
+                        _c("template", { slot: "header" }, [
+                          _c(
+                            "h2",
+                            { staticClass: "pb-4 text-lg text-pink-custom" },
+                            [
+                              _vm._v(
+                                "\n                                        Release Date\n                                    "
+                              )
+                            ]
+                          )
+                        ])
+                      ],
+                      2
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "text-sm font-sans pt-2 pb-2 no-underline lowercase capitalize text-white"
+                  },
+                  [
+                    _c(
+                      "ais-refinement-list",
+                      {
+                        attrs: {
+                          "attribute-name": "byline",
+                          classNames: {
+                            "ais-refinement-list__count": "badge",
+                            "ais-refinement-list__item": "checkbox"
+                          }
+                        }
+                      },
+                      [
+                        _c("template", { slot: "header" }, [
+                          _c(
+                            "h4",
+                            { staticClass: "pb-4 text-lg text-pink-custom" },
+                            [
+                              _vm._v(
+                                "\n                                        Reviewed By\n                                    "
+                              )
+                            ]
+                          )
+                        ])
+                      ],
+                      2
+                    )
+                  ],
+                  1
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "flex flex-col mx-3" },
+              [
+                _c("ais-no-results", {
+                  scopedSlots: _vm._u([
+                    {
+                      key: "default",
+                      fn: function(props) {
+                        return [
+                          _c(
+                            "p",
+                            {
+                              staticClass:
+                                "text-xl font-bold my-6 mx-4 text-grey-darkest"
+                            },
+                            [
+                              _vm._v("Sorry, No movies found for '"),
+                              _c("i", [_vm._v(_vm._s(props.query))]),
+                              _vm._v("'")
+                            ]
+                          ),
+                          _vm._v(".\n                        ")
+                        ]
+                      }
+                    }
+                  ])
+                }),
+                _vm._v(" "),
+                _c("ais-results", {
+                  scopedSlots: _vm._u([
+                    {
+                      key: "default",
+                      fn: function(ref) {
+                        var result = ref.result
+                        return [
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "inline-flex lg:w-1/4 md:w-1/3 sm:w-1/2 justify-start p-2 font-sans "
+                            },
+                            [
+                              _c("div", { staticClass: "flex flex-col" }, [
+                                _c("img", {
+                                  staticClass: "flex",
+                                  attrs: { src: result.src }
+                                }),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "p-2 pt-2 bg-grey-darker lg:h-40 md:h-48 sm:h-64 xs:h-48"
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "font-bold text-white text-xl mb-2"
+                                      },
+                                      [
+                                        _c("ais-highlight", {
+                                          attrs: {
+                                            result: result,
+                                            "attribute-name": "display_title"
+                                          }
+                                        })
+                                      ],
+                                      1
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "p",
+                                      {
+                                        staticClass:
+                                          "text-grey-light text-sm my-2"
+                                      },
+                                      [
+                                        _c("ais-highlight", {
+                                          attrs: {
+                                            result: result,
+                                            "attribute-name": "summary_short"
+                                          }
+                                        })
+                                      ],
+                                      1
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "bg-grey-darkest p-3 text-center"
+                                  },
+                                  [
+                                    _c(
+                                      "span",
+                                      {
+                                        staticClass:
+                                          "inline-block text-lg font-bold text-pink-custom mr-2 "
+                                      },
+                                      [
+                                        _c(
+                                          "a",
+                                          {
+                                            staticClass:
+                                              "no-underline text-pink-custom",
+                                            attrs: { href: result.url }
+                                          },
+                                          [_vm._v("Read Review")]
+                                        )
+                                      ]
+                                    )
+                                  ]
+                                )
+                              ])
+                            ]
+                          )
+                        ]
+                      }
+                    }
+                  ])
+                })
+              ],
+              1
+            )
           ]),
           _vm._v(" "),
           _c(
@@ -72187,7 +72187,7 @@ exports = module.exports = __webpack_require__(163)(false);
 
 
 // module
-exports.push([module.i, "\n#app img {\n  width: 100%;\n  height: 270px;\n}\n.carousel-3d-container figcaption {\n  font-family: Marmelad;\n  position: absolute;\n  background-color: rgba(0, 0, 0, .5);\n  color: #fff;\n  bottom: 0;\n  padding: 15px;\n  font-size: 12pt;\n  min-width: 100%;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n.carousel-3d-container figcaption p {\n  font-size: 16pt;\n  padding-bottom: 10px;\n}\n", ""]);
+exports.push([module.i, "\n#app img {\n  width: 100%;\n  height: 270px;\n}\n.carousel-3d-container figcaption {\n  font-family: Marmelad;\n  position: absolute;\n  background-color: rgba(0, 0, 0, .6);\n  color: #fff;\n  bottom: 0;\n  padding: 15px;\n  font-size: 12pt;\n  min-width: 100%;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n.carousel-3d-container figcaption p {\n  font-size: 16pt;\n  padding-bottom: 10px;\n}\n", ""]);
 
 // exports
 

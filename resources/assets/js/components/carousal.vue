@@ -67,11 +67,10 @@
         width: 100%;
         height: 270px;
     }
-
     .carousel-3d-container figcaption {
         font-family: Marmelad;
         position: absolute;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.6);
         color: #fff;
         bottom: 0;
         padding: 15px;
@@ -84,4 +83,5 @@
         font-size: 16pt;
         padding-bottom: 10px;
     }
+
 </style>
