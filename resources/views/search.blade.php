@@ -19,7 +19,7 @@
     <div class="container mx-auto h-16 py-2 ">
         <div class="flex w-full py-2 justify-between">
             <div class="lg:w-1/2 md:1/2 sm:w-64 xs:w-5/6 text-2xl font-serif tracking-wide text-white px-2">
-                <h3> NY Reviews </h3>
+                <h3> Movie Mag </h3>
             </div>
             <div class="flex justify-end font-sans leading-loose float-right">
                 <h4 class="border-solid border-red border-bottom rounded-sm">
