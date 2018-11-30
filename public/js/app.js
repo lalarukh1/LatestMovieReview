@@ -71975,7 +71975,7 @@ var render = function() {
                             "div",
                             {
                               staticClass:
-                                "inline-flex lg:w-1/4 md:w-1/3 sm:w-1/2 justify-start p-2 font-sans "
+                                "inline-flex lg:w-1/4 justify-start p-2 font-sans "
                             },
                             [
                               _c("div", { staticClass: "flex flex-col" }, [
