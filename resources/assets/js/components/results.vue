@@ -95,7 +95,7 @@
             await axios.get('https://api.nytimes.com/svc/movies/v2/reviews/search.json', {
 
                 params: {
-                    'api-key': "f2ba5949ff8e47939e3b551d1fc42af1",
+                    'api-key': "2b9770369c7c42d3b2c1ea2e6b1778d4",
                     'offset': 40,
                     'critics-pick': "Y"
                 },
