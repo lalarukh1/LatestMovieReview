@@ -95,7 +95,7 @@ let colors = {
   'teal-darkest': '#0d3331',
   'teal-darker': '#20504f',
   'teal-dark': '#38a89d',
-  'teal': '#4dc0b5',
+  'teal': '#00A7AD',
   'teal-light': '#64d5ca',
   'teal-lighter': '#a0f0ed',
   'teal-lightest': '#e8fffe',
@@ -121,7 +121,7 @@ let colors = {
   'purple-darker': '#382b5f',
   'purple-dark': '#794acf',
   'purple': '#9561e2',
-  'purple-light': '#a779e9',
+  'purple-light': '#A0A8CC',
   'purple-lighter': '#d6bbfc',
   'purple-lightest': '#f3ebff',
   'purple-custom': '#300032',
@@ -129,11 +129,11 @@ let colors = {
   'pink-darkest': '#451225',
   'pink-darker': '#6f213f',
   'pink-dark': '#eb5286',
-  'pink': '#f66d9b',
+  'pink': '#CF2F49',
   'pink-light': '#fa7ea8',
   'pink-lighter': '#ffbbca',
   'pink-lightest': '#ffebef',
-  'pink-custom': '#e7717d',
+  'pink-custom': '#E84A63',
 }
 
 module.exports = {

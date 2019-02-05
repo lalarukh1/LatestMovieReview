@@ -14,10 +14,10 @@
     <script src="{{ './js/app.js' }}" defer></script>
 </head>
 
-<body class="sans bg-grey-lighter">
-<header class="bg-black border-b-4 border-pink-custom">
+<body class="sans bg-purple-darkest">
+<header class="bg-purple-darkest border-b-4 border-pink-custom">
     <div class="container mx-auto h-16 py-2 ">
-        <div class="flex w-full py-2 justify-between">
+        <div class="flex w-full py-2 px-6 justify-between">
             <div class="lg:w-1/2 md:1/2 sm:w-64 xs:w-5/6 text-2xl font-serif tracking-wide text-white px-2">
                 <h3> Movie Mag </h3>
             </div>
@@ -32,7 +32,7 @@
     </div>
 </header>
 
-<div id="app">
+<div id="app" class="font-sans">
     <div class="pt-6 justify-center bg-no-repeat bg-cover" style="background-image: url('https://i.ytimg.com/vi/w9iQBNyn4Ac/maxresdefault.jpg');">
         <h1 class="font-serif text-center text-white p-3 pl-4 pr-6 mt-3 mb-3">
             Critic's Picks
