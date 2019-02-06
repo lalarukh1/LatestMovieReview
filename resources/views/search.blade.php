@@ -9,6 +9,7 @@
     <meta name="keywords" content="The New York Times, New York, Newyork, news, movie, review, latest, read">
     <link href="https://fonts.googleapis.com/css?family=Holtwood+One+SC|Raleway|Pacifico|Marmelad" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/output.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
     <script src="{{ './js/app.js' }}" defer></script>
@@ -23,7 +24,7 @@
             </div>
             <div class="flex justify-end font-sans leading-loose float-right">
                 <h4 class="border-solid border-red border-bottom rounded-sm">
-                    <a href="https://github.com/lalarukh1/NY-M-Reviews"
+                    <a href="https://github.com/lalarukh1/LatestMovieReview"
                        class="no-underline text-grey-light shadow-inner shadow-sm p-1 pr-3 pl-3 hover:text-white">
                         Info </a>
                 </h4>
@@ -33,8 +34,8 @@
 </header>
 
 <div id="app" class="font-sans">
-    <div class="pt-6 justify-center bg-no-repeat bg-cover" style="background-image: url('https://i.ytimg.com/vi/w9iQBNyn4Ac/maxresdefault.jpg');">
-        <h1 class="font-serif text-center text-white p-3 pl-4 pr-6 mt-3 mb-3">
+    <div class="pt-6 justify-center bg-no-repeat bg-cover" style="background-image: url('https://ak8.picdn.net/shutterstock/videos/1007581438/thumb/1.jpg');">
+        <h1 class="text-center text-purple-darkest p-3 pl-4 pr-6 mt-3 mb-3">
             Critic's Picks
         </h1>
         <carousal></carousal>

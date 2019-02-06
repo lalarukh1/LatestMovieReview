@@ -70962,62 +70962,6 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     methods: {
@@ -71886,12 +71830,12 @@ var render = function() {
                         attrs: {
                           "class-names": {
                             "ais-clear":
-                              "bg-pink text-white text-sm px-2 py-1 rounded shadow-md font-bold"
+                              "bg-pink hover:bg-pink-custom text-white text-sm px-2 py-1 rounded shadow-md font-bold"
                           },
                           title: "Clear search"
                         }
                       },
-                      [_vm._v("Reset")]
+                      [_vm._v("Reset\n                    ")]
                     )
                   ],
                   1
@@ -71936,7 +71880,11 @@ var render = function() {
                               staticClass:
                                 "my-6 p-2 bg-teal text-base -mx-4 shadow"
                             },
-                            [_vm._v("Release Date")]
+                            [
+                              _vm._v(
+                                "Release\n                            Date"
+                              )
+                            ]
                           )
                         ])
                       ],
@@ -71985,7 +71933,7 @@ var render = function() {
               "div",
               {
                 staticClass:
-                  "flex-row lg:w-4/5 md:full px-4 lg:ml-4 border-l border-black"
+                  "flex-row lg:w-4/5 md:full px-4 lg:ml-4 lg:border-l lg:border-indigo-darkest"
               },
               [
                 _c(
@@ -72005,7 +71953,7 @@ var render = function() {
                                 ]),
                                 _vm._v("'")
                               ]),
-                              _vm._v(".\n                    ")
+                              _vm._v(".\n                        ")
                             ]
                           }
                         }
@@ -72015,104 +71963,106 @@ var render = function() {
                   1
                 ),
                 _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "text-white" },
-                  [
-                    _c("ais-results", {
-                      scopedSlots: _vm._u([
-                        {
-                          key: "default",
-                          fn: function(ref) {
-                            var result = ref.result
-                            return [
-                              _c(
-                                "div",
-                                {
-                                  staticClass:
-                                    "lg:inline-flex float-right lg:w-64 md:w-full bg-purple-darker shadow rounded lg:mx-4 md:mx-0 mb-8"
-                                },
-                                [
-                                  _c("div", [
-                                    _c("img", {
-                                      staticClass: "rounded-t shadow w-full",
-                                      attrs: { src: result.src }
-                                    }),
-                                    _vm._v(" "),
-                                    _c(
-                                      "div",
-                                      { staticClass: "mx-4 my-4 h-40 mb-8" },
-                                      [
-                                        _c(
-                                          "div",
-                                          {
-                                            staticClass:
-                                              "text-md items-center my-2 leading-normal"
-                                          },
-                                          [
-                                            _c("ais-highlight", {
-                                              attrs: {
-                                                result: result,
-                                                "attribute-name":
-                                                  "display_title"
-                                              }
-                                            })
-                                          ],
-                                          1
-                                        ),
-                                        _vm._v(" "),
-                                        _c(
-                                          "p",
-                                          {
-                                            staticClass:
-                                              "text-purple-light leading-normal text-sm"
-                                          },
-                                          [
-                                            _c("ais-highlight", {
-                                              attrs: {
-                                                result: result,
-                                                "attribute-name":
-                                                  "summary_short"
-                                              }
-                                            })
-                                          ],
-                                          1
-                                        )
-                                      ]
-                                    ),
-                                    _vm._v(" "),
+                _c("ais-results", {
+                  staticClass: "text-white flex flex-wrap",
+                  scopedSlots: _vm._u([
+                    {
+                      key: "default",
+                      fn: function(ref) {
+                        var result = ref.result
+                        return [
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "flex-grow lg:w-1/5 md:w-2/5 bg-purple-darker shadow rounded lg:mx-4 md:mx-2 mb-8"
+                            },
+                            [
+                              _c("div", [
+                                _c("img", {
+                                  staticClass: "rounded-t shadow w-full",
+                                  attrs: { src: result.src }
+                                }),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "overflow-hidden mx-4 my-4 h-40 mb-4 pb-2"
+                                  },
+                                  [
                                     _c(
                                       "div",
                                       {
                                         staticClass:
-                                          "w-full items-center p-3 bg-pink-custom text-center"
+                                          "text-md items-center my-2 leading-normal"
                                       },
                                       [
-                                        _c("span", [
-                                          _c(
-                                            "a",
-                                            {
-                                              staticClass:
-                                                "no-underline text-white",
-                                              attrs: { href: result.url }
-                                            },
-                                            [_vm._v("Read Review")]
-                                          )
-                                        ])
-                                      ]
+                                        _c("ais-highlight", {
+                                          attrs: {
+                                            result: result,
+                                            "attribute-name": "display_title"
+                                          }
+                                        })
+                                      ],
+                                      1
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "p",
+                                      {
+                                        staticClass:
+                                          "text-purple-light leading-normal text-sm mb-2 pb-2"
+                                      },
+                                      [
+                                        _c("ais-highlight", {
+                                          attrs: {
+                                            result: result,
+                                            "attribute-name": "summary_short"
+                                          }
+                                        })
+                                      ],
+                                      1
                                     )
-                                  ])
-                                ]
-                              )
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "w-full items-center p-3 bg-pink-custom hover:bg-teal text-center"
+                                  },
+                                  [
+                                    _c("span", [
+                                      _c(
+                                        "a",
+                                        {
+                                          staticClass:
+                                            "no-underline text-white",
+                                          attrs: { href: result.url }
+                                        },
+                                        [
+                                          _c("i", {
+                                            staticClass:
+                                              "fab fa-readme px-3 items-end"
+                                          }),
+                                          _vm._v("Read Review")
+                                        ]
+                                      )
+                                    ])
+                                  ]
+                                )
+                              ])
                             ]
-                          }
-                        }
-                      ])
-                    })
-                  ],
-                  1
-                )
-              ]
+                          )
+                        ]
+                      }
+                    }
+                  ])
+                })
+              ],
+              1
             )
           ]),
           _vm._v(" "),
@@ -72236,7 +72186,7 @@ exports = module.exports = __webpack_require__(163)(false);
 
 
 // module
-exports.push([module.i, "\n#app .carousel-img {\n  width: 100%;\n  height: 270px;\n}\n.carousel-3d-container {\n  width: 80% !important;\n}\n.carousel-3d-container .prev,\n.carousel-3d-container .next {\n  color: white;\n}\n.carousel-3d-container figcaption {\n  font-family: Marmelad;\n  position: absolute;\n  background-color: rgba(33, 24, 60, .6);\n  color: #fff;\n  bottom: 0;\n  padding: 15px;\n  font-size: 12pt;\n  min-width: 100%;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n.carousel-3d-container figcaption p {\n  font-size: 16pt;\n  padding-bottom: 10px;\n}\n", ""]);
+exports.push([module.i, "\n#app .carousel-img {\n  width: 100%;\n  height: 270px;\n}\n.carousel-3d-container {\n  width: 80% !important;\n}\n.carousel-3d-container .prev,\n.carousel-3d-container .next {\n  color: #21183c;\n}\n.carousel-3d-container figcaption {\n  font-family: Marmelad;\n  position: absolute;\n  background-color: rgba(33, 24, 60, .6);\n  color: #fff;\n  bottom: 0;\n  padding: 15px;\n  font-size: 12pt;\n  min-width: 100%;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n.carousel-3d-container figcaption p {\n  font-size: 16pt;\n  padding-bottom: 10px;\n}\n", ""]);
 
 // exports
 

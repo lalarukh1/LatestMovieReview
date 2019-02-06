@@ -73,7 +73,7 @@
     }
 
     .carousel-3d-container .prev, .carousel-3d-container .next {
-        color: white;
+        color: #21183C;
     }
     .carousel-3d-container figcaption {
         font-family: Marmelad;
