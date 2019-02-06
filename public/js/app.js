@@ -71975,7 +71975,7 @@ var render = function() {
                             "div",
                             {
                               staticClass:
-                                "flex-grow lg:w-1/5 md:w-2/5 bg-purple-darker shadow rounded lg:mx-4 md:mx-2 mb-8"
+                                "lg:w-1/6 md:w-2/5 bg-purple-darker shadow rounded lg:mx-4 md:mx-2 mb-8"
                             },
                             [
                               _c("div", [

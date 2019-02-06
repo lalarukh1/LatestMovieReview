@@ -40,7 +40,7 @@
                     </div>
                     <ais-results class="text-white flex flex-wrap">
                         <template slot-scope="{ result }">
-                            <div class="flex-grow lg:w-1/5 md:w-2/5 bg-purple-darker shadow rounded lg:mx-4 md:mx-2 mb-8">
+                            <div class="lg:w-1/6 md:w-2/5 bg-purple-darker shadow rounded lg:mx-4 md:mx-2 mb-8">
                                 <div>
                                     <img :src="result.src" class="rounded-t shadow w-full">
                                     <div class="overflow-hidden mx-4 my-4 h-40 mb-4 pb-2">
