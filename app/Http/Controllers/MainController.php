@@ -12,7 +12,7 @@ use Illuminate\Support\Facades\DB;
 use App\Movies;
 use GuzzleHttp\Client;
 
-class MainController extends controller
+class MainController extends Controller
 {
     public function index()
     {
@@ -51,7 +51,7 @@ class MainController extends controller
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
         $query = array(
-            "api-key" => "f2ba5949ff8e47939e3b551d1fc42af1",
+            "api-key" => "B4M0PyBla9l9HJKQ9aVro4Fux05rahlH",
             "offset" => 20
         );
         curl_setopt($curl, CURLOPT_URL,
@@ -76,7 +76,7 @@ class MainController extends controller
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
         $query = array(
-            "api-key" => "f2ba5949ff8e47939e3b551d1fc42af1",
+            "api-key" => "B4M0PyBla9l9HJKQ9aVro4Fux05rahlH",
             "offset" => 40
         );
         curl_setopt($curl, CURLOPT_URL,
@@ -101,7 +101,7 @@ class MainController extends controller
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
         $query = array(
-            "api-key" => "f2ba5949ff8e47939e3b551d1fc42af1",
+            "api-key" => "B4M0PyBla9l9HJKQ9aVro4Fux05rahlH",
             "offset" => 60
         );
         curl_setopt($curl, CURLOPT_URL,

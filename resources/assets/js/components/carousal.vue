@@ -1,9 +1,9 @@
 <template>
     <div id="app">
-        <carousel-3d :controls-visible="true" :clickable="true" :on-slide-change="onSlideChanged" :on-main-slide-click="onMainSlideClick">
+        <carousel-3d :controls-visible="true" :clickable="true" :on-slide-change="onSlideChanged" :on-main-slide-click="onMainSlideClick" class="mx-8 px-8">
             <slide v-for="(slide, i) in slides" :index="i">
                 <figure>
-                    <img v-bind:src="results.results[i].multimedia.src">
+                    <img v-bind:src="results.results[i].multimedia.src" class="carousel-img">
                     <figcaption>
                         <p>{{results.results[i].display_title}}</p>
                         {{results.results[i].summary_short}}
@@ -11,9 +11,9 @@
                 </figure>
             </slide>
         </carousel-3d>
-        <div class="bg-black text-center py-4 mt-8 lg:px-4 shadow-md">
-            <div class="p-2 bg-grey-darker items-center text-indigo-lightest leading-none lg:rounded-full flex lg:inline-flex" role="alert">
-                <span class="flex font-sans rounded-full bg-pink-custom px-2 py-1 text-xs font-bold mr-3">{{results.results[this.index].byline}}</span>
+        <div class="bg-purple-darker text-center py-4 mt-8 lg:px-4 shadow-md">
+            <div class="p-2 bg-purple-darkest items-center text-indigo-lightest leading-normal lg:rounded flex lg:inline-flex" role="alert">
+                <span class="flex font-sans rounded bg-pink px-2 py-1 text-xs font-bold mr-3">{{results.results[this.index].byline}}</span>
                 <span class="font-semibold font-sans mr-2 text-left flex-auto animated lightSpeedIn">
                     <a :href="results.results[this.index].link.url" class="no-underline text-white">{{results.results[this.index].headline}}</a>
                 </span>
@@ -42,7 +42,7 @@
         async created() {
             await axios.get('https://api.nytimes.com/svc/movies/v2/reviews/search.json', {
                 params: {
-                    'api-key': "2b9770369c7c42d3b2c1ea2e6b1778d4",
+                    'api-key': "B4M0PyBla9l9HJKQ9aVro4Fux05rahlH",
                     'offset': 40,
                     'critics-pick': "Y"
                 },
@@ -63,27 +63,33 @@
     };
 </script>
 <style>
-    #app img {
+    #app .carousel-img {
         width: 100%;
         height: 270px;
     }
 
+    .carousel-3d-container {
+        width: 80% !important;
+    }
+
+    .carousel-3d-container .prev, .carousel-3d-container .next {
+        color: #21183C;
+    }
     .carousel-3d-container figcaption {
         font-family: Marmelad;
         position: absolute;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(33, 24, 60, 0.6);
         color: #fff;
         bottom: 0;
         padding: 15px;
         font-size: 12pt;
         min-width: 100%;
         box-sizing: border-box;
-        text-align: justify;
-        text-justify: inter-word;
     }
 
     .carousel-3d-container figcaption p {
         font-size: 16pt;
         padding-bottom: 10px;
     }
+
 </style>

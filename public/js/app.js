@@ -70839,7 +70839,7 @@ exports = module.exports = __webpack_require__(163)(false);
 
 
 // module
-exports.push([module.i, "\n.checkbox {\n  padding-bottom: 10px;\n}\n.badge {\n  background-color: #b9bbbe;\n  padding: 4px;\n  border-radius: 40px;\n  margin-right: 6%;\n  float: right;\n  font-size: 12px;\n  color: #4d4d4d;\n}\n.form-control {\n  height: 24px;\n}\n.pagination {\n  margin-top: 60px;\n  margin-left: 100px;\n}\n.pagination ul {\n  font-size: 0;\n  list-style-type: none;\n  text-align: center;\n}\n.pagination li {\n  font-size: 14px;\n  display: inline;\n  background-color: #606f7b;\n  color: white;\n  padding-top: 6px;\n  padding-bottom: 6px;\n}\n.pagination a {\n  padding: 8px 12px;\n  text-decoration: none;\n  color: white;\n  border: 1px solid #eee;\n}\n.pagination a:hover {\n  background: #3d4852;\n}\n.pagination li:first-child a {\n  border-top-left-radius: 4px;\n  border-bottom-left-radius: 4px;\n}\n.pagination li:last-child a {\n  border-right: 1px solid #eee;\n  border-top-right-radius: 4px;\n  border-bottom-right-radius: 4px;\n}\n.pagination li.ais-pagination--item__active a:hover {\n  cursor: default;\n}\n.pagination li.ais-pagination--item__disabled a:hover {\n  background: none;\n}\n", ""]);
+exports.push([module.i, "\n.sidebar {\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n}\n.checkbox {\n  padding-bottom: 17px;\n  padding-right: 2px;\n}\n.ais-refinement-list__value {\n  font-size: 14px;\n  padding-left: 10px;\n}\n.badge {\n  background-color: #cf2f49;\n  padding: 2%;\n  border-radius: 20px;\n  float: right;\n  font-size: 10px;\n  color: white;\n}\n.pagination ul {\n  font-size: 0;\n  list-style-type: none;\n  text-align: center;\n}\n.pagination li {\n  margin: 0 !important;\n  font-size: 14px;\n  font-weight: bold;\n  display: inline;\n  background-color: #606f7b;\n  color: white;\n  padding-top: 12px;\n  padding-bottom: 12px;\n}\n.pagination a {\n  padding: 12px;\n  margin: 0 !important;\n  text-decoration: none;\n  color: white;\n  border: 1px solid #eee;\n}\n.pagination a:hover {\n  background: #3d4852;\n}\n.pagination li:first-child a {\n  border-top-left-radius: 4px;\n  border-bottom-left-radius: 4px;\n}\n.pagination li:last-child a {\n  border-right: 1px solid #eee;\n  border-top-right-radius: 4px;\n  border-bottom-right-radius: 4px;\n}\n.pagination li.ais-pagination--item__active a:hover {\n  cursor: default;\n}\n.pagination li.ais-pagination--item__disabled a:hover {\n  background: none;\n}\n", ""]);
 
 // exports
 
@@ -70962,19 +70962,6 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     methods: {
@@ -70994,7 +70981,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
                             return axios.get('https://api.nytimes.com/svc/movies/v2/reviews/search.json', {
 
                                 params: {
-                                    'api-key': "f2ba5949ff8e47939e3b551d1fc42af1",
+                                    'api-key': "B4M0PyBla9l9HJKQ9aVro4Fux05rahlH",
                                     'offset': 40,
                                     'critics-pick': "Y"
                                 }
@@ -71816,260 +71803,272 @@ var render = function() {
           }
         },
         [
-          _c("div", { staticClass: "flex flex-row w-full" }, [
-            _c("div", { staticClass: "flex w-full mx-6 " }, [
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "flex w-70 h-70 flex-no-wrap mt-2 border mr-8 shadow-sm bg-grey-darkest"
-                },
-                [
-                  _c("div", { staticClass: "flex flex-col px-4" }, [
+          _c("div", { staticClass: "lg:flex mx-8 my-4 py-4 justify-between" }, [
+            _c(
+              "div",
+              {
+                staticClass:
+                  "sidebar lg:w-1/6 px-4 py-4 bg-purple-darker text-white overflow-hidden lg:mr-8 mb-8"
+              },
+              [
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "flex bg-pink-custom -mx-4 -mt-4 mb-4 p-3 justify-between items-center rounded-t"
+                  },
+                  [
                     _c(
-                      "div",
-                      {
-                        staticClass:
-                          "flex text-sm font-sans text-white w-auto h-8 my-8 px-2"
-                      },
-                      [
-                        _c("ais-input", {
-                          attrs: {
-                            placeholder: "Search",
-                            "class-names": { "ais-input": "form-control" }
-                          }
-                        }),
-                        _vm._v(" "),
-                        _c(
-                          "ais-clear",
-                          {
-                            attrs: {
-                              "class-names": {
-                                "ais-clear": "bg-grey-dark h-6 text-white"
-                              }
-                            }
-                          },
-                          [
-                            _c("span", { attrs: { "aria-hidden": "true" } }, [
-                              _c(
-                                "svg",
-                                {
-                                  staticStyle: {
-                                    width: "20px",
-                                    height: "20px"
-                                  },
-                                  attrs: { viewBox: "0 0 24 24" }
-                                },
-                                [
-                                  _c("path", {
-                                    attrs: {
-                                      fill: "#000000",
-                                      d:
-                                        "M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"
-                                    }
-                                  })
-                                ]
-                              )
-                            ])
-                          ]
-                        )
-                      ],
-                      1
+                      "h1",
+                      { staticClass: "text-base text-white text-center" },
+                      [_vm._v(" Search ")]
                     ),
                     _vm._v(" "),
                     _c(
-                      "div",
+                      "ais-clear",
                       {
-                        staticClass:
-                          "text-sm font-sans pt-2 pb-2 no-underline text-white"
-                      },
-                      [
-                        _c(
-                          "ais-refinement-list",
-                          {
-                            attrs: {
-                              "attribute-name": "opening_date",
-                              classNames: {
-                                "ais-refinement-list__count": "badge",
-                                "ais-refinement-list__item": "checkbox"
-                              }
-                            }
+                        attrs: {
+                          "class-names": {
+                            "ais-clear":
+                              "bg-pink hover:bg-pink-custom text-white text-sm px-2 py-1 rounded shadow-md font-bold"
                           },
-                          [
-                            _c("template", { slot: "header" }, [
-                              _c(
-                                "h2",
-                                {
-                                  staticClass: "pb-4 text-lg text-pink-custom"
-                                },
-                                [
-                                  _vm._v(
-                                    "\n                                        Release Date\n                                    "
-                                  )
-                                ]
-                              )
-                            ])
-                          ],
-                          2
-                        )
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      {
-                        staticClass:
-                          "text-sm font-sans pt-2 pb-2 no-underline lowercase capitalize text-white"
+                          title: "Clear search"
+                        }
                       },
-                      [
-                        _c(
-                          "ais-refinement-list",
-                          {
-                            attrs: {
-                              "attribute-name": "byline",
-                              classNames: {
-                                "ais-refinement-list__count": "badge",
-                                "ais-refinement-list__item": "checkbox"
-                              }
-                            }
-                          },
-                          [
-                            _c("template", { slot: "header" }, [
-                              _c(
-                                "h4",
-                                {
-                                  staticClass: "pb-4 text-lg text-pink-custom"
-                                },
-                                [
-                                  _vm._v(
-                                    "\n                                        Reviewed By\n                                    "
-                                  )
-                                ]
-                              )
-                            ])
-                          ],
-                          2
-                        )
-                      ],
-                      1
+                      [_vm._v("Reset\n                    ")]
                     )
-                  ])
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "flex w-5/6" },
-                [
-                  _c("ais-results", {
-                    scopedSlots: _vm._u([
-                      {
-                        key: "default",
-                        fn: function(ref) {
-                          var result = ref.result
-                          return [
-                            _c(
-                              "div",
-                              {
-                                staticClass:
-                                  "inline-flex lg:w-1/4 md:w-1/3 sm:w-1/2 justify-start p-2 font-sans "
-                              },
-                              [
-                                _c("div", { staticClass: "shadow-md border" }, [
-                                  _c("img", {
-                                    staticClass: "flex",
-                                    staticStyle: { height: "200px" },
-                                    attrs: { src: result.src }
-                                  }),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "p-2 pt-2 bg-grey-darker lg:h-48 md:h-48 sm:h-64 xs:h-48"
-                                    },
-                                    [
-                                      _c(
-                                        "div",
-                                        {
-                                          staticClass:
-                                            "font-bold text-white text-xl mb-2 "
-                                        },
-                                        [
-                                          _c("ais-highlight", {
-                                            attrs: {
-                                              result: result,
-                                              "attribute-name": "display_title"
-                                            }
-                                          })
-                                        ],
-                                        1
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "p",
-                                        {
-                                          staticClass:
-                                            "text-grey-light text-sm my-2"
-                                        },
-                                        [
-                                          _c("ais-highlight", {
-                                            attrs: {
-                                              result: result,
-                                              "attribute-name": "summary_short"
-                                            }
-                                          })
-                                        ],
-                                        1
-                                      )
-                                    ]
-                                  ),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "bg-grey-darkest p-3 text-center"
-                                    },
-                                    [
-                                      _c(
-                                        "span",
-                                        {
-                                          staticClass:
-                                            "inline-block text-lg font-bold text-pink-custom mr-2 "
-                                        },
-                                        [
-                                          _c(
-                                            "a",
-                                            {
-                                              staticClass:
-                                                "no-underline text-pink-custom",
-                                              attrs: { href: result.url }
-                                            },
-                                            [_vm._v("Read Review")]
-                                          )
-                                        ]
-                                      )
-                                    ]
-                                  )
-                                ])
-                              ]
-                            )
-                          ]
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "items-center text-center my-3" },
+                  [
+                    _c("ais-input", {
+                      attrs: {
+                        placeholder: " Search",
+                        "class-names": {
+                          "ais-input": "form-control p-2 rounded w-full"
                         }
                       }
-                    ])
-                  })
-                ],
-                1
-              )
-            ])
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "items-center my-3" },
+                  [
+                    _c(
+                      "ais-refinement-list",
+                      {
+                        attrs: {
+                          "attribute-name": "opening_date",
+                          classNames: {
+                            "ais-refinement-list__count": "badge",
+                            "ais-refinement-list__item": "checkbox"
+                          }
+                        }
+                      },
+                      [
+                        _c("template", { slot: "header" }, [
+                          _c(
+                            "h2",
+                            {
+                              staticClass:
+                                "my-6 p-2 bg-teal text-base -mx-4 shadow"
+                            },
+                            [
+                              _vm._v(
+                                "Release\n                            Date"
+                              )
+                            ]
+                          )
+                        ])
+                      ],
+                      2
+                    )
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  { staticClass: "items-center my-3" },
+                  [
+                    _c(
+                      "ais-refinement-list",
+                      {
+                        attrs: {
+                          "attribute-name": "byline",
+                          classNames: {
+                            "ais-refinement-list__count": "badge",
+                            "ais-refinement-list__item": "checkbox"
+                          }
+                        }
+                      },
+                      [
+                        _c("template", { slot: "header" }, [
+                          _c(
+                            "h2",
+                            {
+                              staticClass:
+                                "my-6 p-2 bg-teal text-base -mx-4 shadow"
+                            },
+                            [_vm._v("Reviewed By")]
+                          )
+                        ])
+                      ],
+                      2
+                    )
+                  ],
+                  1
+                )
+              ]
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              {
+                staticClass:
+                  "flex-row lg:w-4/5 md:full px-4 lg:ml-4 lg:border-l lg:border-indigo-darkest"
+              },
+              [
+                _c(
+                  "div",
+                  { staticClass: "mx-auto items-center" },
+                  [
+                    _c("ais-no-results", {
+                      scopedSlots: _vm._u([
+                        {
+                          key: "default",
+                          fn: function(props) {
+                            return [
+                              _c("p", { staticClass: "text-lg text-white" }, [
+                                _vm._v("Sorry, No movies found for '"),
+                                _c("i", { staticClass: "text-purple-light" }, [
+                                  _vm._v(_vm._s(props.query))
+                                ]),
+                                _vm._v("'")
+                              ]),
+                              _vm._v(".\n                        ")
+                            ]
+                          }
+                        }
+                      ])
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c("ais-results", {
+                  staticClass: "text-white flex flex-wrap",
+                  scopedSlots: _vm._u([
+                    {
+                      key: "default",
+                      fn: function(ref) {
+                        var result = ref.result
+                        return [
+                          _c(
+                            "div",
+                            {
+                              staticClass:
+                                "flex-grow lg:w-1/5 md:w-2/5 bg-purple-darker shadow rounded lg:mx-4 md:mx-2 mb-8"
+                            },
+                            [
+                              _c("div", [
+                                _c("img", {
+                                  staticClass: "rounded-t shadow w-full",
+                                  attrs: { src: result.src }
+                                }),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "overflow-hidden mx-4 my-4 h-40 mb-4 pb-2"
+                                  },
+                                  [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "text-md items-center my-2 leading-normal"
+                                      },
+                                      [
+                                        _c("ais-highlight", {
+                                          attrs: {
+                                            result: result,
+                                            "attribute-name": "display_title"
+                                          }
+                                        })
+                                      ],
+                                      1
+                                    ),
+                                    _vm._v(" "),
+                                    _c(
+                                      "p",
+                                      {
+                                        staticClass:
+                                          "text-purple-light leading-normal text-sm mb-2 pb-2"
+                                      },
+                                      [
+                                        _c("ais-highlight", {
+                                          attrs: {
+                                            result: result,
+                                            "attribute-name": "summary_short"
+                                          }
+                                        })
+                                      ],
+                                      1
+                                    )
+                                  ]
+                                ),
+                                _vm._v(" "),
+                                _c(
+                                  "div",
+                                  {
+                                    staticClass:
+                                      "w-full items-center p-3 bg-pink-custom hover:bg-teal text-center"
+                                  },
+                                  [
+                                    _c("span", [
+                                      _c(
+                                        "a",
+                                        {
+                                          staticClass:
+                                            "no-underline text-white",
+                                          attrs: { href: result.url }
+                                        },
+                                        [
+                                          _c("i", {
+                                            staticClass:
+                                              "fab fa-readme px-3 items-end"
+                                          }),
+                                          _vm._v("Read Review")
+                                        ]
+                                      )
+                                    ])
+                                  ]
+                                )
+                              ])
+                            ]
+                          )
+                        ]
+                      }
+                    }
+                  ])
+                })
+              ],
+              1
+            )
           ]),
           _vm._v(" "),
           _c(
             "div",
-            { staticClass: "flex-col text-center" },
+            { staticClass: "block text-center items-center -ml-8 mb-8" },
             [
               _c("ais-pagination", {
                 staticClass: "pagination",
@@ -72187,7 +72186,7 @@ exports = module.exports = __webpack_require__(163)(false);
 
 
 // module
-exports.push([module.i, "\n#app img {\n  width: 100%;\n  height: 270px;\n}\n.carousel-3d-container figcaption {\n  font-family: Marmelad;\n  position: absolute;\n  background-color: rgba(0, 0, 0, .5);\n  color: #fff;\n  bottom: 0;\n  padding: 15px;\n  font-size: 12pt;\n  min-width: 100%;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n  text-align: justify;\n  text-justify: inter-word;\n}\n.carousel-3d-container figcaption p {\n  font-size: 16pt;\n  padding-bottom: 10px;\n}\n", ""]);
+exports.push([module.i, "\n#app .carousel-img {\n  width: 100%;\n  height: 270px;\n}\n.carousel-3d-container {\n  width: 80% !important;\n}\n.carousel-3d-container .prev,\n.carousel-3d-container .next {\n  color: #21183c;\n}\n.carousel-3d-container figcaption {\n  font-family: Marmelad;\n  position: absolute;\n  background-color: rgba(33, 24, 60, .6);\n  color: #fff;\n  bottom: 0;\n  padding: 15px;\n  font-size: 12pt;\n  min-width: 100%;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n.carousel-3d-container figcaption p {\n  font-size: 16pt;\n  padding-bottom: 10px;\n}\n", ""]);
 
 // exports
 
@@ -72259,7 +72258,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
                             _context.next = 2;
                             return axios.get('https://api.nytimes.com/svc/movies/v2/reviews/search.json', {
                                 params: {
-                                    'api-key': "f2ba5949ff8e47939e3b551d1fc42af1",
+                                    'api-key': "B4M0PyBla9l9HJKQ9aVro4Fux05rahlH",
                                     'offset': 40,
                                     'critics-pick': "Y"
                                 }
@@ -72309,6 +72308,7 @@ var render = function() {
       _c(
         "carousel-3d",
         {
+          staticClass: "mx-8 px-8",
           attrs: {
             "controls-visible": true,
             clickable: true,
@@ -72320,6 +72320,7 @@ var render = function() {
           return _c("slide", { attrs: { index: i } }, [
             _c("figure", [
               _c("img", {
+                staticClass: "carousel-img",
                 attrs: { src: _vm.results.results[i].multimedia.src }
               }),
               _vm._v(" "),
@@ -72338,13 +72339,16 @@ var render = function() {
       _vm._v(" "),
       _c(
         "div",
-        { staticClass: "bg-black text-center py-4 mt-8 lg:px-4 shadow-md" },
+        {
+          staticClass:
+            "bg-purple-darker text-center py-4 mt-8 lg:px-4 shadow-md"
+        },
         [
           _c(
             "div",
             {
               staticClass:
-                "p-2 bg-grey-darker items-center text-indigo-lightest leading-none lg:rounded-full flex lg:inline-flex",
+                "p-2 bg-purple-darkest items-center text-indigo-lightest leading-normal lg:rounded flex lg:inline-flex",
               attrs: { role: "alert" }
             },
             [
@@ -72352,7 +72356,7 @@ var render = function() {
                 "span",
                 {
                   staticClass:
-                    "flex font-sans rounded-full bg-pink-custom px-2 py-1 text-xs font-bold mr-3"
+                    "flex font-sans rounded bg-pink px-2 py-1 text-xs font-bold mr-3"
                 },
                 [_vm._v(_vm._s(_vm.results.results[this.index].byline))]
               ),

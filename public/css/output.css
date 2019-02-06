@@ -885,7 +885,7 @@ button,
 }
 
 .bg-teal {
-  background-color: #4dc0b5;
+  background-color: #00A7AD;
 }
 
 .bg-teal-light {
@@ -961,11 +961,11 @@ button,
 }
 
 .bg-purple-darkest {
-  background-color: #21183c;
+  background-color: #20243F;
 }
 
 .bg-purple-darker {
-  background-color: #382b5f;
+  background-color: #394166;
 }
 
 .bg-purple-dark {
@@ -977,7 +977,7 @@ button,
 }
 
 .bg-purple-light {
-  background-color: #a779e9;
+  background-color: #A0A8CC;
 }
 
 .bg-purple-lighter {
@@ -1005,7 +1005,7 @@ button,
 }
 
 .bg-pink {
-  background-color: #f66d9b;
+  background-color: #CF2F49;
 }
 
 .bg-pink-light {
@@ -1021,7 +1021,7 @@ button,
 }
 
 .bg-pink-custom {
-  background-color: #e7717d;
+  background-color: #E84A63;
 }
 
 .hover\:bg-transparent:hover {
@@ -1681,7 +1681,7 @@ button,
 }
 
 .border-purple-light {
-  border-color: #a779e9;
+  border-color: #A0A8CC;
 }
 
 .border-purple-lighter {
@@ -4041,7 +4041,7 @@ button,
 }
 
 .text-purple-light {
-  color: #a779e9;
+  color: #A0A8CC;
 }
 
 .text-purple-lighter {
@@ -5776,7 +5776,7 @@ button,
   }
 
   .sm\:border-purple-light {
-    border-color: #a779e9;
+    border-color: #A0A8CC;
   }
 
   .sm\:border-purple-lighter {
@@ -13922,7 +13922,7 @@ button,
   }
 
   .lg\:border-purple-light {
-    border-color: #a779e9;
+    border-color: #A0A8CC;
   }
 
   .lg\:border-purple-lighter {
