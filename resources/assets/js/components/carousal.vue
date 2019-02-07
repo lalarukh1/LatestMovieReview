@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <carousel-3d :controls-visible="true" :clickable="true" :on-slide-change="onSlideChanged" :on-main-slide-click="onMainSlideClick" class="mx-8 px-8">
+        <carousel-3d :controls-visible="true" :clickable="true" :on-slide-change="onSlideChanged" :on-main-slide-click="onMainSlideClick" class="mx-8">
             <slide v-for="(slide, i) in slides" :index="i">
                 <figure>
                     <img v-bind:src="results.results[i].multimedia.src" class="carousel-img">
@@ -12,7 +12,7 @@
             </slide>
         </carousel-3d>
         <div class="bg-purple-darker text-center py-4 mt-8 lg:px-4 shadow-md">
-            <div class="p-2 bg-purple-darkest items-center text-indigo-lightest leading-normal lg:rounded flex lg:inline-flex" role="alert">
+            <div class="p-2 bg-purple-darkest items-center text-indigo-lightest leading-normal lg:rounded md:rounded flex lg:inline-flex md:inline-flex lg:py-1 md:py-1 sm:py-8" role="alert">
                 <span class="flex font-sans rounded bg-pink px-2 py-1 text-xs font-bold mr-3">{{results.results[this.index].byline}}</span>
                 <span class="font-semibold font-sans mr-2 text-left flex-auto animated lightSpeedIn">
                     <a :href="results.results[this.index].link.url" class="no-underline text-white">{{results.results[this.index].headline}}</a>

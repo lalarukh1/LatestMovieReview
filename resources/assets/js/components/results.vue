@@ -1,8 +1,8 @@
 <template>
     <div id="app">
         <ais-index app-id="7VM1U74DCL" api-key="5af9433923da9f95516b8c7d6cfb3866" indexName="reviews">
-            <div class="lg:flex mx-8 my-4 py-4 justify-between">
-                <div class="sidebar lg:w-1/6 px-4 py-4 bg-purple-darker text-white overflow-hidden lg:mr-8 mb-8">
+            <div class="lg:flex md:flex sm:flex mx-8 my-4 py-4 justify-between">
+                <div class="sidebar lg:w-1/6 md:w-1/4 sm:w-1/2 px-4 py-4 bg-purple-darker text-white overflow-hidden lg:mr-8 mb-8">
                     <div class="flex bg-pink-custom -mx-4 -mt-4 mb-4 p-3 justify-between items-center rounded-t">
                         <h1 class="text-base text-white text-center"> Search </h1>
                         <ais-clear
@@ -14,22 +14,22 @@
                         <ais-input placeholder=" Search"
                                    :class-names="{'ais-input': 'form-control p-2 rounded w-full'}"></ais-input>
                     </div>
-                    <div class="items-center my-3">
-                        <ais-refinement-list attribute-name="opening_date"
+                    <div class="items-center my-3 hidden sm:block lg:block md:block">
+                        <ais-refinement-list attribute-name="opening_date" :sort-by="['isRefined:desc', 'name:desc']"
                                              :classNames="{'ais-refinement-list__count': 'badge','ais-refinement-list__item': 'checkbox'}">
-                            <template slot="header"><h2 class="my-6 p-2 bg-teal text-base -mx-4 shadow">Release
+                            <template slot="header"><h2 class="my-6 p-2 border-b border-pink-custom text-base -mx-4 shadow">Release
                                 Date</h2></template>
                         </ais-refinement-list>
                     </div>
-                    <div class="items-center my-3">
-                        <ais-refinement-list attribute-name="byline"
+                    <div class="items-center my-3 hidden sm:block lg:block md:block">
+                        <ais-refinement-list attribute-name="byline" :sort-by="['name:asc']"
                                              :classNames="{'ais-refinement-list__count': 'badge','ais-refinement-list__item': 'checkbox'}">
-                            <template slot="header"><h2 class="my-6 p-2 bg-teal text-base -mx-4 shadow">Reviewed By</h2>
+                            <template slot="header"><h2 class="my-6 p-2 border-b border-pink-custom  text-base -mx-4 shadow">Reviewers</h2>
                             </template>
                         </ais-refinement-list>
                     </div>
                 </div>
-                <div class="flex-row lg:w-4/5 md:full px-4 lg:ml-4 lg:border-l lg:border-indigo-darkest">
+                <div class="flex-row lg:w-4/5 md:w-4/5 sm:w-4/5 px-4 lg:ml-4 lg:border-l lg:border-indigo-darkest md:ml-4 md:border-l md:border-indigo-darkest">
                     <div class="mx-auto items-center">
                         <ais-no-results>
                             <template slot-scope="props">
@@ -38,24 +38,29 @@
                             </template>
                         </ais-no-results>
                     </div>
-                    <ais-results class="text-white flex flex-wrap">
+                    <ais-results class="text-white flex flex-wrap lg:-mr-8 md:-mr-8">
                         <template slot-scope="{ result }">
-                            <div class="lg:w-1/6 md:w-2/5 bg-purple-darker shadow rounded lg:mx-4 md:mx-2 mb-8">
+                            <div class="xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full bg-purple-darker shadow rounded lg:mx-8 md:mx-4 sm:mx-1 mb-8">
                                 <div>
                                     <img :src="result.src" class="rounded-t shadow w-full">
-                                    <div class="overflow-hidden mx-4 my-4 h-40 mb-4 pb-2">
-                                        <div class="text-md items-center my-2 leading-normal">
+                                    <div class="overflow-hidden mx-4 my-2 h-32 mb-4 pb-2">
+                                        <div class="text-lg sm:text-md items-center my-2 leading-normal">
                                             <ais-highlight :result="result"
                                                            attribute-name="display_title"></ais-highlight>
+                                        </div>
+                                        <div class="text-xs items-center my-2 text-purple-light leading-normal">
+                                            <span class="mr-2"><i class="fas fa-user-edit text-white"></i></span>
+                                            <ais-highlight :result="result"
+                                                           attribute-name="byline"></ais-highlight>
                                         </div>
                                         <p class="text-purple-light leading-normal text-sm mb-2 pb-2">
                                             <ais-highlight :result="result"
                                                            attribute-name="summary_short"></ais-highlight>
                                         </p>
                                     </div>
-                                    <div class="w-full items-center p-3 bg-pink-custom hover:bg-teal text-center">
+                                    <div class="w-full items-center p-3 bg-pink-custom hover:bg-pink-custom text-center">
                                         <span> <a :href="result.url" class="no-underline text-white"><i
-                                                class="fab fa-readme px-3 items-end"></i>Read Review</a> </span>
+                                                class="fab fa-readme px-2 items-end"></i>Read Review</a> </span>
                                     </div>
                                 </div>
                             </div>
@@ -107,6 +112,16 @@
     .ais-refinement-list__value {
         font-size: 14px;
         padding-left: 10px;
+    }
+
+    .ais-refinement-list__item--active {
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        background-color: rgba(232, 74, 99, 0.41);
     }
 
     .badge {

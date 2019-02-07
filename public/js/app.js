@@ -70839,7 +70839,7 @@ exports = module.exports = __webpack_require__(163)(false);
 
 
 // module
-exports.push([module.i, "\n.sidebar {\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n}\n.checkbox {\n  padding-bottom: 17px;\n  padding-right: 2px;\n}\n.ais-refinement-list__value {\n  font-size: 14px;\n  padding-left: 10px;\n}\n.badge {\n  background-color: #cf2f49;\n  padding: 2%;\n  border-radius: 20px;\n  float: right;\n  font-size: 10px;\n  color: white;\n}\n.pagination ul {\n  font-size: 0;\n  list-style-type: none;\n  text-align: center;\n}\n.pagination li {\n  margin: 0 !important;\n  font-size: 14px;\n  font-weight: bold;\n  display: inline;\n  background-color: #606f7b;\n  color: white;\n  padding-top: 12px;\n  padding-bottom: 12px;\n}\n.pagination a {\n  padding: 12px;\n  margin: 0 !important;\n  text-decoration: none;\n  color: white;\n  border: 1px solid #eee;\n}\n.pagination a:hover {\n  background: #3d4852;\n}\n.pagination li:first-child a {\n  border-top-left-radius: 4px;\n  border-bottom-left-radius: 4px;\n}\n.pagination li:last-child a {\n  border-right: 1px solid #eee;\n  border-top-right-radius: 4px;\n  border-bottom-right-radius: 4px;\n}\n.pagination li.ais-pagination--item__active a:hover {\n  cursor: default;\n}\n.pagination li.ais-pagination--item__disabled a:hover {\n  background: none;\n}\n", ""]);
+exports.push([module.i, "\n.sidebar {\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n}\n.checkbox {\n  padding-bottom: 17px;\n  padding-right: 2px;\n}\n.ais-refinement-list__value {\n  font-size: 14px;\n  padding-left: 10px;\n}\n.ais-refinement-list__item--active {\n  margin-left: -20px;\n  margin-right: -20px;\n  margin-bottom: 10px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n  background-color: rgba(232, 74, 99, .41);\n}\n.badge {\n  background-color: #cf2f49;\n  padding: 2%;\n  border-radius: 20px;\n  float: right;\n  font-size: 10px;\n  color: white;\n}\n.pagination ul {\n  font-size: 0;\n  list-style-type: none;\n  text-align: center;\n}\n.pagination li {\n  margin: 0 !important;\n  font-size: 14px;\n  font-weight: bold;\n  display: inline;\n  background-color: #606f7b;\n  color: white;\n  padding-top: 12px;\n  padding-bottom: 12px;\n}\n.pagination a {\n  padding: 12px;\n  margin: 0 !important;\n  text-decoration: none;\n  color: white;\n  border: 1px solid #eee;\n}\n.pagination a:hover {\n  background: #3d4852;\n}\n.pagination li:first-child a {\n  border-top-left-radius: 4px;\n  border-bottom-left-radius: 4px;\n}\n.pagination li:last-child a {\n  border-right: 1px solid #eee;\n  border-top-right-radius: 4px;\n  border-bottom-right-radius: 4px;\n}\n.pagination li.ais-pagination--item__active a:hover {\n  cursor: default;\n}\n.pagination li.ais-pagination--item__disabled a:hover {\n  background: none;\n}\n", ""]);
 
 // exports
 
@@ -70889,6 +70889,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
+//
+//
+//
+//
+//
 //
 //
 //
@@ -71803,268 +71808,309 @@ var render = function() {
           }
         },
         [
-          _c("div", { staticClass: "lg:flex mx-8 my-4 py-4 justify-between" }, [
-            _c(
-              "div",
-              {
-                staticClass:
-                  "sidebar lg:w-1/6 px-4 py-4 bg-purple-darker text-white overflow-hidden lg:mr-8 mb-8"
-              },
-              [
-                _c(
-                  "div",
-                  {
-                    staticClass:
-                      "flex bg-pink-custom -mx-4 -mt-4 mb-4 p-3 justify-between items-center rounded-t"
-                  },
-                  [
-                    _c(
-                      "h1",
-                      { staticClass: "text-base text-white text-center" },
-                      [_vm._v(" Search ")]
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "ais-clear",
-                      {
-                        attrs: {
-                          "class-names": {
-                            "ais-clear":
-                              "bg-pink hover:bg-pink-custom text-white text-sm px-2 py-1 rounded shadow-md font-bold"
-                          },
-                          title: "Clear search"
-                        }
-                      },
-                      [_vm._v("Reset\n                    ")]
-                    )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "items-center text-center my-3" },
-                  [
-                    _c("ais-input", {
-                      attrs: {
-                        placeholder: " Search",
-                        "class-names": {
-                          "ais-input": "form-control p-2 rounded w-full"
-                        }
-                      }
-                    })
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "items-center my-3" },
-                  [
-                    _c(
-                      "ais-refinement-list",
-                      {
-                        attrs: {
-                          "attribute-name": "opening_date",
-                          classNames: {
-                            "ais-refinement-list__count": "badge",
-                            "ais-refinement-list__item": "checkbox"
-                          }
-                        }
-                      },
-                      [
-                        _c("template", { slot: "header" }, [
-                          _c(
-                            "h2",
-                            {
-                              staticClass:
-                                "my-6 p-2 bg-teal text-base -mx-4 shadow"
-                            },
-                            [
-                              _vm._v(
-                                "Release\n                            Date"
-                              )
-                            ]
-                          )
-                        ])
-                      ],
-                      2
-                    )
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c(
-                  "div",
-                  { staticClass: "items-center my-3" },
-                  [
-                    _c(
-                      "ais-refinement-list",
-                      {
-                        attrs: {
-                          "attribute-name": "byline",
-                          classNames: {
-                            "ais-refinement-list__count": "badge",
-                            "ais-refinement-list__item": "checkbox"
-                          }
-                        }
-                      },
-                      [
-                        _c("template", { slot: "header" }, [
-                          _c(
-                            "h2",
-                            {
-                              staticClass:
-                                "my-6 p-2 bg-teal text-base -mx-4 shadow"
-                            },
-                            [_vm._v("Reviewed By")]
-                          )
-                        ])
-                      ],
-                      2
-                    )
-                  ],
-                  1
-                )
-              ]
-            ),
-            _vm._v(" "),
-            _c(
-              "div",
-              {
-                staticClass:
-                  "flex-row lg:w-4/5 md:full px-4 lg:ml-4 lg:border-l lg:border-indigo-darkest"
-              },
-              [
-                _c(
-                  "div",
-                  { staticClass: "mx-auto items-center" },
-                  [
-                    _c("ais-no-results", {
-                      scopedSlots: _vm._u([
-                        {
-                          key: "default",
-                          fn: function(props) {
-                            return [
-                              _c("p", { staticClass: "text-lg text-white" }, [
-                                _vm._v("Sorry, No movies found for '"),
-                                _c("i", { staticClass: "text-purple-light" }, [
-                                  _vm._v(_vm._s(props.query))
-                                ]),
-                                _vm._v("'")
-                              ]),
-                              _vm._v(".\n                        ")
-                            ]
-                          }
-                        }
-                      ])
-                    })
-                  ],
-                  1
-                ),
-                _vm._v(" "),
-                _c("ais-results", {
-                  staticClass: "text-white flex flex-wrap",
-                  scopedSlots: _vm._u([
+          _c(
+            "div",
+            {
+              staticClass:
+                "lg:flex md:flex sm:flex mx-8 my-4 py-4 justify-between"
+            },
+            [
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "sidebar lg:w-1/6 md:w-1/4 sm:w-1/2 px-4 py-4 bg-purple-darker text-white overflow-hidden lg:mr-8 mb-8"
+                },
+                [
+                  _c(
+                    "div",
                     {
-                      key: "default",
-                      fn: function(ref) {
-                        var result = ref.result
-                        return [
-                          _c(
-                            "div",
-                            {
-                              staticClass:
-                                "lg:w-1/6 md:w-2/5 bg-purple-darker shadow rounded lg:mx-4 md:mx-2 mb-8"
+                      staticClass:
+                        "flex bg-pink-custom -mx-4 -mt-4 mb-4 p-3 justify-between items-center rounded-t"
+                    },
+                    [
+                      _c(
+                        "h1",
+                        { staticClass: "text-base text-white text-center" },
+                        [_vm._v(" Search ")]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "ais-clear",
+                        {
+                          attrs: {
+                            "class-names": {
+                              "ais-clear":
+                                "bg-pink hover:bg-pink-custom text-white text-sm px-2 py-1 rounded shadow-md font-bold"
                             },
-                            [
-                              _c("div", [
-                                _c("img", {
-                                  staticClass: "rounded-t shadow w-full",
-                                  attrs: { src: result.src }
-                                }),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  {
-                                    staticClass:
-                                      "overflow-hidden mx-4 my-4 h-40 mb-4 pb-2"
-                                  },
-                                  [
-                                    _c(
-                                      "div",
-                                      {
-                                        staticClass:
-                                          "text-md items-center my-2 leading-normal"
-                                      },
-                                      [
-                                        _c("ais-highlight", {
-                                          attrs: {
-                                            result: result,
-                                            "attribute-name": "display_title"
-                                          }
-                                        })
-                                      ],
-                                      1
-                                    ),
-                                    _vm._v(" "),
-                                    _c(
-                                      "p",
-                                      {
-                                        staticClass:
-                                          "text-purple-light leading-normal text-sm mb-2 pb-2"
-                                      },
-                                      [
-                                        _c("ais-highlight", {
-                                          attrs: {
-                                            result: result,
-                                            "attribute-name": "summary_short"
-                                          }
-                                        })
-                                      ],
-                                      1
-                                    )
-                                  ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  {
-                                    staticClass:
-                                      "w-full items-center p-3 bg-pink-custom hover:bg-teal text-center"
-                                  },
-                                  [
-                                    _c("span", [
+                            title: "Clear search"
+                          }
+                        },
+                        [_vm._v("Reset\n                    ")]
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "items-center text-center my-3" },
+                    [
+                      _c("ais-input", {
+                        attrs: {
+                          placeholder: " Search",
+                          "class-names": {
+                            "ais-input": "form-control p-2 rounded w-full"
+                          }
+                        }
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "items-center my-3 hidden sm:block lg:block md:block"
+                    },
+                    [
+                      _c(
+                        "ais-refinement-list",
+                        {
+                          attrs: {
+                            "attribute-name": "opening_date",
+                            "sort-by": ["isRefined:desc", "name:desc"],
+                            classNames: {
+                              "ais-refinement-list__count": "badge",
+                              "ais-refinement-list__item": "checkbox"
+                            }
+                          }
+                        },
+                        [
+                          _c("template", { slot: "header" }, [
+                            _c(
+                              "h2",
+                              {
+                                staticClass:
+                                  "my-6 p-2 border-b border-pink-custom text-base -mx-4 shadow"
+                              },
+                              [
+                                _vm._v(
+                                  "Release\n                            Date"
+                                )
+                              ]
+                            )
+                          ])
+                        ],
+                        2
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "items-center my-3 hidden sm:block lg:block md:block"
+                    },
+                    [
+                      _c(
+                        "ais-refinement-list",
+                        {
+                          attrs: {
+                            "attribute-name": "byline",
+                            "sort-by": ["name:asc"],
+                            classNames: {
+                              "ais-refinement-list__count": "badge",
+                              "ais-refinement-list__item": "checkbox"
+                            }
+                          }
+                        },
+                        [
+                          _c("template", { slot: "header" }, [
+                            _c(
+                              "h2",
+                              {
+                                staticClass:
+                                  "my-6 p-2 border-b border-pink-custom  text-base -mx-4 shadow"
+                              },
+                              [_vm._v("Reviewers")]
+                            )
+                          ])
+                        ],
+                        2
+                      )
+                    ],
+                    1
+                  )
+                ]
+              ),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "flex-row lg:w-4/5 md:w-4/5 sm:w-4/5 px-4 lg:ml-4 lg:border-l lg:border-indigo-darkest md:ml-4 md:border-l md:border-indigo-darkest"
+                },
+                [
+                  _c(
+                    "div",
+                    { staticClass: "mx-auto items-center" },
+                    [
+                      _c("ais-no-results", {
+                        scopedSlots: _vm._u([
+                          {
+                            key: "default",
+                            fn: function(props) {
+                              return [
+                                _c("p", { staticClass: "text-lg text-white" }, [
+                                  _vm._v("Sorry, No movies found for '"),
+                                  _c(
+                                    "i",
+                                    { staticClass: "text-purple-light" },
+                                    [_vm._v(_vm._s(props.query))]
+                                  ),
+                                  _vm._v("'")
+                                ]),
+                                _vm._v(".\n                        ")
+                              ]
+                            }
+                          }
+                        ])
+                      })
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c("ais-results", {
+                    staticClass: "text-white flex flex-wrap lg:-mr-8 md:-mr-8",
+                    scopedSlots: _vm._u([
+                      {
+                        key: "default",
+                        fn: function(ref) {
+                          var result = ref.result
+                          return [
+                            _c(
+                              "div",
+                              {
+                                staticClass:
+                                  "xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full bg-purple-darker shadow rounded lg:mx-8 md:mx-4 sm:mx-1 mb-8"
+                              },
+                              [
+                                _c("div", [
+                                  _c("img", {
+                                    staticClass: "rounded-t shadow w-full",
+                                    attrs: { src: result.src }
+                                  }),
+                                  _vm._v(" "),
+                                  _c(
+                                    "div",
+                                    {
+                                      staticClass:
+                                        "overflow-hidden mx-4 my-2 h-32 mb-4 pb-2"
+                                    },
+                                    [
                                       _c(
-                                        "a",
+                                        "div",
                                         {
                                           staticClass:
-                                            "no-underline text-white",
-                                          attrs: { href: result.url }
+                                            "text-lg sm:text-md items-center my-2 leading-normal"
                                         },
                                         [
-                                          _c("i", {
-                                            staticClass:
-                                              "fab fa-readme px-3 items-end"
-                                          }),
-                                          _vm._v("Read Review")
-                                        ]
+                                          _c("ais-highlight", {
+                                            attrs: {
+                                              result: result,
+                                              "attribute-name": "display_title"
+                                            }
+                                          })
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "div",
+                                        {
+                                          staticClass:
+                                            "text-xs items-center my-2 text-purple-light leading-normal"
+                                        },
+                                        [
+                                          _c("span", { staticClass: "mr-2" }, [
+                                            _c("i", {
+                                              staticClass:
+                                                "fas fa-user-edit text-white"
+                                            })
+                                          ]),
+                                          _vm._v(" "),
+                                          _c("ais-highlight", {
+                                            attrs: {
+                                              result: result,
+                                              "attribute-name": "byline"
+                                            }
+                                          })
+                                        ],
+                                        1
+                                      ),
+                                      _vm._v(" "),
+                                      _c(
+                                        "p",
+                                        {
+                                          staticClass:
+                                            "text-purple-light leading-normal text-sm mb-2 pb-2"
+                                        },
+                                        [
+                                          _c("ais-highlight", {
+                                            attrs: {
+                                              result: result,
+                                              "attribute-name": "summary_short"
+                                            }
+                                          })
+                                        ],
+                                        1
                                       )
-                                    ])
-                                  ]
-                                )
-                              ])
-                            ]
-                          )
-                        ]
+                                    ]
+                                  ),
+                                  _vm._v(" "),
+                                  _c(
+                                    "div",
+                                    {
+                                      staticClass:
+                                        "w-full items-center p-3 bg-pink-custom hover:bg-pink-custom text-center"
+                                    },
+                                    [
+                                      _c("span", [
+                                        _c(
+                                          "a",
+                                          {
+                                            staticClass:
+                                              "no-underline text-white",
+                                            attrs: { href: result.url }
+                                          },
+                                          [
+                                            _c("i", {
+                                              staticClass:
+                                                "fab fa-readme px-2 items-end"
+                                            }),
+                                            _vm._v("Read Review")
+                                          ]
+                                        )
+                                      ])
+                                    ]
+                                  )
+                                ])
+                              ]
+                            )
+                          ]
+                        }
                       }
-                    }
-                  ])
-                })
-              ],
-              1
-            )
-          ]),
+                    ])
+                  })
+                ],
+                1
+              )
+            ]
+          ),
           _vm._v(" "),
           _c(
             "div",
@@ -72308,7 +72354,7 @@ var render = function() {
       _c(
         "carousel-3d",
         {
-          staticClass: "mx-8 px-8",
+          staticClass: "mx-8",
           attrs: {
             "controls-visible": true,
             clickable: true,
@@ -72348,7 +72394,7 @@ var render = function() {
             "div",
             {
               staticClass:
-                "p-2 bg-purple-darkest items-center text-indigo-lightest leading-normal lg:rounded flex lg:inline-flex",
+                "p-2 bg-purple-darkest items-center text-indigo-lightest leading-normal lg:rounded md:rounded flex lg:inline-flex md:inline-flex lg:py-1 md:py-1 sm:py-8",
               attrs: { role: "alert" }
             },
             [
