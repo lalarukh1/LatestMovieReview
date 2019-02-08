@@ -1,9 +1,9 @@
 <template>
     <div id="app">
         <ais-index app-id="7VM1U74DCL" api-key="5af9433923da9f95516b8c7d6cfb3866" indexName="reviews">
-            <div class="lg:flex md:flex sm:flex mx-8 my-4 py-4 justify-between">
+            <div class="lg:flex md:flex sm:flex lg:mx-8 md:mx-8 sm:mx-8 lg:my-4 md:my-4 sm:my-4 lg:py-4 md:py-4 sm:py-4 justify-between">
                 <div class="sidebar lg:w-1/6 md:w-1/4 sm:w-1/2 px-4 py-4 bg-purple-darker text-white overflow-hidden lg:mr-8 mb-8">
-                    <div class="flex bg-pink-custom -mx-4 -mt-4 mb-4 p-3 justify-between items-center rounded-t">
+                    <div class="flex bg-pink-custom -mx-4 -mt-4 mb-4 p-3 justify-between items-center lg:rounded-t md:rounded-t">
                         <h1 class="text-base text-white text-center"> Search </h1>
                         <ais-clear
                                 :class-names="{'ais-clear': 'bg-pink hover:bg-pink-custom text-white text-sm px-2 py-1 rounded shadow-md font-bold'}"
@@ -83,20 +83,20 @@
                 window.scrollTo(0, 520);
             },
         },
-        async created() {
-            await axios.get('https://api.nytimes.com/svc/movies/v2/reviews/search.json', {
-
-                params: {
-                    'api-key': "B4M0PyBla9l9HJKQ9aVro4Fux05rahlH",
-                    'offset': 40,
-                    'critics-pick': "Y"
-                },
-            }).then(response => {
-                if (response.data.count !== 0) {
-                    this.results = response.data;
-                }
-            });
-        },
+        // async created() {
+        //     await axios.get('https://api.nytimes.com/svc/movies/v2/reviews/search.json', {
+        //
+        //         params: {
+        //             'api-key': "B4M0PyBla9l9HJKQ9aVro4Fux05rahlH",
+        //             'offset': 40,
+        //             'critics-pick': "Y"
+        //         },
+        //     }).then(response => {
+        //         if (response.data.count !== 0) {
+        //             this.results = response.data;
+        //         }
+        //     });
+        // },
     }
 </script>
 <style>

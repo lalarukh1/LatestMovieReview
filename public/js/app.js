@@ -34273,7 +34273,7 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('carousal', __webpack_requ
 var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
     el: '#app',
     data: {
-        slides: 20
+        slides: 10
     },
     components: {
         'carousel-3d': __WEBPACK_IMPORTED_MODULE_1_vue_carousel_3d___default.a.Carousel3d,
@@ -70883,12 +70883,6 @@ module.exports = function listToStyles (parentId, list) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
-
-
-function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
-
 //
 //
 //
@@ -70973,43 +70967,21 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
         onPageChange: function onPageChange(page) {
             window.scrollTo(0, 520);
         }
-    },
-    created: function () {
-        var _ref = _asyncToGenerator( /*#__PURE__*/__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.mark(function _callee() {
-            var _this = this;
-
-            return __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default.a.wrap(function _callee$(_context) {
-                while (1) {
-                    switch (_context.prev = _context.next) {
-                        case 0:
-                            _context.next = 2;
-                            return axios.get('https://api.nytimes.com/svc/movies/v2/reviews/search.json', {
-
-                                params: {
-                                    'api-key': "B4M0PyBla9l9HJKQ9aVro4Fux05rahlH",
-                                    'offset': 40,
-                                    'critics-pick': "Y"
-                                }
-                            }).then(function (response) {
-                                if (response.data.count !== 0) {
-                                    _this.results = response.data;
-                                }
-                            });
-
-                        case 2:
-                        case 'end':
-                            return _context.stop();
-                    }
-                }
-            }, _callee, this);
-        }));
-
-        function created() {
-            return _ref.apply(this, arguments);
-        }
-
-        return created;
-    }()
+    }
+    // async created() {
+    //     await axios.get('https://api.nytimes.com/svc/movies/v2/reviews/search.json', {
+    //
+    //         params: {
+    //             'api-key': "B4M0PyBla9l9HJKQ9aVro4Fux05rahlH",
+    //             'offset': 40,
+    //             'critics-pick': "Y"
+    //         },
+    //     }).then(response => {
+    //         if (response.data.count !== 0) {
+    //             this.results = response.data;
+    //         }
+    //     });
+    // },
 });
 
 /***/ }),
@@ -71812,7 +71784,7 @@ var render = function() {
             "div",
             {
               staticClass:
-                "lg:flex md:flex sm:flex mx-8 my-4 py-4 justify-between"
+                "lg:flex md:flex sm:flex lg:mx-8 md:mx-8 sm:mx-8 lg:my-4 md:my-4 sm:my-4 lg:py-4 md:py-4 sm:py-4 justify-between"
             },
             [
               _c(
@@ -71826,7 +71798,7 @@ var render = function() {
                     "div",
                     {
                       staticClass:
-                        "flex bg-pink-custom -mx-4 -mt-4 mb-4 p-3 justify-between items-center rounded-t"
+                        "flex bg-pink-custom -mx-4 -mt-4 mb-4 p-3 justify-between items-center lg:rounded-t md:rounded-t"
                     },
                     [
                       _c(
@@ -72232,7 +72204,7 @@ exports = module.exports = __webpack_require__(163)(false);
 
 
 // module
-exports.push([module.i, "\n#app .carousel-img {\n  width: 100%;\n  height: 270px;\n}\n.carousel-3d-container {\n  width: 80% !important;\n}\n.carousel-3d-container .prev,\n.carousel-3d-container .next {\n  color: #21183c;\n}\n.carousel-3d-container figcaption {\n  font-family: Marmelad;\n  position: absolute;\n  background-color: rgba(33, 24, 60, .6);\n  color: #fff;\n  bottom: 0;\n  padding: 15px;\n  font-size: 12pt;\n  min-width: 100%;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n.carousel-3d-container figcaption p {\n  font-size: 16pt;\n  padding-bottom: 10px;\n}\n", ""]);
+exports.push([module.i, "\n#app .carousel-img {\n  width: 100%;\n  height: 270px;\n}\n.carousel-3d-container {\n  width: 80% !important;\n}\n.carousel-3d-container .prev,\n.carousel-3d-container .next {\n  background-color: #21183c;\n  border: thin solid #21183c;\n  text-align: center;\n  border-radius: 40px;\n  color: white;\n}\n.carousel-3d-container a.prev,\n.carousel-3d-container a.next {\n  line-height: 30px !important;\n}\n.carousel-3d-container figcaption {\n  font-family: Marmelad;\n  position: absolute;\n  background-color: rgba(33, 24, 60, .4);\n  color: #fff;\n  bottom: 0;\n  padding: 15px;\n  font-size: 12pt;\n  min-width: 100%;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n.carousel-3d-container figcaption p {\n  font-size: 16pt;\n  padding-bottom: 10px;\n}\n", ""]);
 
 // exports
 
@@ -72282,7 +72254,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
         return {
-            slides: 20,
+            slides: 10,
             results: [],
             name: '',
             index: 0
@@ -72358,6 +72330,8 @@ var render = function() {
           attrs: {
             "controls-visible": true,
             clickable: true,
+            autoplay: true,
+            "autoplay-timeout": 5000,
             "on-slide-change": _vm.onSlideChanged,
             "on-main-slide-click": _vm.onMainSlideClick
           }
@@ -72373,7 +72347,7 @@ var render = function() {
               _c("figcaption", [
                 _c("p", [_vm._v(_vm._s(_vm.results.results[i].display_title))]),
                 _vm._v(
-                  "\n                    " +
+                  "\n                        " +
                     _vm._s(_vm.results.results[i].summary_short) +
                     "\n                "
                 )
@@ -72385,16 +72359,13 @@ var render = function() {
       _vm._v(" "),
       _c(
         "div",
-        {
-          staticClass:
-            "bg-purple-darker text-center py-4 mt-8 lg:px-4 shadow-md"
-        },
+        { staticClass: "bg-purple-darker text-center py-4 mt-8 shadow-md" },
         [
           _c(
             "div",
             {
               staticClass:
-                "p-2 bg-purple-darkest items-center text-indigo-lightest leading-normal lg:rounded md:rounded flex lg:inline-flex md:inline-flex lg:py-1 md:py-1 sm:py-8",
+                "p-2 bg-purple-darkest items-center text-indigo-lightest leading-normal lg:rounded md:rounded flex px-4 lg:inline-flex md:inline-flex lg:py-3 md:py-3 sm:py-8 py-8",
               attrs: { role: "alert" }
             },
             [
@@ -72417,7 +72388,8 @@ var render = function() {
                   _c(
                     "a",
                     {
-                      staticClass: "no-underline text-white",
+                      staticClass:
+                        "no-underline text-white hover:text-pink-custom",
                       attrs: { href: _vm.results.results[this.index].link.url }
                     },
                     [_vm._v(_vm._s(_vm.results.results[this.index].headline))]
