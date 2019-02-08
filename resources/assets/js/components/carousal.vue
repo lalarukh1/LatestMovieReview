@@ -1,25 +1,26 @@
-<template>
+<template v-if="results.results">
     <div id="app">
         <carousel-3d :controls-visible="true" :clickable="true" :autoplay="true" :autoplay-timeout="5000" :on-slide-change="onSlideChanged" :on-main-slide-click="onMainSlideClick" class="mx-8">
             <slide v-for="(slide, i) in slides" :index="i">
                 <figure>
-                    <img v-bind:src="results.results[i].multimedia.src" class="carousel-img">
+                    <img v-if="results.results" v-bind:src="results.results[i].multimedia.src" class="carousel-img">
                     <figcaption>
-                            <p>{{results.results[i].display_title}}</p>
-                            {{results.results[i].summary_short}}
+                            <p v-if="results.results">{{results.results[i].display_title}}</p>
+                            <!--{{results.results[i].summary_short}}-->
                     </figcaption>
                 </figure>
             </slide>
         </carousel-3d>
         <div class="bg-purple-darker text-center py-4 mt-8 shadow-md">
             <div class="p-2 bg-purple-darkest items-center text-indigo-lightest leading-normal lg:rounded md:rounded flex px-4 lg:inline-flex md:inline-flex lg:py-3 md:py-3 sm:py-8 py-8" role="alert">
-                <span class="flex font-sans rounded bg-pink px-2 py-1 text-xs font-bold mr-3">{{results.results[this.index].byline}}</span>
-                <span class="font-semibold font-sans mr-2 text-left flex-auto animated lightSpeedIn">
-                    <a :href="results.results[this.index].link.url" class="no-underline text-white hover:text-pink-custom">{{results.results[this.index].headline}}</a>
+                <span v-if="results.results" class="flex font-sans rounded border border-pink-custom px-2 py-1 text-xs font-bold mr-3">{{results.results[this.index].byline}}</span>
+                <span v-if="results.results" class="font-semibold font-sans mr-2 text-left flex-auto animated lightSpeedIn">
+                    {{results.results[this.index].headline}}
+                    <a :href="results.results[this.index].link.url" class="no-underline text-white hover:text-pink-custom">
+                    <span class="mx-2 bg-pink hover:bg-pink-custom text-white text-sm px-1 py-1 rounded shadow-md">
+                        <i class="fas fa-arrow-circle-right"></i></span></a>
                 </span>
-                <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
-                    <path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"></path>
-                </svg>
+
             </div>
         </div>
     </div>
@@ -49,6 +50,7 @@
             }).then(response => {
                 if (response.data.count !== 0) {
                     this.results = response.data;
+                    return this.results;
                 }
             });
         },
