@@ -140,12 +140,12 @@
         font-size: 14px;
         display: inline;
         color: white;
-        padding: 0.2rem;
+        padding: 0.3rem;
         background-color: #394166;
 
     }
     .pagination a {
-        padding: 0.4rem;
+        padding: 0.5rem;
         text-decoration: none;
         color: white;
     }

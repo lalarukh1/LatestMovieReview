@@ -1,4 +1,4 @@
-<template v-if="results.results">
+<template>
     <div id="app">
         <carousel-3d :controls-visible="true" :clickable="true" :autoplay="true" :autoplay-timeout="5000" :on-slide-change="onSlideChanged" :on-main-slide-click="onMainSlideClick" class="mx-8">
             <slide v-for="(slide, i) in slides" :index="i">

@@ -46,7 +46,7 @@
         <carousal></carousal>
     </div>
     <results></results>
-    <div class="font-sans border-t border-pink-custom px-4 py-4 bg-purple-darkest text-white text-right">
+    <div class="font-sans px-4 py-4 bg-purple-darkest text-white text-sm text-right">
         Lala Rukh
     </div>
 </div>
