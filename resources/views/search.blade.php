@@ -9,6 +9,7 @@
     <meta name="keywords" content="The New York Times, New York, Newyork, news, movie, review, latest, read">
     <link href="https://fonts.googleapis.com/css?family=Holtwood+One+SC|Raleway|Pacifico|Marmelad" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/output.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
@@ -35,7 +36,7 @@
 
 <div id="app" class="font-sans">
     <div class="pt-6 justify-center bg-no-repeat bg-cover" style="background-image: url('https://ak7.picdn.net/shutterstock/videos/3644417/thumb/1.jpg');">
-        <h1 class="text-center text-purple-darkest px-2 py-1">
+        <h1 class="text-center text-purple-darkest text-md px-2 py-1 font-sans leading-none tracking-tight">
             Critic's Picks
         </h1>
         <carousal></carousal>
