@@ -18,31 +18,35 @@
 
 <body class="sans bg-purple-darkest">
 <header class="bg-purple-darkest border-b-4 border-pink-custom">
-    <div class="container mx-auto h-16 py-2 ">
-        <div class="flex w-full py-2 px-6 justify-between">
-            <div class="lg:w-1/2 md:1/2 sm:w-64 xs:w-5/6 text-2xl font-serif tracking-wide text-white px-2">
-                <h3> Movie Mag </h3>
+    <div class="container mx-auto ">
+        <div class="flex w-full px-6 justify-between items-center py-2">
+            <div class="w-1/2 text-md font-serif text-white px-2 py-2">
+                <h1> Movie Mag </h1>
             </div>
-            <div class="flex justify-end font-sans leading-loose float-right">
-                <h4 class="border-solid border-red border-bottom rounded-sm">
-                    <a href="https://github.com/lalarukh1/LatestMovieReview"
-                       class="no-underline text-grey-light shadow-inner shadow-sm p-1 pr-3 pl-3 hover:text-white">
-                        Info </a>
-                </h4>
+            <div class="flex font-sans leading-none">
+                <p class="mx-1 shadow-md hover:bg-purple-darker rounded leading-none px-1 py-1 border-2 border-purple-darker">
+                    <a href="https://github.com/lalarukh1/LatestMovieReview" class="no-underline text-white">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </p>
+                <p class="mx-1 shadow-md hover:bg-purple-darker rounded leading-none px-1 py-1 border-2 border-purple-darker">
+                    <a href="https://www.nytimes.com/section/movies" class="no-underline text-white">
+                        <i class="fas fa-newspaper"></i>
+                    </a>
+                </p>
             </div>
         </div>
     </div>
 </header>
-
 <div id="app" class="font-sans">
     <div class="pt-6 justify-center bg-no-repeat bg-cover" style="background-image: url('https://ak7.picdn.net/shutterstock/videos/3644417/thumb/1.jpg');">
-        <h1 class="text-center text-purple-darkest text-md px-2 py-1 font-sans leading-none tracking-tight">
+        <h2 class="text-center text-purple-darkest px-2 py-1 font-sans leading-none tracking-tight">
             Critic's Picks
-        </h1>
+        </h2>
         <carousal></carousal>
     </div>
     <results></results>
-    <div class="font-sans border p-4 mt-4 bg-grey text-grey-darkest text-right">
+    <div class="font-sans border-t border-pink-custom px-4 py-4 bg-purple-darkest text-white text-right">
         Lala Rukh
     </div>
 </div>

@@ -1285,7 +1285,7 @@ button,
 }
 
 .hover\:bg-purple-darker:hover {
-  background-color: #382b5f;
+  background-color: #394166;
 }
 
 .hover\:bg-purple-dark:hover {
@@ -1669,7 +1669,7 @@ button,
 }
 
 .border-purple-darker {
-  border-color: #382b5f;
+  border-color: #394166;
 }
 
 .border-purple-dark {
@@ -1725,7 +1725,7 @@ button,
 }
 
 .border-pink-custom {
-  border-color: #e7717d;
+  border-color: #E84A63;
 }
 
 .hover\:border-transparent:hover {
@@ -4085,7 +4085,7 @@ button,
 }
 
 .text-pink-custom {
-  color: #e7717d;
+  color: #E84A63;
 }
 
 .hover\:text-transparent:hover {

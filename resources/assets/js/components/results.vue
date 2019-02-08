@@ -70,9 +70,8 @@
                     </ais-results>
                 </div>
             </div>
-            <div class="block text-center items-center -ml-8 mb-8">
-                <ais-pagination v-on:page-change="onPageChange" class="pagination"
-                                :classNames="{ 'ais-pagination': 'pagination ', 'ais-pagination__item--active': 'active','ais-pagination__item--disabled': 'disabled' }">
+            <div class="flex items-center justify-center mb-8">
+                <ais-pagination v-on:page-change="onPageChange" class="inline-flex pagination">
                 </ais-pagination>
             </div>
         </ais-index>
@@ -134,53 +133,38 @@
         font-size: 10px;
         color: white;
     }
-
     .pagination ul {
-        font-size: 0;
         list-style-type: none;
-        text-align: center;
     }
-
     .pagination li {
-        margin: 0px !important;
         font-size: 14px;
-        font-weight: bold;
         display: inline;
-        background-color: #606f7b;
         color: white;
-        padding-top: 12px;
-        padding-bottom: 12px;
+        padding: 0.2rem;
+        background-color: #394166;
 
     }
-
     .pagination a {
-        padding: 12px;
-        margin: 0px !important;
+        padding: 0.4rem;
         text-decoration: none;
         color: white;
-        border: 1px solid #eee;
     }
-
-    .pagination a:hover {
-        background: #3d4852;
+    .pagination li:first-child {
+        border-radius: 4px 0 0 4px;
     }
-
-    .pagination li:first-child a {
-        border-top-left-radius: 4px;
-        border-bottom-left-radius: 4px;
+    .pagination li:last-child {
+        border-radius: 0 4px 4px 0;
     }
-
-    .pagination li:last-child a {
-        border-right: 1px solid #eee;
-        border-top-right-radius: 4px;
-        border-bottom-right-radius: 4px;
+    .pagination li.ais-pagination__item--active {
+        background: #E84A63;
     }
-
-    .pagination li.ais-pagination--item__active a:hover {
-        cursor: default;
+    .pagination li.ais-pagination__item--disabled {
+        background: rgba(57, 65, 102, 0.5);
     }
-
-    .pagination li.ais-pagination--item__disabled a:hover {
-        background: none;
+    .pagination li.ais-pagination__item:hover {
+        background: #E84A63;
+    }
+    .pagination li.ais-pagination__item--disabled:hover {
+        background: rgba(57, 65, 102, 0.5);
     }
 </style>

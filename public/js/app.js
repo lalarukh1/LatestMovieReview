@@ -70832,7 +70832,7 @@ exports = module.exports = __webpack_require__(163)(false);
 
 
 // module
-exports.push([module.i, "\n.sidebar {\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n}\n.checkbox {\n  padding-bottom: 17px;\n  padding-right: 2px;\n}\n.ais-refinement-list__value {\n  font-size: 14px;\n  padding-left: 10px;\n}\n.ais-refinement-list__item--active {\n  margin-left: -20px;\n  margin-right: -20px;\n  margin-bottom: 10px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n  background-color: rgba(232, 74, 99, .41);\n}\n.badge {\n  background-color: #cf2f49;\n  padding: 2%;\n  border-radius: 20px;\n  float: right;\n  font-size: 10px;\n  color: white;\n}\n.pagination ul {\n  font-size: 0;\n  list-style-type: none;\n  text-align: center;\n}\n.pagination li {\n  margin: 0 !important;\n  font-size: 14px;\n  font-weight: bold;\n  display: inline;\n  background-color: #606f7b;\n  color: white;\n  padding-top: 12px;\n  padding-bottom: 12px;\n}\n.pagination a {\n  padding: 12px;\n  margin: 0 !important;\n  text-decoration: none;\n  color: white;\n  border: 1px solid #eee;\n}\n.pagination a:hover {\n  background: #3d4852;\n}\n.pagination li:first-child a {\n  border-top-left-radius: 4px;\n  border-bottom-left-radius: 4px;\n}\n.pagination li:last-child a {\n  border-right: 1px solid #eee;\n  border-top-right-radius: 4px;\n  border-bottom-right-radius: 4px;\n}\n.pagination li.ais-pagination--item__active a:hover {\n  cursor: default;\n}\n.pagination li.ais-pagination--item__disabled a:hover {\n  background: none;\n}\n", ""]);
+exports.push([module.i, "\n.sidebar {\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n}\n.checkbox {\n  padding-bottom: 17px;\n  padding-right: 2px;\n}\n.ais-refinement-list__value {\n  font-size: 14px;\n  padding-left: 10px;\n}\n.ais-refinement-list__item--active {\n  margin-left: -20px;\n  margin-right: -20px;\n  margin-bottom: 10px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n  background-color: rgba(232, 74, 99, .41);\n}\n.badge {\n  background-color: #cf2f49;\n  padding: 2%;\n  border-radius: 20px;\n  float: right;\n  font-size: 10px;\n  color: white;\n}\n.pagination ul {\n  list-style-type: none;\n}\n.pagination li {\n  font-size: 14px;\n  display: inline;\n  color: white;\n  padding: .2rem;\n  background-color: #394166;\n}\n.pagination a {\n  padding: .4rem;\n  text-decoration: none;\n  color: white;\n}\n.pagination li:first-child {\n  border-radius: 4px 0 0 4px;\n}\n.pagination li:last-child {\n  border-radius: 0 4px 4px 0;\n}\n.pagination li.ais-pagination__item--active {\n  background: #e84a63;\n}\n.pagination li.ais-pagination__item--disabled {\n  background: rgba(57, 65, 102, .5);\n}\n.pagination li.ais-pagination__item:hover {\n  background: #e84a63;\n}\n.pagination li.ais-pagination__item--disabled:hover {\n  background: rgba(57, 65, 102, .5);\n}\n", ""]);
 
 // exports
 
@@ -70876,7 +70876,6 @@ module.exports = function listToStyles (parentId, list) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-//
 //
 //
 //
@@ -71308,17 +71307,10 @@ var render = function() {
           _vm._v(" "),
           _c(
             "div",
-            { staticClass: "block text-center items-center -ml-8 mb-8" },
+            { staticClass: "flex items-center justify-center mb-8" },
             [
               _c("ais-pagination", {
-                staticClass: "pagination",
-                attrs: {
-                  classNames: {
-                    "ais-pagination": "pagination ",
-                    "ais-pagination__item--active": "active",
-                    "ais-pagination__item--disabled": "disabled"
-                  }
-                },
+                staticClass: "inline-flex pagination",
                 on: { "page-change": _vm.onPageChange }
               })
             ],
