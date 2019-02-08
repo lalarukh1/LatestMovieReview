@@ -6,19 +6,18 @@
                     <img v-if="results.results" v-bind:src="results.results[i].multimedia.src" class="carousel-img">
                     <figcaption>
                             <p v-if="results.results">{{results.results[i].display_title}}</p>
-                            <!--{{results.results[i].summary_short}}-->
                     </figcaption>
                 </figure>
             </slide>
         </carousel-3d>
         <div class="bg-purple-darker text-center py-4 mt-8 shadow-md">
             <div class="p-2 bg-purple-darkest items-center text-indigo-lightest leading-normal lg:rounded md:rounded flex px-4 lg:inline-flex md:inline-flex lg:py-3 md:py-3 sm:py-8 py-8" role="alert">
-                <span v-if="results.results" class="flex font-sans rounded border border-pink-custom px-2 py-1 text-xs font-bold mr-3">{{results.results[this.index].byline}}</span>
+                <span v-if="results.results" class="flex font-sans rounded bg-white text-purple-darkest border-2 border-pink-darkest px-2 py-1 text-xs font-bold mr-3">{{results.results[this.index].byline}}</span>
                 <span v-if="results.results" class="font-semibold font-sans mr-2 text-left flex-auto animated lightSpeedIn">
                     {{results.results[this.index].headline}}
-                    <a :href="results.results[this.index].link.url" class="no-underline text-white hover:text-pink-custom">
-                    <span class="mx-2 bg-pink hover:bg-pink-custom text-white text-sm px-1 py-1 rounded shadow-md">
-                        <i class="fas fa-arrow-circle-right"></i></span></a>
+                    <a :href="results.results[this.index].link.url" class="no-underline text-white">
+                    <span class="mx-2 hover:text-pink-darkest text-white text-lg rounded-full shadow-md border border-purple-darkest ">
+                        <i class="fas fa-chevron-circle-right"></i></span></a>
                 </span>
 
             </div>
@@ -75,11 +74,11 @@
     }
 
     .carousel-3d-container .prev, .carousel-3d-container .next {
-        background-color: #21183C;
+        background-color: white;
         border: thin solid #21183C;
         text-align: center;
         border-radius: 40px;
-        color: white;
+        color: #21183C;
     }
     .carousel-3d-container a.prev, .carousel-3d-container a.next {
         line-height: 30px !important;
@@ -99,6 +98,9 @@
     .carousel-3d-container figcaption p {
         font-size: 16pt;
         padding-bottom: 10px;
+    }
+    .carousel-3d-slide {
+        border: thin solid rgba(255, 255, 255, 0) !important;
     }
 
 </style>

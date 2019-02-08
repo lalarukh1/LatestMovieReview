@@ -993,7 +993,7 @@ button,
 }
 
 .bg-pink-darkest {
-  background-color: #451225;
+  background-color: #CF2F49;
 }
 
 .bg-pink-darker {
@@ -1313,7 +1313,7 @@ button,
 }
 
 .hover\:bg-pink-darkest:hover {
-  background-color: #451225;
+  background-color: #CF2F49;
 }
 
 .hover\:bg-pink-darker:hover {
@@ -1697,7 +1697,7 @@ button,
 }
 
 .border-pink-darkest {
-  border-color: #451225;
+  border-color: #CF2F49;
 }
 
 .border-pink-darker {
@@ -4057,7 +4057,7 @@ button,
 }
 
 .text-pink-darkest {
-  color: #451225;
+  color: #CF2F49;
 }
 
 .text-pink-darker {
@@ -4377,7 +4377,7 @@ button,
 }
 
 .hover\:text-pink-darkest:hover {
-  color: #451225;
+  color: #CF2F49;
 }
 
 .hover\:text-pink-darker:hover {

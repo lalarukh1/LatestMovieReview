@@ -38,27 +38,29 @@
                             </template>
                         </ais-no-results>
                     </div>
-                    <ais-results class="text-white flex flex-wrap lg:-mr-8 md:-mr-8">
+                    <ais-results class="text-purple-darkest flex flex-wrap lg:-mr-8 md:-mr-8">
                         <template slot-scope="{ result }">
-                            <div class="xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full bg-purple-darker shadow rounded lg:mx-8 md:mx-4 sm:mx-1 mb-8">
+                            <div class="xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full bg-white lg:mx-8 md:mx-4 sm:mx-1 mb-8">
                                 <div>
-                                    <img :src="result.src" class="rounded-t shadow w-full">
+                                    <img :src="result.src" class="shadow-md w-full">
                                     <div class="overflow-hidden mx-4 my-2 h-32 mb-4 pb-2">
-                                        <div class="text-lg sm:text-md items-center my-2 leading-normal">
+                                        <div class="text-lg sm:text-md items-center my-2 leading-normal font-bold">
                                             <ais-highlight :result="result"
                                                            attribute-name="display_title"></ais-highlight>
                                         </div>
-                                        <div class="text-xs items-center my-2 text-purple-light leading-normal">
-                                            <span class="mr-2"><i class="fas fa-user-edit text-white"></i></span>
+                                        <div class="text-xs items-center my-2 text-pink-darkest leading-normal">
+                                            <span class="mr-2">
+                                                <i class="fas fa-user-edit text-pink-darkest shadow-md rounded-full"></i>
+                                            </span>
                                             <ais-highlight :result="result"
                                                            attribute-name="byline"></ais-highlight>
                                         </div>
-                                        <p class="text-purple-light leading-normal text-sm mb-2 pb-2">
+                                        <p class="text-purple-darker leading-normal text-sm mb-2 pb-2">
                                             <ais-highlight :result="result"
                                                            attribute-name="summary_short"></ais-highlight>
                                         </p>
                                     </div>
-                                    <div class="w-full items-center p-3 bg-pink-custom hover:bg-pink-custom text-center">
+                                    <div class="w-full items-center p-3 bg-purple-darker hover:bg-pink-darkest text-center">
                                         <span> <a :href="result.url" class="no-underline text-white"><i
                                                 class="fab fa-readme px-2 items-end"></i>Read Review</a> </span>
                                     </div>

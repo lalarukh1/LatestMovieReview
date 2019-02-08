@@ -34,8 +34,8 @@
 </header>
 
 <div id="app" class="font-sans">
-    <div class="pt-6 justify-center bg-no-repeat bg-cover" style="background-image: url('https://ak8.picdn.net/shutterstock/videos/1007581438/thumb/1.jpg');">
-        <h1 class="text-center text-purple-darkest p-3 pl-4 pr-6 mt-3 mb-3">
+    <div class="pt-6 justify-center bg-no-repeat bg-cover" style="background-image: url('https://ak7.picdn.net/shutterstock/videos/3644417/thumb/1.jpg');">
+        <h1 class="text-center text-purple-darkest px-2 py-1">
             Critic's Picks
         </h1>
         <carousal></carousal>

@@ -70954,6 +70954,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     methods: {
@@ -71176,7 +71178,8 @@ var render = function() {
                   ),
                   _vm._v(" "),
                   _c("ais-results", {
-                    staticClass: "text-white flex flex-wrap lg:-mr-8 md:-mr-8",
+                    staticClass:
+                      "text-purple-darkest flex flex-wrap lg:-mr-8 md:-mr-8",
                     scopedSlots: _vm._u([
                       {
                         key: "default",
@@ -71187,12 +71190,12 @@ var render = function() {
                               "div",
                               {
                                 staticClass:
-                                  "xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full bg-purple-darker shadow rounded lg:mx-8 md:mx-4 sm:mx-1 mb-8"
+                                  "xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full bg-white lg:mx-8 md:mx-4 sm:mx-1 mb-8"
                               },
                               [
                                 _c("div", [
                                   _c("img", {
-                                    staticClass: "rounded-t shadow w-full",
+                                    staticClass: "shadow-md w-full",
                                     attrs: { src: result.src }
                                   }),
                                   _vm._v(" "),
@@ -71207,7 +71210,7 @@ var render = function() {
                                         "div",
                                         {
                                           staticClass:
-                                            "text-lg sm:text-md items-center my-2 leading-normal"
+                                            "text-lg sm:text-md items-center my-2 leading-normal font-bold"
                                         },
                                         [
                                           _c("ais-highlight", {
@@ -71224,13 +71227,13 @@ var render = function() {
                                         "div",
                                         {
                                           staticClass:
-                                            "text-xs items-center my-2 text-purple-light leading-normal"
+                                            "text-xs items-center my-2 text-pink-darkest leading-normal"
                                         },
                                         [
                                           _c("span", { staticClass: "mr-2" }, [
                                             _c("i", {
                                               staticClass:
-                                                "fas fa-user-edit text-white"
+                                                "fas fa-user-edit text-pink-darkest shadow-md rounded-full"
                                             })
                                           ]),
                                           _vm._v(" "),
@@ -71248,7 +71251,7 @@ var render = function() {
                                         "p",
                                         {
                                           staticClass:
-                                            "text-purple-light leading-normal text-sm mb-2 pb-2"
+                                            "text-purple-darker leading-normal text-sm mb-2 pb-2"
                                         },
                                         [
                                           _c("ais-highlight", {
@@ -71267,7 +71270,7 @@ var render = function() {
                                     "div",
                                     {
                                       staticClass:
-                                        "w-full items-center p-3 bg-pink-custom hover:bg-pink-custom text-center"
+                                        "w-full items-center p-3 bg-purple-darker hover:bg-pink-darkest text-center"
                                     },
                                     [
                                       _c("span", [
@@ -71423,7 +71426,7 @@ exports = module.exports = __webpack_require__(163)(false);
 
 
 // module
-exports.push([module.i, "\n#app .carousel-img {\n  width: 100%;\n  height: 270px;\n}\n.carousel-3d-container {\n  width: 80% !important;\n}\n.carousel-3d-container .prev,\n.carousel-3d-container .next {\n  background-color: #21183c;\n  border: thin solid #21183c;\n  text-align: center;\n  border-radius: 40px;\n  color: white;\n}\n.carousel-3d-container a.prev,\n.carousel-3d-container a.next {\n  line-height: 30px !important;\n}\n.carousel-3d-container figcaption {\n  font-family: Marmelad;\n  position: absolute;\n  background-color: rgba(33, 24, 60, .4);\n  color: #fff;\n  bottom: 0;\n  padding: 15px;\n  font-size: 12pt;\n  min-width: 100%;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n.carousel-3d-container figcaption p {\n  font-size: 16pt;\n  padding-bottom: 10px;\n}\n", ""]);
+exports.push([module.i, "\n#app .carousel-img {\n  width: 100%;\n  height: 270px;\n}\n.carousel-3d-container {\n  width: 80% !important;\n}\n.carousel-3d-container .prev,\n.carousel-3d-container .next {\n  background-color: white;\n  border: thin solid #21183c;\n  text-align: center;\n  border-radius: 40px;\n  color: #21183c;\n}\n.carousel-3d-container a.prev,\n.carousel-3d-container a.next {\n  line-height: 30px !important;\n}\n.carousel-3d-container figcaption {\n  font-family: Marmelad;\n  position: absolute;\n  background-color: rgba(33, 24, 60, .4);\n  color: #fff;\n  bottom: 0;\n  padding: 15px;\n  font-size: 12pt;\n  min-width: 100%;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n.carousel-3d-container figcaption p {\n  font-size: 16pt;\n  padding-bottom: 10px;\n}\n.carousel-3d-slide {\n  border: thin solid rgba(255, 255, 255, 0) !important;\n}\n", ""]);
 
 // exports
 
@@ -71442,7 +71445,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
-//
 //
 //
 //
@@ -72377,7 +72379,7 @@ var render = function() {
                     "span",
                     {
                       staticClass:
-                        "flex font-sans rounded border border-pink-custom px-2 py-1 text-xs font-bold mr-3"
+                        "flex font-sans rounded bg-white text-purple-darkest border-2 border-pink-darkest px-2 py-1 text-xs font-bold mr-3"
                     },
                     [_vm._v(_vm._s(_vm.results.results[this.index].byline))]
                   )
@@ -72399,8 +72401,7 @@ var render = function() {
                       _c(
                         "a",
                         {
-                          staticClass:
-                            "no-underline text-white hover:text-pink-custom",
+                          staticClass: "no-underline text-white",
                           attrs: {
                             href: _vm.results.results[this.index].link.url
                           }
@@ -72427,9 +72428,9 @@ var staticRenderFns = [
       "span",
       {
         staticClass:
-          "mx-2 bg-pink hover:bg-pink-custom text-white text-sm px-1 py-1 rounded shadow-md"
+          "mx-2 hover:text-pink-darkest text-white text-lg rounded-full shadow-md border border-purple-darkest "
       },
-      [_c("i", { staticClass: "fas fa-arrow-circle-right" })]
+      [_c("i", { staticClass: "fas fa-chevron-circle-right" })]
     )
   }
 ]
