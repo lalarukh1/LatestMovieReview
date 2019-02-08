@@ -71426,7 +71426,7 @@ exports = module.exports = __webpack_require__(163)(false);
 
 
 // module
-exports.push([module.i, "\n#app .carousel-img {\n  width: 100%;\n  height: 270px;\n}\n.carousel-3d-container {\n  width: 80% !important;\n}\n.carousel-3d-container .prev,\n.carousel-3d-container .next {\n  background-color: white;\n  border: thin solid #21183c;\n  text-align: center;\n  border-radius: 40px;\n  color: #21183c;\n}\n.carousel-3d-container a.prev,\n.carousel-3d-container a.next {\n  line-height: 30px !important;\n}\n.carousel-3d-container figcaption {\n  font-family: Marmelad;\n  position: absolute;\n  background-color: rgba(33, 24, 60, .4);\n  color: #fff;\n  bottom: 0;\n  padding: 15px;\n  font-size: 12pt;\n  min-width: 100%;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n.carousel-3d-container figcaption p {\n  font-size: 16pt;\n  padding-bottom: 10px;\n}\n.carousel-3d-slide {\n  border: thin solid rgba(255, 255, 255, 0) !important;\n}\n", ""]);
+exports.push([module.i, "\n#app .carousel-img {\n  width: 100%;\n  height: 270px;\n}\n.carousel-3d-container .prev,\n.carousel-3d-container .next {\n  background-color: white;\n  border: thin solid #21183c;\n  text-align: center;\n  border-radius: 40px;\n  color: #21183c;\n}\n.carousel-3d-container a.prev,\n.carousel-3d-container a.next {\n  line-height: 30px !important;\n}\n.carousel-3d-container figcaption {\n  font-family: Marmelad;\n  position: absolute;\n  background-color: rgba(33, 24, 60, .4);\n  color: #fff;\n  bottom: 0;\n  padding: 15px;\n  font-size: 12pt;\n  min-width: 100%;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n.carousel-3d-container figcaption p {\n  font-size: 16pt;\n  padding-bottom: 10px;\n}\n.carousel-3d-slide {\n  border: thin solid rgba(255, 255, 255, 0) !important;\n}\n", ""]);
 
 // exports
 
@@ -72379,7 +72379,7 @@ var render = function() {
                     "span",
                     {
                       staticClass:
-                        "flex font-sans rounded bg-white text-purple-darkest border-2 border-pink-darkest px-2 py-1 text-xs font-bold mr-3"
+                        "lg:flex md:flex sm:flex hidden font-sans rounded bg-white text-purple-darkest border-2 border-pink-darkest px-2 py-1 text-xs font-bold mr-3"
                     },
                     [_vm._v(_vm._s(_vm.results.results[this.index].byline))]
                   )
