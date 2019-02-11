@@ -43,7 +43,7 @@
                             <div class="xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full w-2/5 bg-white lg:mx-8 md:mx-4 sm:mx-1 mx-2 mb-8 shadow-md rounded">
                                 <div>
                                     <img :src="result.src" class="shadow-md w-full">
-                                    <div class="overflow-hidden mx-4 my-2 h-32 mb-4 pb-2">
+                                    <div class="overflow-hidden mx-4 my-2 lg:h-32 md:h-32 sm:h-32 h-40 mb-4 pb-2">
                                         <div class="lg:text-lg md:text-lg sm:text-md text-md items-center my-2 leading-normal font-bold">
                                             <ais-highlight :result="result"
                                                            attribute-name="display_title"></ais-highlight>

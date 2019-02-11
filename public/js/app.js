@@ -71202,7 +71202,7 @@ var render = function() {
                                     "div",
                                     {
                                       staticClass:
-                                        "overflow-hidden mx-4 my-2 h-32 mb-4 pb-2"
+                                        "overflow-hidden mx-4 my-2 lg:h-32 md:h-32 sm:h-32 h-40 mb-4 pb-2"
                                     },
                                     [
                                       _c(
