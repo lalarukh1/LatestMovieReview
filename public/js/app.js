@@ -34266,7 +34266,8 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('carousal', __webpack_requ
 var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
     el: '#app',
     data: {
-        slides: 10
+        slides: 10,
+        isHidden: true
     },
     components: {
         'carousel-3d': __WEBPACK_IMPORTED_MODULE_1_vue_carousel_3d___default.a.Carousel3d,
@@ -70955,27 +70956,29 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+    data: function data() {
+        return {
+            isHidden: true
+        };
+    },
+
     methods: {
         onPageChange: function onPageChange(page) {
             window.scrollTo(0, 520);
         }
     }
-    // async created() {
-    //     await axios.get('https://api.nytimes.com/svc/movies/v2/reviews/search.json', {
-    //
-    //         params: {
-    //             'api-key': "B4M0PyBla9l9HJKQ9aVro4Fux05rahlH",
-    //             'offset': 40,
-    //             'critics-pick': "Y"
-    //         },
-    //     }).then(response => {
-    //         if (response.data.count !== 0) {
-    //             this.results = response.data;
-    //         }
-    //     });
-    // },
 });
 
 /***/ }),
@@ -71046,7 +71049,10 @@ var render = function() {
                   _vm._v(" "),
                   _c(
                     "div",
-                    { staticClass: "items-center text-center my-3" },
+                    {
+                      staticClass:
+                        "items-center text-center my-3 lg:hidden md:hidden sm:hidden block"
+                    },
                     [
                       _c("ais-input", {
                         attrs: {
@@ -71055,7 +71061,25 @@ var render = function() {
                             "ais-input": "form-control p-2 rounded w-full"
                           }
                         }
-                      })
+                      }),
+                      _vm._v(" "),
+                      _c(
+                        "h4",
+                        {
+                          staticClass: "text-md mt-6",
+                          on: {
+                            click: function($event) {
+                              _vm.isHidden = !_vm.isHidden
+                            }
+                          }
+                        },
+                        [
+                          _vm._v("Filter Results\n                        "),
+                          _c("i", {
+                            staticClass: "fas fa-chevron-circle-down mx-2"
+                          })
+                        ]
+                      )
                     ],
                     1
                   ),
@@ -71064,7 +71088,8 @@ var render = function() {
                     "div",
                     {
                       staticClass:
-                        "items-center my-3 hidden sm:block lg:block md:block"
+                        "filter items-center my-3 sm:block lg:block md:block animated fadeInDown",
+                      class: { hidden: _vm.isHidden }
                     },
                     [
                       _c(
@@ -71105,7 +71130,8 @@ var render = function() {
                     "div",
                     {
                       staticClass:
-                        "items-center my-3 hidden sm:block lg:block md:block"
+                        "filter items-center my-3 sm:block lg:block md:block animated fadeInDown",
+                      class: { hidden: _vm.isHidden }
                     },
                     [
                       _c(
@@ -71136,7 +71162,26 @@ var render = function() {
                       )
                     ],
                     1
-                  )
+                  ),
+                  _vm._v(" "),
+                  !_vm.isHidden
+                    ? _c(
+                        "h4",
+                        {
+                          staticClass:
+                            "lg:hidden md:hidden sm:hidden block text-md my-3 text-center",
+                          on: {
+                            click: function($event) {
+                              _vm.isHidden = !_vm.isHidden
+                            }
+                          }
+                        },
+                        [
+                          _vm._v("Close\n                    "),
+                          _c("i", { staticClass: "fas fa-times-circle" })
+                        ]
+                      )
+                    : _vm._e()
                 ]
               ),
               _vm._v(" "),
@@ -71174,6 +71219,19 @@ var render = function() {
                       })
                     ],
                     1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "h2",
+                    {
+                      staticClass:
+                        "block lg:hidden md:hidden sm:hidden text-center text-purple-darkest px-2 py-1 mb-4 font-sans leading-none tracking-tight"
+                    },
+                    [
+                      _vm._v(
+                        "\n                    LATEST MOVIES\n                "
+                      )
+                    ]
                   ),
                   _vm._v(" "),
                   _c("ais-results", {

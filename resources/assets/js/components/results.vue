@@ -10,24 +10,31 @@
                                 title="Clear search">Reset
                         </ais-clear>
                     </div>
-                    <div class="items-center text-center my-3">
+                    <div class="items-center text-center my-3 lg:hidden md:hidden sm:hidden block">
                         <ais-input placeholder=" Search"
                                    :class-names="{'ais-input': 'form-control p-2 rounded w-full'}"></ais-input>
+                        <h4 class="text-md mt-6" v-on:click="isHidden = !isHidden">Filter Results
+                            <i class="fas fa-chevron-circle-down mx-2"></i></h4>
                     </div>
-                    <div class="items-center my-3 hidden sm:block lg:block md:block">
+
+                    <div class="filter items-center my-3 sm:block lg:block md:block animated fadeInDown" v-bind:class="{ hidden: isHidden }">
                         <ais-refinement-list attribute-name="opening_date" :sort-by="['isRefined:desc', 'name:desc']"
                                              :classNames="{'ais-refinement-list__count': 'badge','ais-refinement-list__item': 'checkbox'}">
                             <template slot="header"><h2 class="my-6 p-2 border-b border-pink-custom text-base -mx-4 shadow">Release
                                 Date</h2></template>
                         </ais-refinement-list>
                     </div>
-                    <div class="items-center my-3 hidden sm:block lg:block md:block">
+
+                    <div class="filter items-center my-3 sm:block lg:block md:block animated fadeInDown" v-bind:class="{ hidden: isHidden }">
                         <ais-refinement-list attribute-name="byline" :sort-by="['name:asc']"
                                              :classNames="{'ais-refinement-list__count': 'badge','ais-refinement-list__item': 'checkbox'}">
                             <template slot="header"><h2 class="my-6 p-2 border-b border-pink-custom  text-base -mx-4 shadow">Reviewers</h2>
                             </template>
                         </ais-refinement-list>
                     </div>
+
+                    <h4 v-if="!isHidden" class="lg:hidden md:hidden sm:hidden block text-md my-3 text-center" v-on:click="isHidden = !isHidden">Close
+                        <i class="fas fa-times-circle"></i></h4>
                 </div>
                 <div class="flex-row lg:w-4/5 md:w-4/5 sm:w-4/5 lg:px-4 md:px-4 sm:px-4 lg:ml-4 lg:border-l border-grey md:ml-4 md:border-l">
                     <div class="mx-auto items-center">
@@ -38,6 +45,9 @@
                             </template>
                         </ais-no-results>
                     </div>
+                    <h2 class="block lg:hidden md:hidden sm:hidden text-center text-purple-darkest px-2 py-1 mb-4 font-sans leading-none tracking-tight">
+                        LATEST MOVIES
+                    </h2>
                     <ais-results class="text-purple-darkest flex flex-wrap lg:-mr-8 md:-mr-8 items-center justify-center">
                         <template slot-scope="{ result }">
                             <div class="xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full w-2/5 bg-white lg:mx-8 md:mx-4 sm:mx-1 mx-2 mb-8 shadow-md rounded">
@@ -79,25 +89,33 @@
 </template>
 <script>
     export default {
+        data() {
+            return {
+                isHidden: true
+            }
+        },
         methods: {
             onPageChange(page) {
                 window.scrollTo(0, 520);
             },
+
+        // filter() {
+        //         var vm = this;
+        //         const element = document.querySelector('.filter');
+        //         const list =  document.querySelectorAll('.filter');
+        //         list.forEach(element => {
+        //             element.classList.remove('animated', 'fadeInDown');
+        //             element.classList.add('animated', 'bounceOutLeft');
+        //         });
+        //         element.addEventListener('animationend', function()
+        //         {
+        //             console.log(vm.isHidden);
+        //             vm.isHidden = true;
+        //             console.log(vm.isHidden);
+        //         })
+        //         return this.isHidden;
+        //     },
         },
-        // async created() {
-        //     await axios.get('https://api.nytimes.com/svc/movies/v2/reviews/search.json', {
-        //
-        //         params: {
-        //             'api-key': "B4M0PyBla9l9HJKQ9aVro4Fux05rahlH",
-        //             'offset': 40,
-        //             'critics-pick': "Y"
-        //         },
-        //     }).then(response => {
-        //         if (response.data.count !== 0) {
-        //             this.results = response.data;
-        //         }
-        //     });
-        // },
     }
 </script>
 <style>

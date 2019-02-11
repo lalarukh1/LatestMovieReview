@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css?family=Holtwood+One+SC|Raleway|Pacifico|Marmelad" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/balloon-css/0.5.0/balloon.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/output.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
@@ -24,12 +25,12 @@
                 <h1 class="lg:text-2xl md:text-xl sm:text-xl text-lg"> Movie Mag </h1>
             </div>
             <div class="flex font-sans leading-none">
-                <p class="mx-1 shadow-md hover:bg-purple-darker rounded leading-none px-1 py-1 border-2 border-purple-darker">
+                <p class="mx-1 shadow-md hover:bg-purple-darker rounded leading-none px-1 py-1 border-2 border-purple-darker" data-balloon="My Github" data-balloon-pos="down">
                     <a href="https://github.com/lalarukh1/LatestMovieReview" class="no-underline text-white">
                         <i class="fab fa-github"></i>
                     </a>
                 </p>
-                <p class="mx-1 shadow-md hover:bg-purple-darker rounded leading-none px-1 py-1 border-2 border-purple-darker">
+                <p class="mx-1 shadow-md hover:bg-purple-darker rounded leading-none px-1 py-1 border-2 border-purple-darker" data-balloon="The Newyork Times website" data-balloon-pos="down">
                     <a href="https://www.nytimes.com/section/movies" class="no-underline text-white">
                         <i class="fas fa-newspaper"></i>
                     </a>
@@ -41,7 +42,7 @@
 <div id="app" class="font-sans">
     <div class="pt-6 justify-center bg-no-repeat bg-cover bg-white">
         <h2 class="text-center text-purple-darkest px-2 py-1 font-sans leading-none tracking-tight">
-            Critic's Picks
+            CRITIC'S PICKS
         </h2>
         <carousal></carousal>
     </div>

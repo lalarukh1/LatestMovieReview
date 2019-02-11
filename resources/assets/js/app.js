@@ -23,7 +23,8 @@ Vue.component('carousal', require('./components/carousal.vue'));
 const app = new Vue({
     el: '#app',
     data: {
-        slides: 10
+        slides: 10,
+        isHidden: true,
     },
     components: {
         'carousel-3d': Carousel3d.Carousel3d,
