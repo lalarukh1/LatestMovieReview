@@ -44,7 +44,7 @@
                                 <div>
                                     <img :src="result.src" class="shadow-md w-full">
                                     <div class="overflow-hidden mx-4 my-2 h-32 mb-4 pb-2">
-                                        <div class="text-lg sm:text-md items-center my-2 leading-normal font-bold">
+                                        <div class="lg:text-lg md:text-lg sm:text-md text-md items-center my-2 leading-normal font-bold">
                                             <ais-highlight :result="result"
                                                            attribute-name="display_title"></ais-highlight>
                                         </div>
@@ -60,8 +60,8 @@
                                                            attribute-name="summary_short"></ais-highlight>
                                         </p>
                                     </div>
-                                    <div class="w-full items-center p-3 bg-purple-darkest hover:bg-pink-darkest text-center">
-                                        <span> <a :href="result.url" class="no-underline text-white"><i
+                                    <div class="w-full items-center lg:p-3 md:p-3 sm:p-2 p-2 bg-purple-darkest hover:bg-pink-darkest text-center">
+                                        <span> <a :href="result.url" class="no-underline text-white text-md"><i
                                                 class="fab fa-readme px-2 items-end"></i>Read Review</a> </span>
                                     </div>
                                 </div>

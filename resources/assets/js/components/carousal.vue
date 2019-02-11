@@ -104,4 +104,10 @@
         border: thin solid rgba(255, 255, 255, 0) !important;
     }
 
+    @media (max-width: 576px) {
+        .carousel-3d-container .prev, .carousel-3d-container .next {
+            display: none;
+        }
+    }
+
 </style>

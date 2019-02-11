@@ -71209,7 +71209,7 @@ var render = function() {
                                         "div",
                                         {
                                           staticClass:
-                                            "text-lg sm:text-md items-center my-2 leading-normal font-bold"
+                                            "lg:text-lg md:text-lg sm:text-md text-md items-center my-2 leading-normal font-bold"
                                         },
                                         [
                                           _c("ais-highlight", {
@@ -71269,7 +71269,7 @@ var render = function() {
                                     "div",
                                     {
                                       staticClass:
-                                        "w-full items-center p-3 bg-purple-darkest hover:bg-pink-darkest text-center"
+                                        "w-full items-center lg:p-3 md:p-3 sm:p-2 p-2 bg-purple-darkest hover:bg-pink-darkest text-center"
                                     },
                                     [
                                       _c("span", [
@@ -71277,7 +71277,7 @@ var render = function() {
                                           "a",
                                           {
                                             staticClass:
-                                              "no-underline text-white",
+                                              "no-underline text-white text-md",
                                             attrs: { href: result.url }
                                           },
                                           [
@@ -71418,7 +71418,7 @@ exports = module.exports = __webpack_require__(163)(false);
 
 
 // module
-exports.push([module.i, "\n#app .carousel-img {\n  width: 100%;\n  height: 270px;\n}\n.carousel-3d-container .prev,\n.carousel-3d-container .next {\n  background-color: rgba(255, 255, 255, .4);\n  border: thin solid #21183c;\n  text-align: center;\n  border-radius: 40px;\n  color: #21183c;\n}\n.carousel-3d-container a.prev,\n.carousel-3d-container a.next {\n  line-height: 30px !important;\n}\n.carousel-3d-container figcaption {\n  font-family: Marmelad;\n  position: absolute;\n  background-color: rgba(33, 24, 60, .61);\n  color: #fff;\n  bottom: 0;\n  padding: 15px;\n  font-size: 12pt;\n  min-width: 100%;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n.carousel-3d-container figcaption p {\n  font-size: 16pt;\n  padding-bottom: 10px;\n}\n.carousel-3d-slide {\n  border: thin solid rgba(255, 255, 255, 0) !important;\n}\n", ""]);
+exports.push([module.i, "\n#app .carousel-img {\n  width: 100%;\n  height: 270px;\n}\n.carousel-3d-container .prev,\n.carousel-3d-container .next {\n  background-color: rgba(255, 255, 255, .4);\n  border: thin solid #21183c;\n  text-align: center;\n  border-radius: 40px;\n  color: #21183c;\n}\n.carousel-3d-container a.prev,\n.carousel-3d-container a.next {\n  line-height: 30px !important;\n}\n.carousel-3d-container figcaption {\n  font-family: Marmelad;\n  position: absolute;\n  background-color: rgba(33, 24, 60, .61);\n  color: #fff;\n  bottom: 0;\n  padding: 15px;\n  font-size: 12pt;\n  min-width: 100%;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n.carousel-3d-container figcaption p {\n  font-size: 16pt;\n  padding-bottom: 10px;\n}\n.carousel-3d-slide {\n  border: thin solid rgba(255, 255, 255, 0) !important;\n}\n@media (max-width: 576px) {\n.carousel-3d-container .prev,\n  .carousel-3d-container .next {\n    display: none;\n}\n}\n", ""]);
 
 // exports
 
