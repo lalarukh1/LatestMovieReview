@@ -70966,6 +70966,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -71076,7 +71078,13 @@ var render = function() {
                         [
                           _vm._v("Filter Results\n                        "),
                           _c("i", {
-                            staticClass: "fas fa-chevron-circle-down mx-2"
+                            staticClass: "fas fa-chevron-circle-down mx-2",
+                            class: { hidden: !_vm.isHidden }
+                          }),
+                          _vm._v(" "),
+                          _c("i", {
+                            staticClass: "fas fa-chevron-circle-up",
+                            class: { hidden: _vm.isHidden }
                           })
                         ]
                       )
@@ -72479,7 +72487,7 @@ var render = function() {
                     "span",
                     {
                       staticClass:
-                        "font-semibold font-sans mr-2 text-left flex-auto animated lightSpeedIn"
+                        "font-semibold font-sans mr-2 text-left flex-auto"
                     },
                     [
                       _c(

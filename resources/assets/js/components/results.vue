@@ -14,7 +14,9 @@
                         <ais-input placeholder=" Search"
                                    :class-names="{'ais-input': 'form-control p-2 rounded w-full'}"></ais-input>
                         <h4 class="text-md mt-6" v-on:click="isHidden = !isHidden">Filter Results
-                            <i class="fas fa-chevron-circle-down mx-2"></i></h4>
+                            <i class="fas fa-chevron-circle-down mx-2" v-bind:class="{ hidden: !isHidden }"></i>
+                            <i class="fas fa-chevron-circle-up" v-bind:class="{ hidden: isHidden }"></i>
+                        </h4>
                     </div>
 
                     <div class="filter items-center my-3 sm:block lg:block md:block animated fadeInDown" v-bind:class="{ hidden: isHidden }">
