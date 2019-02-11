@@ -71189,7 +71189,7 @@ var render = function() {
                               "div",
                               {
                                 staticClass:
-                                  "xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full w-2/5 bg-white lg:mx-8 md:mx-4 sm:mx-1 mb-8 mx-6 shadow-md rounded"
+                                  "xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full w-1/2 bg-white lg:mx-8 md:mx-4 sm:mx-1 mb-8 shadow-md rounded"
                               },
                               [
                                 _c("div", [
