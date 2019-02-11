@@ -71144,7 +71144,7 @@ var render = function() {
                 "div",
                 {
                   staticClass:
-                    "flex-row lg:w-4/5 md:w-4/5 sm:w-4/5 lg:px-4 md:px-4 sm:px-4 px-4 lg:ml-4 lg:border-l border-grey md:ml-4 md:border-l"
+                    "flex-row lg:w-4/5 md:w-4/5 sm:w-4/5 lg:px-4 md:px-4 sm:px-4 lg:ml-4 lg:border-l border-grey md:ml-4 md:border-l"
                 },
                 [
                   _c(
@@ -71178,7 +71178,7 @@ var render = function() {
                   _vm._v(" "),
                   _c("ais-results", {
                     staticClass:
-                      "text-purple-darkest flex flex-wrap lg:-mr-8 md:-mr-8",
+                      "text-purple-darkest flex flex-wrap lg:-mr-8 md:-mr-8 items-center justify-center",
                     scopedSlots: _vm._u([
                       {
                         key: "default",
@@ -71189,7 +71189,7 @@ var render = function() {
                               "div",
                               {
                                 staticClass:
-                                  "xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full w-2/5 bg-white lg:mx-8 md:mx-4 sm:mx-1 mx-6 mb-8 shadow-md rounded"
+                                  "xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full w-2/5 bg-white lg:mx-8 md:mx-4 sm:mx-1 mx-2 mb-8 shadow-md rounded"
                               },
                               [
                                 _c("div", [
