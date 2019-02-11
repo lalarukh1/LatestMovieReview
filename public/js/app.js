@@ -33905,7 +33905,7 @@ if (typeof DEBUG !== 'undefined' && DEBUG) {
   ) }
 }
 
-var listToStyles = __webpack_require__(375)
+var listToStyles = __webpack_require__(376)
 
 /*
 type StyleObject = {
@@ -34227,7 +34227,7 @@ module.exports = function normalizeComponent (
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(167);
-module.exports = __webpack_require__(386);
+module.exports = __webpack_require__(387);
 
 
 /***/ }),
@@ -34260,8 +34260,8 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vue_
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('results', __webpack_require__(372));
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('carousal', __webpack_require__(378));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('results', __webpack_require__(373));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('carousal', __webpack_require__(379));
 
 var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
     el: '#app',
@@ -70747,19 +70747,20 @@ function escapeHtml(string) {
 
 
 /***/ }),
-/* 372 */
+/* 372 */,
+/* 373 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(373)
+  __webpack_require__(374)
 }
 var normalizeComponent = __webpack_require__(165)
 /* script */
-var __vue_script__ = __webpack_require__(376)
+var __vue_script__ = __webpack_require__(377)
 /* template */
-var __vue_template__ = __webpack_require__(377)
+var __vue_template__ = __webpack_require__(378)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -70798,13 +70799,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 373 */
+/* 374 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(374);
+var content = __webpack_require__(375);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -70824,7 +70825,7 @@ if(false) {
 }
 
 /***/ }),
-/* 374 */
+/* 375 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(163)(false);
@@ -70832,13 +70833,13 @@ exports = module.exports = __webpack_require__(163)(false);
 
 
 // module
-exports.push([module.i, "\n.sidebar {\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n}\n.checkbox {\n  padding-bottom: 17px;\n  padding-right: 2px;\n}\n.ais-refinement-list__value {\n  font-size: 14px;\n  padding-left: 10px;\n}\n.ais-refinement-list__item--active {\n  margin-left: -20px;\n  margin-right: -20px;\n  margin-bottom: 10px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n  background-color: rgba(232, 74, 99, .41);\n}\n.badge {\n  background-color: #cf2f49;\n  padding: 2%;\n  border-radius: 20px;\n  float: right;\n  font-size: 10px;\n  color: white;\n}\n.pagination ul {\n  list-style-type: none;\n}\n.pagination li {\n  font-size: 14px;\n  display: inline;\n  color: white;\n  padding: .2rem;\n  background-color: #394166;\n}\n.pagination a {\n  padding: .4rem;\n  text-decoration: none;\n  color: white;\n}\n.pagination li:first-child {\n  border-radius: 4px 0 0 4px;\n}\n.pagination li:last-child {\n  border-radius: 0 4px 4px 0;\n}\n.pagination li.ais-pagination__item--active {\n  background: #e84a63;\n}\n.pagination li.ais-pagination__item--disabled {\n  background: rgba(57, 65, 102, .5);\n}\n.pagination li.ais-pagination__item:hover {\n  background: #e84a63;\n}\n.pagination li.ais-pagination__item--disabled:hover {\n  background: rgba(57, 65, 102, .5);\n}\n", ""]);
+exports.push([module.i, "\n.sidebar {\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n}\n.checkbox {\n  padding-bottom: 17px;\n  padding-right: 2px;\n}\n.ais-refinement-list__value {\n  font-size: 14px;\n  padding-left: 10px;\n}\n.ais-refinement-list__item--active {\n  margin-left: -20px;\n  margin-right: -20px;\n  margin-bottom: 10px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n  background-color: rgba(232, 74, 99, .41);\n}\n.badge {\n  background-color: #cf2f49;\n  padding: 2%;\n  border-radius: 20px;\n  float: right;\n  font-size: 10px;\n  color: white;\n}\n.pagination ul {\n  list-style-type: none;\n}\n.pagination li {\n  font-size: 14px;\n  display: inline;\n  color: white;\n  padding: .3rem;\n  background-color: #20243f;\n}\n.pagination a {\n  padding: .5rem;\n  text-decoration: none;\n  color: white;\n}\n.pagination li:first-child {\n  border-radius: 4px 0 0 4px;\n}\n.pagination li:last-child {\n  border-radius: 0 4px 4px 0;\n}\n.pagination li.ais-pagination__item--active {\n  background: #e84a63;\n}\n.pagination li.ais-pagination__item--disabled {\n  background: #394166;\n}\n.pagination li.ais-pagination__item:hover {\n  background: #e84a63;\n}\n.pagination li.ais-pagination__item--disabled:hover {\n  background: #394166;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 375 */
+/* 376 */
 /***/ (function(module, exports) {
 
 /**
@@ -70871,7 +70872,7 @@ module.exports = function listToStyles (parentId, list) {
 
 
 /***/ }),
-/* 376 */
+/* 377 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -70979,7 +70980,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 377 */
+/* 378 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -71018,7 +71019,7 @@ var render = function() {
                     "div",
                     {
                       staticClass:
-                        "flex bg-pink-custom -mx-4 -mt-4 mb-4 p-3 justify-between items-center lg:rounded-t md:rounded-t"
+                        "flex bg-purple-darkest -mx-4 -mt-4 mb-4 p-3 justify-between items-center lg:rounded-t md:rounded-t"
                     },
                     [
                       _c(
@@ -71144,7 +71145,7 @@ var render = function() {
                 "div",
                 {
                   staticClass:
-                    "flex-row lg:w-4/5 md:w-4/5 sm:w-4/5 px-4 lg:ml-4 lg:border-l lg:border-indigo-darkest md:ml-4 md:border-l md:border-indigo-darkest"
+                    "flex-row lg:w-4/5 md:w-4/5 sm:w-4/5 px-4 lg:ml-4 lg:border-l border-grey md:ml-4 md:border-l"
                 },
                 [
                   _c(
@@ -71189,7 +71190,7 @@ var render = function() {
                               "div",
                               {
                                 staticClass:
-                                  "xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full bg-white lg:mx-8 md:mx-4 sm:mx-1 mb-8"
+                                  "xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full bg-white lg:mx-8 md:mx-4 sm:mx-1 mb-8 shadow-md"
                               },
                               [
                                 _c("div", [
@@ -71269,7 +71270,7 @@ var render = function() {
                                     "div",
                                     {
                                       staticClass:
-                                        "w-full items-center p-3 bg-purple-darker hover:bg-pink-darkest text-center"
+                                        "w-full items-center p-3 bg-purple-darkest hover:bg-pink-darkest text-center"
                                     },
                                     [
                                       _c("span", [
@@ -71333,19 +71334,19 @@ if (false) {
 }
 
 /***/ }),
-/* 378 */
+/* 379 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(379)
+  __webpack_require__(380)
 }
 var normalizeComponent = __webpack_require__(165)
 /* script */
-var __vue_script__ = __webpack_require__(381)
+var __vue_script__ = __webpack_require__(382)
 /* template */
-var __vue_template__ = __webpack_require__(385)
+var __vue_template__ = __webpack_require__(386)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -71384,13 +71385,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 379 */
+/* 380 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(380);
+var content = __webpack_require__(381);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -71410,7 +71411,7 @@ if(false) {
 }
 
 /***/ }),
-/* 380 */
+/* 381 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(163)(false);
@@ -71418,18 +71419,18 @@ exports = module.exports = __webpack_require__(163)(false);
 
 
 // module
-exports.push([module.i, "\n#app .carousel-img {\n  width: 100%;\n  height: 270px;\n}\n.carousel-3d-container .prev,\n.carousel-3d-container .next {\n  background-color: white;\n  border: thin solid #21183c;\n  text-align: center;\n  border-radius: 40px;\n  color: #21183c;\n}\n.carousel-3d-container a.prev,\n.carousel-3d-container a.next {\n  line-height: 30px !important;\n}\n.carousel-3d-container figcaption {\n  font-family: Marmelad;\n  position: absolute;\n  background-color: rgba(33, 24, 60, .4);\n  color: #fff;\n  bottom: 0;\n  padding: 15px;\n  font-size: 12pt;\n  min-width: 100%;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n.carousel-3d-container figcaption p {\n  font-size: 16pt;\n  padding-bottom: 10px;\n}\n.carousel-3d-slide {\n  border: thin solid rgba(255, 255, 255, 0) !important;\n}\n", ""]);
+exports.push([module.i, "\n#app .carousel-img {\n  width: 100%;\n  height: 270px;\n}\n.carousel-3d-container .prev,\n.carousel-3d-container .next {\n  background-color: white;\n  border: thin solid #21183c;\n  text-align: center;\n  border-radius: 40px;\n  color: #21183c;\n}\n.carousel-3d-container a.prev,\n.carousel-3d-container a.next {\n  line-height: 30px !important;\n}\n.carousel-3d-container figcaption {\n  font-family: Marmelad;\n  position: absolute;\n  background-color: rgba(33, 24, 60, .61);\n  color: #fff;\n  bottom: 0;\n  padding: 15px;\n  font-size: 12pt;\n  min-width: 100%;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n.carousel-3d-container figcaption p {\n  font-size: 16pt;\n  padding-bottom: 10px;\n}\n.carousel-3d-slide {\n  border: thin solid rgba(255, 255, 255, 0) !important;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 381 */
+/* 382 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(382);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(383);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_carousel_3d__ = __webpack_require__(95);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_carousel_3d___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_carousel_3d__);
@@ -71437,6 +71438,11 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
+//
+//
+//
+//
+//
 //
 //
 //
@@ -71527,14 +71533,14 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 });
 
 /***/ }),
-/* 382 */
+/* 383 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(383);
+module.exports = __webpack_require__(384);
 
 
 /***/ }),
-/* 383 */
+/* 384 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -71559,7 +71565,7 @@ var oldRuntime = hadRuntime && g.regeneratorRuntime;
 // Force reevalutation of runtime.js.
 g.regeneratorRuntime = undefined;
 
-module.exports = __webpack_require__(384);
+module.exports = __webpack_require__(385);
 
 if (hadRuntime) {
   // Restore the original runtime.
@@ -71575,7 +71581,7 @@ if (hadRuntime) {
 
 
 /***/ }),
-/* 384 */
+/* 385 */
 /***/ (function(module, exports) {
 
 /**
@@ -72308,7 +72314,7 @@ if (hadRuntime) {
 
 
 /***/ }),
-/* 385 */
+/* 386 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -72326,8 +72332,6 @@ var render = function() {
           attrs: {
             "controls-visible": true,
             clickable: true,
-            autoplay: true,
-            "autoplay-timeout": 5000,
             "on-slide-change": _vm.onSlideChanged,
             "on-main-slide-click": _vm.onMainSlideClick
           }
@@ -72336,17 +72340,53 @@ var render = function() {
           return _c("slide", { attrs: { index: i } }, [
             _c("figure", [
               _vm.results.results
-                ? _c("img", {
-                    staticClass: "carousel-img",
-                    attrs: { src: _vm.results.results[i].multimedia.src }
-                  })
+                ? _c(
+                    "a",
+                    { attrs: { href: _vm.results.results[i].link.url } },
+                    [
+                      _vm.results.results
+                        ? _c("img", {
+                            staticClass: "carousel-img",
+                            attrs: {
+                              src: _vm.results.results[i].multimedia.src
+                            }
+                          })
+                        : _vm._e()
+                    ]
+                  )
                 : _vm._e(),
               _vm._v(" "),
               _c("figcaption", [
                 _vm.results.results
-                  ? _c("p", [
-                      _vm._v(_vm._s(_vm.results.results[i].display_title))
-                    ])
+                  ? _c(
+                      "a",
+                      {
+                        staticClass: "no-underline text-white",
+                        attrs: { href: _vm.results.results[i].link.url }
+                      },
+                      [
+                        _vm.results.results
+                          ? _c("p", [
+                              _vm._v(
+                                _vm._s(_vm.results.results[i].display_title) +
+                                  "\n                            "
+                              ),
+                              _c(
+                                "span",
+                                {
+                                  staticClass:
+                                    "mx-2 hover:text-pink-darkest text-white text-lg shadow-md"
+                                },
+                                [
+                                  _c("i", {
+                                    staticClass: "fas fa-chevron-circle-right"
+                                  })
+                                ]
+                              )
+                            ])
+                          : _vm._e()
+                      ]
+                    )
                   : _vm._e()
               ])
             ])
@@ -72385,11 +72425,6 @@ var render = function() {
                         "font-semibold font-sans mr-2 text-left flex-auto animated lightSpeedIn"
                     },
                     [
-                      _vm._v(
-                        "\n                " +
-                          _vm._s(_vm.results.results[this.index].headline) +
-                          "\n                "
-                      ),
                       _c(
                         "a",
                         {
@@ -72398,7 +72433,14 @@ var render = function() {
                             href: _vm.results.results[this.index].link.url
                           }
                         },
-                        [_vm._m(0)]
+                        [
+                          _vm._v(
+                            "\n                " +
+                              _vm._s(_vm.results.results[this.index].headline) +
+                              "\n                "
+                          ),
+                          _vm._m(0)
+                        ]
                       )
                     ]
                   )
@@ -72419,8 +72461,7 @@ var staticRenderFns = [
     return _c(
       "span",
       {
-        staticClass:
-          "mx-2 hover:text-pink-darkest text-white text-lg rounded-full shadow-md border border-purple-darkest "
+        staticClass: "mx-2 hover:text-pink-darkest text-white text-lg shadow-md"
       },
       [_c("i", { staticClass: "fas fa-chevron-circle-right" })]
     )
@@ -72436,7 +72477,7 @@ if (false) {
 }
 
 /***/ }),
-/* 386 */
+/* 387 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin

@@ -16,7 +16,7 @@
     <script src="{{ './js/app.js' }}" defer></script>
 </head>
 
-<body class="sans bg-purple-darkest">
+<body class="sans" style="background: radial-gradient(ellipse at center,rgba(32,36,63,0.2) 0,rgba(32,36,63,0.31) 100%);">
 <header class="bg-purple-darkest border-b-4 border-pink-custom">
     <div class="container mx-auto ">
         <div class="flex w-full px-6 justify-between items-center py-2">
@@ -39,7 +39,7 @@
     </div>
 </header>
 <div id="app" class="font-sans">
-    <div class="pt-6 justify-center bg-no-repeat bg-cover" style="background-image: url('https://ak7.picdn.net/shutterstock/videos/3644417/thumb/1.jpg');">
+    <div class="pt-6 justify-center bg-no-repeat bg-cover bg-white">
         <h2 class="text-center text-purple-darkest px-2 py-1 font-sans leading-none tracking-tight">
             Critic's Picks
         </h2>

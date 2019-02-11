@@ -3,7 +3,7 @@
         <ais-index app-id="7VM1U74DCL" api-key="5af9433923da9f95516b8c7d6cfb3866" indexName="reviews">
             <div class="lg:flex md:flex sm:flex lg:mx-8 md:mx-8 sm:mx-8 lg:my-4 md:my-4 sm:my-4 lg:py-4 md:py-4 sm:py-4 justify-between">
                 <div class="sidebar lg:w-1/6 md:w-1/4 sm:w-1/2 px-4 py-4 bg-purple-darker text-white overflow-hidden lg:mr-8 mb-8">
-                    <div class="flex bg-pink-custom -mx-4 -mt-4 mb-4 p-3 justify-between items-center lg:rounded-t md:rounded-t">
+                    <div class="flex bg-purple-darkest -mx-4 -mt-4 mb-4 p-3 justify-between items-center lg:rounded-t md:rounded-t">
                         <h1 class="text-base text-white text-center"> Search </h1>
                         <ais-clear
                                 :class-names="{'ais-clear': 'bg-pink hover:bg-pink-custom text-white text-sm px-2 py-1 rounded shadow-md font-bold'}"
@@ -29,7 +29,7 @@
                         </ais-refinement-list>
                     </div>
                 </div>
-                <div class="flex-row lg:w-4/5 md:w-4/5 sm:w-4/5 px-4 lg:ml-4 lg:border-l lg:border-indigo-darkest md:ml-4 md:border-l md:border-indigo-darkest">
+                <div class="flex-row lg:w-4/5 md:w-4/5 sm:w-4/5 px-4 lg:ml-4 lg:border-l border-grey md:ml-4 md:border-l">
                     <div class="mx-auto items-center">
                         <ais-no-results>
                             <template slot-scope="props">
@@ -40,7 +40,7 @@
                     </div>
                     <ais-results class="text-purple-darkest flex flex-wrap lg:-mr-8 md:-mr-8">
                         <template slot-scope="{ result }">
-                            <div class="xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full bg-white lg:mx-8 md:mx-4 sm:mx-1 mb-8">
+                            <div class="xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full bg-white lg:mx-8 md:mx-4 sm:mx-1 mb-8 shadow-md">
                                 <div>
                                     <img :src="result.src" class="shadow-md w-full">
                                     <div class="overflow-hidden mx-4 my-2 h-32 mb-4 pb-2">
@@ -60,7 +60,7 @@
                                                            attribute-name="summary_short"></ais-highlight>
                                         </p>
                                     </div>
-                                    <div class="w-full items-center p-3 bg-purple-darker hover:bg-pink-darkest text-center">
+                                    <div class="w-full items-center p-3 bg-purple-darkest hover:bg-pink-darkest text-center">
                                         <span> <a :href="result.url" class="no-underline text-white"><i
                                                 class="fab fa-readme px-2 items-end"></i>Read Review</a> </span>
                                     </div>
@@ -141,7 +141,7 @@
         display: inline;
         color: white;
         padding: 0.3rem;
-        background-color: #394166;
+        background-color: #20243F;
 
     }
     .pagination a {
@@ -159,12 +159,12 @@
         background: #E84A63;
     }
     .pagination li.ais-pagination__item--disabled {
-        background: rgba(57, 65, 102, 0.5);
+        background: #394166;
     }
     .pagination li.ais-pagination__item:hover {
         background: #E84A63;
     }
     .pagination li.ais-pagination__item--disabled:hover {
-        background: rgba(57, 65, 102, 0.5);
+        background: #394166;
     }
 </style>

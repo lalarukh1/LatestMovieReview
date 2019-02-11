@@ -1,11 +1,16 @@
 <template>
     <div id="app">
-        <carousel-3d :controls-visible="true" :clickable="true" :autoplay="true" :autoplay-timeout="5000" :on-slide-change="onSlideChanged" :on-main-slide-click="onMainSlideClick" class="mx-8">
+        <carousel-3d :controls-visible="true" :clickable="true" :on-slide-change="onSlideChanged" :on-main-slide-click="onMainSlideClick" class="mx-8">
             <slide v-for="(slide, i) in slides" :index="i">
                 <figure>
-                    <img v-if="results.results" v-bind:src="results.results[i].multimedia.src" class="carousel-img">
+                    <a :href="results.results[i].link.url" v-if="results.results">
+                        <img v-if="results.results" v-bind:src="results.results[i].multimedia.src" class="carousel-img"></a>
                     <figcaption>
-                            <p v-if="results.results">{{results.results[i].display_title}}</p>
+                        <a :href="results.results[i].link.url" v-if="results.results" class="no-underline text-white">
+                            <p v-if="results.results">{{results.results[i].display_title}}
+                                <span class="mx-2 hover:text-pink-darkest text-white text-lg shadow-md">
+                            <i class="fas fa-chevron-circle-right"></i></span>
+                            </p></a>
                     </figcaption>
                 </figure>
             </slide>
@@ -14,9 +19,9 @@
             <div class="p-2 bg-purple-darkest items-center text-indigo-lightest leading-normal lg:rounded md:rounded flex px-4 lg:inline-flex md:inline-flex lg:py-3 md:py-3 sm:py-8 py-8" role="alert">
                 <span v-if="results.results" class="lg:flex md:flex sm:flex hidden font-sans rounded bg-white text-purple-darkest border-2 border-pink-darkest px-2 py-1 text-xs font-bold mr-3">{{results.results[this.index].byline}}</span>
                 <span v-if="results.results" class="font-semibold font-sans mr-2 text-left flex-auto animated lightSpeedIn">
-                    {{results.results[this.index].headline}}
                     <a :href="results.results[this.index].link.url" class="no-underline text-white">
-                    <span class="mx-2 hover:text-pink-darkest text-white text-lg rounded-full shadow-md border border-purple-darkest ">
+                    {{results.results[this.index].headline}}
+                    <span class="mx-2 hover:text-pink-darkest text-white text-lg shadow-md">
                         <i class="fas fa-chevron-circle-right"></i></span></a>
                 </span>
 
@@ -82,7 +87,7 @@
     .carousel-3d-container figcaption {
         font-family: Marmelad;
         position: absolute;
-        background-color: rgba(33, 24, 60, 0.4);
+        background-color: rgba(33, 24, 60, 0.61);
         color: #fff;
         bottom: 0;
         padding: 15px;
