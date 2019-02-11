@@ -29,7 +29,7 @@
                         </ais-refinement-list>
                     </div>
                 </div>
-                <div class="flex-row lg:w-4/5 md:w-4/5 sm:w-4/5 px-4 lg:ml-4 lg:border-l border-grey md:ml-4 md:border-l">
+                <div class="flex-row lg:w-4/5 md:w-4/5 sm:w-4/5 lg:px-4 md:px-4 sm:px-4 px-4 lg:ml-4 lg:border-l border-grey md:ml-4 md:border-l">
                     <div class="mx-auto items-center">
                         <ais-no-results>
                             <template slot-scope="props">
@@ -40,7 +40,7 @@
                     </div>
                     <ais-results class="text-purple-darkest flex flex-wrap lg:-mr-8 md:-mr-8">
                         <template slot-scope="{ result }">
-                            <div class="xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full w-1/2 bg-white lg:mx-8 md:mx-4 sm:mx-1 mb-8 shadow-md rounded">
+                            <div class="xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full w-2/5 bg-white lg:mx-8 md:mx-4 sm:mx-1 mx-6 mb-8 shadow-md rounded">
                                 <div>
                                     <img :src="result.src" class="shadow-md w-full">
                                     <div class="overflow-hidden mx-4 my-2 h-32 mb-4 pb-2">
