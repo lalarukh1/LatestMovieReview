@@ -71011,7 +71011,7 @@ var render = function() {
                 "div",
                 {
                   staticClass:
-                    "sidebar lg:w-1/6 md:w-1/4 sm:w-1/2 px-4 py-4 bg-purple-darker text-white overflow-hidden lg:mr-8 mb-8 rounded"
+                    "sidebar lg:w-1/6 md:w-1/4 sm:w-1/2 px-4 py-4 bg-purple-darker text-white overflow-hidden lg:mr-8 mb-8 lg:rounded md:rounded sm:rounded rounded-none"
                 },
                 [
                   _c(
@@ -71189,7 +71189,7 @@ var render = function() {
                               "div",
                               {
                                 staticClass:
-                                  "xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full bg-white lg:mx-8 md:mx-4 sm:mx-1 mb-8 shadow-md"
+                                  "xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full w-2/5 bg-white lg:mx-8 md:mx-4 sm:mx-1 mb-8 mx-6 shadow-md rounded"
                               },
                               [
                                 _c("div", [
@@ -71269,7 +71269,7 @@ var render = function() {
                                     "div",
                                     {
                                       staticClass:
-                                        "w-full items-center p-3 bg-purple-darkest hover:bg-pink-darkest text-center rounded-b"
+                                        "w-full items-center p-3 bg-purple-darkest hover:bg-pink-darkest text-center"
                                     },
                                     [
                                       _c("span", [

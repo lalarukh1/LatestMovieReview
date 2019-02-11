@@ -2,7 +2,7 @@
     <div id="app">
         <ais-index app-id="7VM1U74DCL" api-key="5af9433923da9f95516b8c7d6cfb3866" indexName="reviews">
             <div class="lg:flex md:flex sm:flex lg:mx-8 md:mx-8 sm:mx-8 lg:my-4 md:my-4 sm:my-4 lg:py-4 md:py-4 sm:py-4 justify-between">
-                <div class="sidebar lg:w-1/6 md:w-1/4 sm:w-1/2 px-4 py-4 bg-purple-darker text-white overflow-hidden lg:mr-8 mb-8 rounded">
+                <div class="sidebar lg:w-1/6 md:w-1/4 sm:w-1/2 px-4 py-4 bg-purple-darker text-white overflow-hidden lg:mr-8 mb-8 lg:rounded md:rounded sm:rounded rounded-none">
                     <div class="flex bg-purple-darkest -mx-4 -mt-4 mb-4 p-3 justify-between items-center lg:rounded-t md:rounded-t">
                         <h1 class="text-base text-white text-center"> Search </h1>
                         <ais-clear
@@ -40,7 +40,7 @@
                     </div>
                     <ais-results class="text-purple-darkest flex flex-wrap lg:-mr-8 md:-mr-8">
                         <template slot-scope="{ result }">
-                            <div class="xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full bg-white lg:mx-8 md:mx-4 sm:mx-1 mb-8 shadow-md">
+                            <div class="xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full w-2/5 bg-white lg:mx-8 md:mx-4 sm:mx-1 mb-8 mx-6 shadow-md rounded">
                                 <div>
                                     <img :src="result.src" class="shadow-md w-full">
                                     <div class="overflow-hidden mx-4 my-2 h-32 mb-4 pb-2">
@@ -60,7 +60,7 @@
                                                            attribute-name="summary_short"></ais-highlight>
                                         </p>
                                     </div>
-                                    <div class="w-full items-center p-3 bg-purple-darkest hover:bg-pink-darkest text-center rounded-b">
+                                    <div class="w-full items-center p-3 bg-purple-darkest hover:bg-pink-darkest text-center">
                                         <span> <a :href="result.url" class="no-underline text-white"><i
                                                 class="fab fa-readme px-2 items-end"></i>Read Review</a> </span>
                                     </div>
