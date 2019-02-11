@@ -21,7 +21,7 @@
     <div class="container mx-auto ">
         <div class="flex w-full px-6 justify-between items-center py-2">
             <div class="w-1/2 text-md font-serif text-white px-2 py-2">
-                <h1> Movie Mag </h1>
+                <h1 class="lg:text-2xl md:text-xl sm:text-xl text-lg"> Movie Mag </h1>
             </div>
             <div class="flex font-sans leading-none">
                 <p class="mx-1 shadow-md hover:bg-purple-darker rounded leading-none px-1 py-1 border-2 border-purple-darker">

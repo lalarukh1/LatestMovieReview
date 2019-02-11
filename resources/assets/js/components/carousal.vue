@@ -75,7 +75,7 @@
     }
 
     .carousel-3d-container .prev, .carousel-3d-container .next {
-        background-color: white;
+        background-color: rgba(255, 255, 255, 0.4);
         border: thin solid #21183C;
         text-align: center;
         border-radius: 40px;

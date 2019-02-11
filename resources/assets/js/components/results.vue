@@ -2,7 +2,7 @@
     <div id="app">
         <ais-index app-id="7VM1U74DCL" api-key="5af9433923da9f95516b8c7d6cfb3866" indexName="reviews">
             <div class="lg:flex md:flex sm:flex lg:mx-8 md:mx-8 sm:mx-8 lg:my-4 md:my-4 sm:my-4 lg:py-4 md:py-4 sm:py-4 justify-between">
-                <div class="sidebar lg:w-1/6 md:w-1/4 sm:w-1/2 px-4 py-4 bg-purple-darker text-white overflow-hidden lg:mr-8 mb-8">
+                <div class="sidebar lg:w-1/6 md:w-1/4 sm:w-1/2 px-4 py-4 bg-purple-darker text-white overflow-hidden lg:mr-8 mb-8 rounded">
                     <div class="flex bg-purple-darkest -mx-4 -mt-4 mb-4 p-3 justify-between items-center lg:rounded-t md:rounded-t">
                         <h1 class="text-base text-white text-center"> Search </h1>
                         <ais-clear
@@ -60,7 +60,7 @@
                                                            attribute-name="summary_short"></ais-highlight>
                                         </p>
                                     </div>
-                                    <div class="w-full items-center p-3 bg-purple-darkest hover:bg-pink-darkest text-center">
+                                    <div class="w-full items-center p-3 bg-purple-darkest hover:bg-pink-darkest text-center rounded-b">
                                         <span> <a :href="result.url" class="no-underline text-white"><i
                                                 class="fab fa-readme px-2 items-end"></i>Read Review</a> </span>
                                     </div>
@@ -70,7 +70,7 @@
                     </ais-results>
                 </div>
             </div>
-            <div class="flex items-center justify-center mb-8">
+            <div class="flex items-center justify-center -ml-8 mb-8">
                 <ais-pagination v-on:page-change="onPageChange" class="inline-flex pagination">
                 </ais-pagination>
             </div>
@@ -166,5 +166,20 @@
     }
     .pagination li.ais-pagination__item--disabled:hover {
         background: #394166;
+    }
+
+    @media (max-width: 576px) {
+        .pagination li.ais-pagination__item {
+            display: none;
+        }
+        .pagination li.ais-pagination__item--next {
+            display: block;
+            border-radius: 0 4px 4px 0;
+        }
+        .pagination li.ais-pagination__item--previous {
+            display: block;
+            border-radius: 4px 0 0 4px;
+
+        }
     }
 </style>

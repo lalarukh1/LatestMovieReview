@@ -33905,7 +33905,7 @@ if (typeof DEBUG !== 'undefined' && DEBUG) {
   ) }
 }
 
-var listToStyles = __webpack_require__(376)
+var listToStyles = __webpack_require__(375)
 
 /*
 type StyleObject = {
@@ -34227,7 +34227,7 @@ module.exports = function normalizeComponent (
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(167);
-module.exports = __webpack_require__(387);
+module.exports = __webpack_require__(386);
 
 
 /***/ }),
@@ -34260,8 +34260,8 @@ __WEBPACK_IMPORTED_MODULE_0_vue___default.a.use(__WEBPACK_IMPORTED_MODULE_2_vue_
  * the page. Then, you may begin adding components to this application
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('results', __webpack_require__(373));
-__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('carousal', __webpack_require__(379));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('results', __webpack_require__(372));
+__WEBPACK_IMPORTED_MODULE_0_vue___default.a.component('carousal', __webpack_require__(378));
 
 var app = new __WEBPACK_IMPORTED_MODULE_0_vue___default.a({
     el: '#app',
@@ -70747,20 +70747,19 @@ function escapeHtml(string) {
 
 
 /***/ }),
-/* 372 */,
-/* 373 */
+/* 372 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(374)
+  __webpack_require__(373)
 }
 var normalizeComponent = __webpack_require__(165)
 /* script */
-var __vue_script__ = __webpack_require__(377)
+var __vue_script__ = __webpack_require__(376)
 /* template */
-var __vue_template__ = __webpack_require__(378)
+var __vue_template__ = __webpack_require__(377)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -70799,13 +70798,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 374 */
+/* 373 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(375);
+var content = __webpack_require__(374);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -70825,7 +70824,7 @@ if(false) {
 }
 
 /***/ }),
-/* 375 */
+/* 374 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(163)(false);
@@ -70833,13 +70832,13 @@ exports = module.exports = __webpack_require__(163)(false);
 
 
 // module
-exports.push([module.i, "\n.sidebar {\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n}\n.checkbox {\n  padding-bottom: 17px;\n  padding-right: 2px;\n}\n.ais-refinement-list__value {\n  font-size: 14px;\n  padding-left: 10px;\n}\n.ais-refinement-list__item--active {\n  margin-left: -20px;\n  margin-right: -20px;\n  margin-bottom: 10px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n  background-color: rgba(232, 74, 99, .41);\n}\n.badge {\n  background-color: #cf2f49;\n  padding: 2%;\n  border-radius: 20px;\n  float: right;\n  font-size: 10px;\n  color: white;\n}\n.pagination ul {\n  list-style-type: none;\n}\n.pagination li {\n  font-size: 14px;\n  display: inline;\n  color: white;\n  padding: .3rem;\n  background-color: #20243f;\n}\n.pagination a {\n  padding: .5rem;\n  text-decoration: none;\n  color: white;\n}\n.pagination li:first-child {\n  border-radius: 4px 0 0 4px;\n}\n.pagination li:last-child {\n  border-radius: 0 4px 4px 0;\n}\n.pagination li.ais-pagination__item--active {\n  background: #e84a63;\n}\n.pagination li.ais-pagination__item--disabled {\n  background: #394166;\n}\n.pagination li.ais-pagination__item:hover {\n  background: #e84a63;\n}\n.pagination li.ais-pagination__item--disabled:hover {\n  background: #394166;\n}\n", ""]);
+exports.push([module.i, "\n.sidebar {\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n}\n.checkbox {\n  padding-bottom: 17px;\n  padding-right: 2px;\n}\n.ais-refinement-list__value {\n  font-size: 14px;\n  padding-left: 10px;\n}\n.ais-refinement-list__item--active {\n  margin-left: -20px;\n  margin-right: -20px;\n  margin-bottom: 10px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n  background-color: rgba(232, 74, 99, .41);\n}\n.badge {\n  background-color: #cf2f49;\n  padding: 2%;\n  border-radius: 20px;\n  float: right;\n  font-size: 10px;\n  color: white;\n}\n.pagination ul {\n  list-style-type: none;\n}\n.pagination li {\n  font-size: 14px;\n  display: inline;\n  color: white;\n  padding: .3rem;\n  background-color: #20243f;\n}\n.pagination a {\n  padding: .5rem;\n  text-decoration: none;\n  color: white;\n}\n.pagination li:first-child {\n  border-radius: 4px 0 0 4px;\n}\n.pagination li:last-child {\n  border-radius: 0 4px 4px 0;\n}\n.pagination li.ais-pagination__item--active {\n  background: #e84a63;\n}\n.pagination li.ais-pagination__item--disabled {\n  background: #394166;\n}\n.pagination li.ais-pagination__item:hover {\n  background: #e84a63;\n}\n.pagination li.ais-pagination__item--disabled:hover {\n  background: #394166;\n}\n@media (max-width: 576px) {\n.pagination li.ais-pagination__item {\n    display: none;\n}\n.pagination li.ais-pagination__item--next {\n    display: block;\n    border-radius: 0 4px 4px 0;\n}\n.pagination li.ais-pagination__item--previous {\n    display: block;\n    border-radius: 4px 0 0 4px;\n}\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 376 */
+/* 375 */
 /***/ (function(module, exports) {
 
 /**
@@ -70872,7 +70871,7 @@ module.exports = function listToStyles (parentId, list) {
 
 
 /***/ }),
-/* 377 */
+/* 376 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -70980,7 +70979,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 });
 
 /***/ }),
-/* 378 */
+/* 377 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -71012,7 +71011,7 @@ var render = function() {
                 "div",
                 {
                   staticClass:
-                    "sidebar lg:w-1/6 md:w-1/4 sm:w-1/2 px-4 py-4 bg-purple-darker text-white overflow-hidden lg:mr-8 mb-8"
+                    "sidebar lg:w-1/6 md:w-1/4 sm:w-1/2 px-4 py-4 bg-purple-darker text-white overflow-hidden lg:mr-8 mb-8 rounded"
                 },
                 [
                   _c(
@@ -71270,7 +71269,7 @@ var render = function() {
                                     "div",
                                     {
                                       staticClass:
-                                        "w-full items-center p-3 bg-purple-darkest hover:bg-pink-darkest text-center"
+                                        "w-full items-center p-3 bg-purple-darkest hover:bg-pink-darkest text-center rounded-b"
                                     },
                                     [
                                       _c("span", [
@@ -71308,7 +71307,7 @@ var render = function() {
           _vm._v(" "),
           _c(
             "div",
-            { staticClass: "flex items-center justify-center mb-8" },
+            { staticClass: "flex items-center justify-center -ml-8 mb-8" },
             [
               _c("ais-pagination", {
                 staticClass: "inline-flex pagination",
@@ -71334,19 +71333,19 @@ if (false) {
 }
 
 /***/ }),
-/* 379 */
+/* 378 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var disposed = false
 function injectStyle (ssrContext) {
   if (disposed) return
-  __webpack_require__(380)
+  __webpack_require__(379)
 }
 var normalizeComponent = __webpack_require__(165)
 /* script */
-var __vue_script__ = __webpack_require__(382)
+var __vue_script__ = __webpack_require__(381)
 /* template */
-var __vue_template__ = __webpack_require__(386)
+var __vue_template__ = __webpack_require__(385)
 /* template functional */
 var __vue_template_functional__ = false
 /* styles */
@@ -71385,13 +71384,13 @@ module.exports = Component.exports
 
 
 /***/ }),
-/* 380 */
+/* 379 */
 /***/ (function(module, exports, __webpack_require__) {
 
 // style-loader: Adds some css to the DOM by adding a <style> tag
 
 // load the styles
-var content = __webpack_require__(381);
+var content = __webpack_require__(380);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
@@ -71411,7 +71410,7 @@ if(false) {
 }
 
 /***/ }),
-/* 381 */
+/* 380 */
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__(163)(false);
@@ -71419,18 +71418,18 @@ exports = module.exports = __webpack_require__(163)(false);
 
 
 // module
-exports.push([module.i, "\n#app .carousel-img {\n  width: 100%;\n  height: 270px;\n}\n.carousel-3d-container .prev,\n.carousel-3d-container .next {\n  background-color: white;\n  border: thin solid #21183c;\n  text-align: center;\n  border-radius: 40px;\n  color: #21183c;\n}\n.carousel-3d-container a.prev,\n.carousel-3d-container a.next {\n  line-height: 30px !important;\n}\n.carousel-3d-container figcaption {\n  font-family: Marmelad;\n  position: absolute;\n  background-color: rgba(33, 24, 60, .61);\n  color: #fff;\n  bottom: 0;\n  padding: 15px;\n  font-size: 12pt;\n  min-width: 100%;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n.carousel-3d-container figcaption p {\n  font-size: 16pt;\n  padding-bottom: 10px;\n}\n.carousel-3d-slide {\n  border: thin solid rgba(255, 255, 255, 0) !important;\n}\n", ""]);
+exports.push([module.i, "\n#app .carousel-img {\n  width: 100%;\n  height: 270px;\n}\n.carousel-3d-container .prev,\n.carousel-3d-container .next {\n  background-color: rgba(255, 255, 255, .4);\n  border: thin solid #21183c;\n  text-align: center;\n  border-radius: 40px;\n  color: #21183c;\n}\n.carousel-3d-container a.prev,\n.carousel-3d-container a.next {\n  line-height: 30px !important;\n}\n.carousel-3d-container figcaption {\n  font-family: Marmelad;\n  position: absolute;\n  background-color: rgba(33, 24, 60, .61);\n  color: #fff;\n  bottom: 0;\n  padding: 15px;\n  font-size: 12pt;\n  min-width: 100%;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n.carousel-3d-container figcaption p {\n  font-size: 16pt;\n  padding-bottom: 10px;\n}\n.carousel-3d-slide {\n  border: thin solid rgba(255, 255, 255, 0) !important;\n}\n", ""]);
 
 // exports
 
 
 /***/ }),
-/* 382 */
+/* 381 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(383);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__ = __webpack_require__(382);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_carousel_3d__ = __webpack_require__(95);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_carousel_3d___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_vue_carousel_3d__);
@@ -71533,14 +71532,14 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 });
 
 /***/ }),
-/* 383 */
+/* 382 */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(384);
+module.exports = __webpack_require__(383);
 
 
 /***/ }),
-/* 384 */
+/* 383 */
 /***/ (function(module, exports, __webpack_require__) {
 
 /**
@@ -71565,7 +71564,7 @@ var oldRuntime = hadRuntime && g.regeneratorRuntime;
 // Force reevalutation of runtime.js.
 g.regeneratorRuntime = undefined;
 
-module.exports = __webpack_require__(385);
+module.exports = __webpack_require__(384);
 
 if (hadRuntime) {
   // Restore the original runtime.
@@ -71581,7 +71580,7 @@ if (hadRuntime) {
 
 
 /***/ }),
-/* 385 */
+/* 384 */
 /***/ (function(module, exports) {
 
 /**
@@ -72314,7 +72313,7 @@ if (hadRuntime) {
 
 
 /***/ }),
-/* 386 */
+/* 385 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var render = function() {
@@ -72477,7 +72476,7 @@ if (false) {
 }
 
 /***/ }),
-/* 387 */
+/* 386 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
