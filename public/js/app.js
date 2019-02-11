@@ -71307,7 +71307,7 @@ var render = function() {
           _vm._v(" "),
           _c(
             "div",
-            { staticClass: "flex items-center justify-center -ml-8 mb-8" },
+            { staticClass: "flex items-center justify-center -ml-8 mr-2 mb-8" },
             [
               _c("ais-pagination", {
                 staticClass: "inline-flex pagination",

@@ -70,7 +70,7 @@
                     </ais-results>
                 </div>
             </div>
-            <div class="flex items-center justify-center -ml-8 mb-8">
+            <div class="flex items-center justify-center -ml-8 mr-2 mb-8">
                 <ais-pagination v-on:page-change="onPageChange" class="inline-flex pagination">
                 </ais-pagination>
             </div>
