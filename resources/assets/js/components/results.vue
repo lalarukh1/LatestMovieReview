@@ -19,23 +19,28 @@
                         </h4>
                     </div>
 
-                    <div class="filter items-center my-3 sm:block lg:block md:block animated fadeInDown" v-bind:class="{ hidden: isHidden }">
+                    <div class="filter items-center my-3 sm:block lg:block md:block animated fadeInDown"
+                         v-bind:class="{ hidden: isHidden }">
                         <ais-refinement-list attribute-name="opening_date" :sort-by="['isRefined:desc', 'name:desc']"
                                              :classNames="{'ais-refinement-list__count': 'badge','ais-refinement-list__item': 'checkbox'}">
-                            <template slot="header"><h2 class="my-6 p-2 border-b border-pink-custom text-base -mx-4 shadow">Release
+                            <template slot="header"><h2
+                                    class="my-6 p-2 border-b border-pink-custom text-base -mx-4 shadow">Release
                                 Date</h2></template>
                         </ais-refinement-list>
                     </div>
 
-                    <div class="filter items-center my-3 sm:block lg:block md:block animated fadeInDown" v-bind:class="{ hidden: isHidden }">
+                    <div class="filter items-center my-3 sm:block lg:block md:block animated fadeInDown"
+                         v-bind:class="{ hidden: isHidden }">
                         <ais-refinement-list attribute-name="byline" :sort-by="['name:asc']"
                                              :classNames="{'ais-refinement-list__count': 'badge','ais-refinement-list__item': 'checkbox'}">
-                            <template slot="header"><h2 class="my-6 p-2 border-b border-pink-custom  text-base -mx-4 shadow">Reviewers</h2>
+                            <template slot="header"><h2
+                                    class="my-6 p-2 border-b border-pink-custom  text-base -mx-4 shadow">Reviewers</h2>
                             </template>
                         </ais-refinement-list>
                     </div>
 
-                    <h4 v-if="!isHidden" class="lg:hidden md:hidden sm:hidden block text-md my-3 text-center" v-on:click="isHidden = !isHidden">Close
+                    <h4 v-if="!isHidden" class="lg:hidden md:hidden sm:hidden block text-md my-3 text-center"
+                        v-on:click="isHidden = !isHidden">Close
                         <i class="fas fa-times-circle"></i></h4>
                 </div>
                 <div class="flex-row lg:w-4/5 md:w-4/5 sm:w-4/5 lg:px-4 md:px-4 sm:px-4 lg:ml-4 lg:border-l border-grey md:ml-4 md:border-l">
@@ -50,27 +55,34 @@
                     <h2 class="block lg:hidden md:hidden sm:hidden text-center text-purple-darkest px-2 py-1 mb-4 font-sans leading-none tracking-tight">
                         LATEST MOVIES
                     </h2>
-                    <ais-results class="text-purple-darkest flex flex-wrap lg:-mr-8 md:-mr-8 items-center justify-center">
+                    <ais-results
+                            class="text-purple-darkest flex flex-wrap lg:-mr-8 md:-mr-8 items-center justify-center">
                         <template slot-scope="{ result }">
-                            <div class="xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full w-2/5 bg-white lg:mx-8 md:mx-4 sm:mx-1 mx-2 mb-8 shadow-md rounded">
+                            <div class="xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full w-full bg-white lg:mx-8 md:mx-4 sm:mx-1 mx-4 mb-8 shadow-md rounded">
                                 <div>
                                     <img :src="result.src" class="shadow-md w-full">
-                                    <div class="overflow-hidden mx-4 my-2 lg:h-32 md:h-32 sm:h-32 h-40 mb-4 pb-2">
-                                        <div class="lg:text-lg md:text-lg sm:text-md text-md items-center my-2 leading-normal font-bold">
+                                    <div class="small-height overflow-hidden mx-4 my-2 h-32 mb-4 pb-2">
+                                        <div class="flex justify-between">
+                                        <div class="text-xs items-center my-2 leading-normal">
                                             <ais-highlight :result="result"
                                                            attribute-name="display_title"></ais-highlight>
                                         </div>
                                         <div class="text-xs items-center my-2 text-pink-darkest leading-normal">
-                                            <span class="mr-2">
+                                            <span>
                                                 <i class="fas fa-user-edit text-pink-darkest shadow-md rounded-full"></i>
                                             </span>
                                             <ais-highlight :result="result"
                                                            attribute-name="byline"></ais-highlight>
                                         </div>
-                                        <p class="text-purple-darker leading-normal text-sm mb-2 pb-2">
+                                        </div>
+                                        <div class="text-md items-center my-2 leading-normal font-bold">
                                             <ais-highlight :result="result"
-                                                           attribute-name="summary_short"></ais-highlight>
-                                        </p>
+                                                           attribute-name="headline"></ais-highlight>
+                                        </div>
+                                        <!--<p class="text-purple-darker leading-normal text-sm mb-2 pb-2">-->
+                                            <!--<ais-highlight :result="result"-->
+                                                           <!--attribute-name="summary_short"></ais-highlight>-->
+                                        <!--</p>-->
                                     </div>
                                     <div class="w-full items-center lg:p-3 md:p-3 sm:p-2 p-2 bg-purple-darkest hover:bg-pink-darkest text-center">
                                         <span> <a :href="result.url" class="no-underline text-white text-md"><i
@@ -100,23 +112,6 @@
             onPageChange(page) {
                 window.scrollTo(0, 520);
             },
-
-        // filter() {
-        //         var vm = this;
-        //         const element = document.querySelector('.filter');
-        //         const list =  document.querySelectorAll('.filter');
-        //         list.forEach(element => {
-        //             element.classList.remove('animated', 'fadeInDown');
-        //             element.classList.add('animated', 'bounceOutLeft');
-        //         });
-        //         element.addEventListener('animationend', function()
-        //         {
-        //             console.log(vm.isHidden);
-        //             vm.isHidden = true;
-        //             console.log(vm.isHidden);
-        //         })
-        //         return this.isHidden;
-        //     },
         },
     }
 </script>
@@ -153,9 +148,11 @@
         font-size: 10px;
         color: white;
     }
+
     .pagination ul {
         list-style-type: none;
     }
+
     .pagination li {
         font-size: 14px;
         display: inline;
@@ -164,26 +161,33 @@
         background-color: #20243F;
 
     }
+
     .pagination a {
         padding: 0.5rem;
         text-decoration: none;
         color: white;
     }
+
     .pagination li:first-child {
         border-radius: 4px 0 0 4px;
     }
+
     .pagination li:last-child {
         border-radius: 0 4px 4px 0;
     }
+
     .pagination li.ais-pagination__item--active {
         background: #E84A63;
     }
+
     .pagination li.ais-pagination__item--disabled {
         background: #394166;
     }
+
     .pagination li.ais-pagination__item:hover {
         background: #E84A63;
     }
+
     .pagination li.ais-pagination__item--disabled:hover {
         background: #394166;
     }
@@ -192,14 +196,27 @@
         .pagination li.ais-pagination__item {
             display: none;
         }
+
         .pagination li.ais-pagination__item--next {
             display: block;
             border-radius: 0 4px 4px 0;
         }
+
         .pagination li.ais-pagination__item--previous {
             display: block;
             border-radius: 4px 0 0 4px;
 
+        }
+
+        .pagination li.ais-pagination__item--disabled {
+            background: #929292;
+        }
+
+        .pagination li.ais-pagination__item--disabled:hover {
+            background: #929292;
+        }
+        .small-height {
+            height: fit-content !important;
         }
     }
 </style>

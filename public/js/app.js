@@ -70833,7 +70833,7 @@ exports = module.exports = __webpack_require__(163)(false);
 
 
 // module
-exports.push([module.i, "\n.sidebar {\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n}\n.checkbox {\n  padding-bottom: 17px;\n  padding-right: 2px;\n}\n.ais-refinement-list__value {\n  font-size: 14px;\n  padding-left: 10px;\n}\n.ais-refinement-list__item--active {\n  margin-left: -20px;\n  margin-right: -20px;\n  margin-bottom: 10px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n  background-color: rgba(232, 74, 99, .41);\n}\n.badge {\n  background-color: #cf2f49;\n  padding: 2%;\n  border-radius: 20px;\n  float: right;\n  font-size: 10px;\n  color: white;\n}\n.pagination ul {\n  list-style-type: none;\n}\n.pagination li {\n  font-size: 14px;\n  display: inline;\n  color: white;\n  padding: .3rem;\n  background-color: #20243f;\n}\n.pagination a {\n  padding: .5rem;\n  text-decoration: none;\n  color: white;\n}\n.pagination li:first-child {\n  border-radius: 4px 0 0 4px;\n}\n.pagination li:last-child {\n  border-radius: 0 4px 4px 0;\n}\n.pagination li.ais-pagination__item--active {\n  background: #e84a63;\n}\n.pagination li.ais-pagination__item--disabled {\n  background: #394166;\n}\n.pagination li.ais-pagination__item:hover {\n  background: #e84a63;\n}\n.pagination li.ais-pagination__item--disabled:hover {\n  background: #394166;\n}\n@media (max-width: 576px) {\n.pagination li.ais-pagination__item {\n    display: none;\n}\n.pagination li.ais-pagination__item--next {\n    display: block;\n    border-radius: 0 4px 4px 0;\n}\n.pagination li.ais-pagination__item--previous {\n    display: block;\n    border-radius: 4px 0 0 4px;\n}\n}\n", ""]);
+exports.push([module.i, "\n.sidebar {\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n}\n.checkbox {\n  padding-bottom: 17px;\n  padding-right: 2px;\n}\n.ais-refinement-list__value {\n  font-size: 14px;\n  padding-left: 10px;\n}\n.ais-refinement-list__item--active {\n  margin-left: -20px;\n  margin-right: -20px;\n  margin-bottom: 10px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n  background-color: rgba(232, 74, 99, .41);\n}\n.badge {\n  background-color: #cf2f49;\n  padding: 2%;\n  border-radius: 20px;\n  float: right;\n  font-size: 10px;\n  color: white;\n}\n.pagination ul {\n  list-style-type: none;\n}\n.pagination li {\n  font-size: 14px;\n  display: inline;\n  color: white;\n  padding: .3rem;\n  background-color: #20243f;\n}\n.pagination a {\n  padding: .5rem;\n  text-decoration: none;\n  color: white;\n}\n.pagination li:first-child {\n  border-radius: 4px 0 0 4px;\n}\n.pagination li:last-child {\n  border-radius: 0 4px 4px 0;\n}\n.pagination li.ais-pagination__item--active {\n  background: #e84a63;\n}\n.pagination li.ais-pagination__item--disabled {\n  background: #394166;\n}\n.pagination li.ais-pagination__item:hover {\n  background: #e84a63;\n}\n.pagination li.ais-pagination__item--disabled:hover {\n  background: #394166;\n}\n@media (max-width: 576px) {\n.pagination li.ais-pagination__item {\n    display: none;\n}\n.pagination li.ais-pagination__item--next {\n    display: block;\n    border-radius: 0 4px 4px 0;\n}\n.pagination li.ais-pagination__item--previous {\n    display: block;\n    border-radius: 4px 0 0 4px;\n}\n.pagination li.ais-pagination__item--disabled {\n    background: #929292;\n}\n.pagination li.ais-pagination__item--disabled:hover {\n    background: #929292;\n}\n.small-height {\n    height: -webkit-fit-content !important;\n    height: -moz-fit-content !important;\n    height: fit-content !important;\n}\n}\n", ""]);
 
 // exports
 
@@ -70877,6 +70877,18 @@ module.exports = function listToStyles (parentId, list) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -71255,7 +71267,7 @@ var render = function() {
                               "div",
                               {
                                 staticClass:
-                                  "xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full w-2/5 bg-white lg:mx-8 md:mx-4 sm:mx-1 mx-2 mb-8 shadow-md rounded"
+                                  "xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full w-full bg-white lg:mx-8 md:mx-4 sm:mx-1 mx-4 mb-8 shadow-md rounded"
                               },
                               [
                                 _c("div", [
@@ -71268,61 +71280,68 @@ var render = function() {
                                     "div",
                                     {
                                       staticClass:
-                                        "overflow-hidden mx-4 my-2 lg:h-32 md:h-32 sm:h-32 h-40 mb-4 pb-2"
+                                        "small-height overflow-hidden mx-4 my-2 h-32 mb-4 pb-2"
                                     },
                                     [
                                       _c(
                                         "div",
-                                        {
-                                          staticClass:
-                                            "lg:text-lg md:text-lg sm:text-md text-md items-center my-2 leading-normal font-bold"
-                                        },
+                                        { staticClass: "flex justify-between" },
                                         [
-                                          _c("ais-highlight", {
-                                            attrs: {
-                                              result: result,
-                                              "attribute-name": "display_title"
-                                            }
-                                          })
-                                        ],
-                                        1
+                                          _c(
+                                            "div",
+                                            {
+                                              staticClass:
+                                                "text-xs items-center my-2 leading-normal"
+                                            },
+                                            [
+                                              _c("ais-highlight", {
+                                                attrs: {
+                                                  result: result,
+                                                  "attribute-name":
+                                                    "display_title"
+                                                }
+                                              })
+                                            ],
+                                            1
+                                          ),
+                                          _vm._v(" "),
+                                          _c(
+                                            "div",
+                                            {
+                                              staticClass:
+                                                "text-xs items-center my-2 text-pink-darkest leading-normal"
+                                            },
+                                            [
+                                              _c("span", [
+                                                _c("i", {
+                                                  staticClass:
+                                                    "fas fa-user-edit text-pink-darkest shadow-md rounded-full"
+                                                })
+                                              ]),
+                                              _vm._v(" "),
+                                              _c("ais-highlight", {
+                                                attrs: {
+                                                  result: result,
+                                                  "attribute-name": "byline"
+                                                }
+                                              })
+                                            ],
+                                            1
+                                          )
+                                        ]
                                       ),
                                       _vm._v(" "),
                                       _c(
                                         "div",
                                         {
                                           staticClass:
-                                            "text-xs items-center my-2 text-pink-darkest leading-normal"
-                                        },
-                                        [
-                                          _c("span", { staticClass: "mr-2" }, [
-                                            _c("i", {
-                                              staticClass:
-                                                "fas fa-user-edit text-pink-darkest shadow-md rounded-full"
-                                            })
-                                          ]),
-                                          _vm._v(" "),
-                                          _c("ais-highlight", {
-                                            attrs: {
-                                              result: result,
-                                              "attribute-name": "byline"
-                                            }
-                                          })
-                                        ],
-                                        1
-                                      ),
-                                      _vm._v(" "),
-                                      _c(
-                                        "p",
-                                        {
-                                          staticClass:
-                                            "text-purple-darker leading-normal text-sm mb-2 pb-2"
+                                            "text-md items-center my-2 leading-normal font-bold"
                                         },
                                         [
                                           _c("ais-highlight", {
                                             attrs: {
                                               result: result,
-                                              "attribute-name": "summary_short"
+                                              "attribute-name": "headline"
                                             }
                                           })
                                         ],
@@ -71534,6 +71553,10 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 //
 //
 //
+//
+//
+//
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
