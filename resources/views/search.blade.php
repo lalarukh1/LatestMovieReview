@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ app()->getLocale() }}" class="overflow-hidden overflow-y-scroll">
+<html lang="{{ app()->getLocale() }}" class="w-screen">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +17,7 @@
     <script src="{{ './js/app.js' }}" defer></script>
 </head>
 
-<body class="sans" style="background: radial-gradient(ellipse at center,rgba(32,36,63,0.2) 0,rgba(32,36,63,0.31) 100%);">
+<body class="sans w-screen">
 <header class="bg-purple-darkest border-b-4 border-pink-custom">
     <div class="container mx-auto">
         <div class="flex w-full px-6 justify-between items-center py-2">
