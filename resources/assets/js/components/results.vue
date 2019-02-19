@@ -10,10 +10,10 @@
                                 title="Clear search">Reset
                         </ais-clear>
                     </div>
-                    <div class="items-center text-center my-3 lg:hidden md:hidden sm:hidden block">
+                    <div class="items-center text-center my-3">
                         <ais-input placeholder=" Search"
                                    :class-names="{'ais-input': 'form-control p-2 rounded w-full'}"></ais-input>
-                        <h4 class="text-md mt-6" v-on:click="isHidden = !isHidden">Filter Results
+                        <h4 class="text-md mt-6 lg:hidden md:hidden sm:hidden block" v-on:click="isHidden = !isHidden">Filter Results
                             <i class="fas fa-chevron-circle-down mx-2" v-bind:class="{ hidden: !isHidden }"></i>
                             <i class="fas fa-chevron-circle-up" v-bind:class="{ hidden: isHidden }"></i>
                         </h4>
@@ -125,6 +125,9 @@
     }
     .sidebar {
         height: fit-content;
+    }
+    .ais-highlight em {
+        color: #CE2F49;
     }
 
     .checkbox {

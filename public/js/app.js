@@ -70833,7 +70833,7 @@ exports = module.exports = __webpack_require__(163)(false);
 
 
 // module
-exports.push([module.i, "\nhtml,\nbody {\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  overflow-x: hidden;\n}\n.sidebar {\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n}\n.checkbox {\n  padding-bottom: 17px;\n  padding-right: 2px;\n}\n.ais-refinement-list__value {\n  font-size: 14px;\n  padding-left: 10px;\n}\n.ais-refinement-list__item--active {\n  margin-left: -20px;\n  margin-right: -20px;\n  margin-bottom: 10px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n  background-color: rgba(232, 74, 99, .41);\n}\n.badge {\n  background-color: #cf2f49;\n  padding: 2%;\n  border-radius: 20px;\n  float: right;\n  font-size: 10px;\n  color: white;\n}\n.pagination {\n  margin-left: 16%;\n}\n.pagination ul {\n  list-style-type: none;\n}\n.pagination li {\n  font-size: 14px;\n  display: inline;\n  color: white;\n  padding: .3rem;\n  background-color: #20243f;\n}\n.pagination a {\n  padding: .5rem;\n  text-decoration: none;\n  color: white;\n}\n.pagination li:first-child {\n  border-radius: 4px 0 0 4px;\n}\n.pagination li:last-child {\n  border-radius: 0 4px 4px 0;\n}\n.pagination li.ais-pagination__item--active {\n  background: #e84a63;\n}\n.pagination li.ais-pagination__item--disabled {\n  background: #394166;\n}\n.pagination li.ais-pagination__item:hover {\n  background: #e84a63;\n}\n.pagination li.ais-pagination__item--disabled:hover {\n  background: #394166;\n}\n@media (max-width: 576px) {\n.pagination {\n    margin-left: 0%;\n    margin-right: 16%;\n}\n.pagination li.ais-pagination__item {\n    display: none;\n}\n.pagination li.ais-pagination__item--next {\n    display: block;\n    border-radius: 0 4px 4px 0;\n}\n.pagination li.ais-pagination__item--previous {\n    display: block;\n    border-radius: 4px 0 0 4px;\n}\n.pagination li.ais-pagination__item--disabled {\n    background: #929292;\n}\n.pagination li.ais-pagination__item--disabled:hover {\n    background: #929292;\n}\n.small-height {\n    height: -webkit-fit-content !important;\n    height: -moz-fit-content !important;\n    height: fit-content !important;\n}\n}\n", ""]);
+exports.push([module.i, "\nhtml,\nbody {\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  overflow-x: hidden;\n}\n.sidebar {\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n}\n.ais-highlight em {\n  color: #ce2f49;\n}\n.checkbox {\n  padding-bottom: 17px;\n  padding-right: 2px;\n}\n.ais-refinement-list__value {\n  font-size: 14px;\n  padding-left: 10px;\n}\n.ais-refinement-list__item--active {\n  margin-left: -20px;\n  margin-right: -20px;\n  margin-bottom: 10px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n  background-color: rgba(232, 74, 99, .41);\n}\n.badge {\n  background-color: #cf2f49;\n  padding: 2%;\n  border-radius: 20px;\n  float: right;\n  font-size: 10px;\n  color: white;\n}\n.pagination {\n  margin-left: 16%;\n}\n.pagination ul {\n  list-style-type: none;\n}\n.pagination li {\n  font-size: 14px;\n  display: inline;\n  color: white;\n  padding: .3rem;\n  background-color: #20243f;\n}\n.pagination a {\n  padding: .5rem;\n  text-decoration: none;\n  color: white;\n}\n.pagination li:first-child {\n  border-radius: 4px 0 0 4px;\n}\n.pagination li:last-child {\n  border-radius: 0 4px 4px 0;\n}\n.pagination li.ais-pagination__item--active {\n  background: #e84a63;\n}\n.pagination li.ais-pagination__item--disabled {\n  background: #394166;\n}\n.pagination li.ais-pagination__item:hover {\n  background: #e84a63;\n}\n.pagination li.ais-pagination__item--disabled:hover {\n  background: #394166;\n}\n@media (max-width: 576px) {\n.pagination {\n    margin-left: 0%;\n    margin-right: 16%;\n}\n.pagination li.ais-pagination__item {\n    display: none;\n}\n.pagination li.ais-pagination__item--next {\n    display: block;\n    border-radius: 0 4px 4px 0;\n}\n.pagination li.ais-pagination__item--previous {\n    display: block;\n    border-radius: 4px 0 0 4px;\n}\n.pagination li.ais-pagination__item--disabled {\n    background: #929292;\n}\n.pagination li.ais-pagination__item--disabled:hover {\n    background: #929292;\n}\n.small-height {\n    height: -webkit-fit-content !important;\n    height: -moz-fit-content !important;\n    height: fit-content !important;\n}\n}\n", ""]);
 
 // exports
 
@@ -71062,10 +71062,7 @@ var render = function() {
                   _vm._v(" "),
                   _c(
                     "div",
-                    {
-                      staticClass:
-                        "items-center text-center my-3 lg:hidden md:hidden sm:hidden block"
-                    },
+                    { staticClass: "items-center text-center my-3" },
                     [
                       _c("ais-input", {
                         attrs: {
@@ -71079,7 +71076,8 @@ var render = function() {
                       _c(
                         "h4",
                         {
-                          staticClass: "text-md mt-6",
+                          staticClass:
+                            "text-md mt-6 lg:hidden md:hidden sm:hidden block",
                           on: {
                             click: function($event) {
                               _vm.isHidden = !_vm.isHidden
@@ -72584,4 +72582,3 @@ if (false) {
 
 /***/ })
 /******/ ]);
-//fileee
