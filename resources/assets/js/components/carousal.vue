@@ -18,9 +18,10 @@
         </carousel-3d>
         <div class="bg-purple-darker text-center py-4 mt-8 shadow-md">
             <div class="p-2 bg-purple-darkest items-center text-indigo-lightest leading-normal lg:rounded md:rounded flex px-4 lg:inline-flex md:inline-flex lg:py-3 md:py-3 sm:py-8 py-8"
-                 role="alert">
+                 role="alert" data-balloon-length="xlarge" :data-balloon="results.results[this.index].summary_short" data-balloon-pos="up-left">
                 <span v-if="results.results"
-                      class="lg:flex md:flex sm:flex hidden font-sans rounded bg-white text-purple-darkest border-2 border-pink-darkest px-2 py-1 text-xs font-bold mr-3">{{results.results[this.index].byline}}</span>
+                      class="lg:flex md:flex sm:flex hidden font-sans rounded bg-white text-purple-darkest border-2 border-pink-darkest px-2 py-1 text-xs font-bold mr-3"
+                     >{{results.results[this.index].byline}}</span>
                 <span v-if="results.results" class="font-semibold font-sans mr-2 text-left flex-auto">
                     <a :href="results.results[this.index].link.url" class="no-underline text-white">
                     {{results.results[this.index].headline}}

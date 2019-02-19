@@ -47,8 +47,8 @@
                     <div class="mx-auto items-center">
                         <ais-no-results>
                             <template slot-scope="props">
-                                <p class="text-lg text-white">Sorry, No movies found for '<i class="text-purple-light">{{
-                                    props.query }}</i>'</p>.
+                                <p class="text-lg text-purple-darkest">Sorry, No movies found for <i class="font-bold text-pink-darkest">{{
+                                    props.query }}</i></p>
                             </template>
                         </ais-no-results>
                     </div>
@@ -129,10 +129,6 @@
     }
     .ais-highlight em {
         color: #CE2F49;
-    }
-
-    data-balloon {
-        height: 200px;
     }
 
     .checkbox {

@@ -70833,7 +70833,7 @@ exports = module.exports = __webpack_require__(163)(false);
 
 
 // module
-exports.push([module.i, "\nhtml,\nbody {\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  overflow-x: hidden;\n}\n.sidebar {\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n}\n.ais-highlight em {\n  color: #ce2f49;\n}\ndata-balloon {\n  height: 200px;\n}\n.checkbox {\n  padding-bottom: 17px;\n  padding-right: 2px;\n}\n.ais-refinement-list__value {\n  font-size: 14px;\n  padding-left: 10px;\n}\n.ais-refinement-list__item--active {\n  margin-left: -20px;\n  margin-right: -20px;\n  margin-bottom: 10px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n  background-color: rgba(232, 74, 99, .41);\n}\n.badge {\n  background-color: #cf2f49;\n  padding: 2%;\n  border-radius: 20px;\n  float: right;\n  font-size: 10px;\n  color: white;\n}\n.pagination {\n  margin-left: 16%;\n}\n.pagination ul {\n  list-style-type: none;\n}\n.pagination li {\n  font-size: 14px;\n  display: inline;\n  color: white;\n  padding: .3rem;\n  background-color: #20243f;\n}\n.pagination a {\n  padding: .5rem;\n  text-decoration: none;\n  color: white;\n}\n.pagination li:first-child {\n  border-radius: 4px 0 0 4px;\n}\n.pagination li:last-child {\n  border-radius: 0 4px 4px 0;\n}\n.pagination li.ais-pagination__item--active {\n  background: #e84a63;\n}\n.pagination li.ais-pagination__item--disabled {\n  background: #394166;\n}\n.pagination li.ais-pagination__item:hover {\n  background: #e84a63;\n}\n.pagination li.ais-pagination__item--disabled:hover {\n  background: #394166;\n}\n@media (max-width: 576px) {\n.pagination {\n    margin-left: 0%;\n    margin-right: 16%;\n}\n.pagination li.ais-pagination__item {\n    display: none;\n}\n.pagination li.ais-pagination__item--next {\n    display: block;\n    border-radius: 0 4px 4px 0;\n}\n.pagination li.ais-pagination__item--previous {\n    display: block;\n    border-radius: 4px 0 0 4px;\n}\n.pagination li.ais-pagination__item--disabled {\n    background: #929292;\n}\n.pagination li.ais-pagination__item--disabled:hover {\n    background: #929292;\n}\n.small-height {\n    height: -webkit-fit-content !important;\n    height: -moz-fit-content !important;\n    height: fit-content !important;\n}\n}\n", ""]);
+exports.push([module.i, "\nhtml,\nbody {\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  overflow-x: hidden;\n}\n.sidebar {\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n}\n.ais-highlight em {\n  color: #ce2f49;\n}\n.checkbox {\n  padding-bottom: 17px;\n  padding-right: 2px;\n}\n.ais-refinement-list__value {\n  font-size: 14px;\n  padding-left: 10px;\n}\n.ais-refinement-list__item--active {\n  margin-left: -20px;\n  margin-right: -20px;\n  margin-bottom: 10px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n  background-color: rgba(232, 74, 99, .41);\n}\n.badge {\n  background-color: #cf2f49;\n  padding: 2%;\n  border-radius: 20px;\n  float: right;\n  font-size: 10px;\n  color: white;\n}\n.pagination {\n  margin-left: 16%;\n}\n.pagination ul {\n  list-style-type: none;\n}\n.pagination li {\n  font-size: 14px;\n  display: inline;\n  color: white;\n  padding: .3rem;\n  background-color: #20243f;\n}\n.pagination a {\n  padding: .5rem;\n  text-decoration: none;\n  color: white;\n}\n.pagination li:first-child {\n  border-radius: 4px 0 0 4px;\n}\n.pagination li:last-child {\n  border-radius: 0 4px 4px 0;\n}\n.pagination li.ais-pagination__item--active {\n  background: #e84a63;\n}\n.pagination li.ais-pagination__item--disabled {\n  background: #394166;\n}\n.pagination li.ais-pagination__item:hover {\n  background: #e84a63;\n}\n.pagination li.ais-pagination__item--disabled:hover {\n  background: #394166;\n}\n@media (max-width: 576px) {\n.pagination {\n    margin-left: 0%;\n    margin-right: 16%;\n}\n.pagination li.ais-pagination__item {\n    display: none;\n}\n.pagination li.ais-pagination__item--next {\n    display: block;\n    border-radius: 0 4px 4px 0;\n}\n.pagination li.ais-pagination__item--previous {\n    display: block;\n    border-radius: 4px 0 0 4px;\n}\n.pagination li.ais-pagination__item--disabled {\n    background: #929292;\n}\n.pagination li.ais-pagination__item--disabled:hover {\n    background: #929292;\n}\n.small-height {\n    height: -webkit-fit-content !important;\n    height: -moz-fit-content !important;\n    height: fit-content !important;\n}\n}\n", ""]);
 
 // exports
 
@@ -71220,16 +71220,23 @@ var render = function() {
                             key: "default",
                             fn: function(props) {
                               return [
-                                _c("p", { staticClass: "text-lg text-white" }, [
-                                  _vm._v("Sorry, No movies found for '"),
-                                  _c(
-                                    "i",
-                                    { staticClass: "text-purple-light" },
-                                    [_vm._v(_vm._s(props.query))]
-                                  ),
-                                  _vm._v("'")
-                                ]),
-                                _vm._v(".\n                        ")
+                                _c(
+                                  "p",
+                                  {
+                                    staticClass: "text-lg text-purple-darkest"
+                                  },
+                                  [
+                                    _vm._v("Sorry, No movies found for "),
+                                    _c(
+                                      "i",
+                                      {
+                                        staticClass:
+                                          "font-bold text-pink-darkest"
+                                      },
+                                      [_vm._v(_vm._s(props.query))]
+                                    )
+                                  ]
+                                )
                               ]
                             }
                           }
@@ -71538,6 +71545,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
+//
 //
 //
 //
@@ -72507,7 +72515,12 @@ var render = function() {
             {
               staticClass:
                 "p-2 bg-purple-darkest items-center text-indigo-lightest leading-normal lg:rounded md:rounded flex px-4 lg:inline-flex md:inline-flex lg:py-3 md:py-3 sm:py-8 py-8",
-              attrs: { role: "alert" }
+              attrs: {
+                role: "alert",
+                "data-balloon-length": "xlarge",
+                "data-balloon": _vm.results.results[this.index].summary_short,
+                "data-balloon-pos": "up-left"
+              }
             },
             [
               _vm.results.results
