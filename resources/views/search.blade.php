@@ -17,7 +17,7 @@
     <script src="{{ './js/app.js' }}" defer></script>
 </head>
 
-<body class="sans w-screen">
+<body class="sans w-screen bg-grey-custom">
 <header class="bg-purple-darkest border-b-4 border-pink-custom">
     <div class="container mx-auto">
         <div class="flex w-full px-6 justify-between items-center py-2">

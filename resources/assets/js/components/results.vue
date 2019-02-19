@@ -43,7 +43,7 @@
                         v-on:click="isHidden = !isHidden">Close
                         <i class="fas fa-times-circle"></i></h4>
                 </div>
-                <div class="flex-row lg:w-4/5 md:w-4/5 sm:w-4/5 lg:px-4 md:px-4 sm:px-4 lg:ml-4 lg:border-l border-grey md:ml-4 md:border-l">
+                <div class="flex-row lg:w-4/5 md:w-4/5 sm:w-4/5 lg:px-4 md:px-4 sm:px-4 lg:ml-4 md:ml-4">
                     <div class="mx-auto items-center">
                         <ais-no-results>
                             <template slot-scope="props">
@@ -67,7 +67,7 @@
                                             <ais-highlight :result="result"
                                                            attribute-name="display_title"></ais-highlight>
                                         </div>
-                                        <div class="text-xs items-center my-2 text-pink-darkest leading-normal">
+                                        <div class="text-xs font-thin tracking-tight truncate items-center my-2 text-pink-darkest leading-normal">
                                             <span>
                                                 <i class="fas fa-user-edit text-pink-darkest shadow-md rounded-full"></i>
                                             </span>
@@ -75,14 +75,12 @@
                                                            attribute-name="byline"></ais-highlight>
                                         </div>
                                         </div>
+                                        <a :href="result.url" class="no-underline text-purple-darkest">
                                         <div class="text-md items-center my-2 leading-normal font-bold">
                                             <ais-highlight :result="result"
                                                            attribute-name="headline"></ais-highlight>
                                         </div>
-                                        <!--<p class="text-purple-darker leading-normal text-sm mb-2 pb-2">-->
-                                            <!--<ais-highlight :result="result"-->
-                                                           <!--attribute-name="summary_short"></ais-highlight>-->
-                                        <!--</p>-->
+                                        </a>
                                     </div>
                                     <div class="w-full items-center lg:p-3 md:p-3 sm:p-2 p-2 bg-purple-darkest hover:bg-pink-darkest text-center">
                                         <span> <a :href="result.url" class="no-underline text-white text-md"><i
@@ -94,7 +92,7 @@
                     </ais-results>
                 </div>
             </div>
-            <div class="flex items-center justify-center -ml-8 mr-2 mb-8">
+            <div class="flex items-center justify-center ml-8 pl-8 mr-2 mb-8 ">
                 <ais-pagination v-on:page-change="onPageChange" class="inline-flex pagination">
                 </ais-pagination>
             </div>
@@ -110,6 +108,7 @@
         },
         methods: {
             onPageChange(page) {
+                console.log('page');
                 window.scrollTo(0, 520);
             },
         },
@@ -157,6 +156,10 @@
         color: white;
     }
 
+    .pagination {
+        margin-left: 16%;
+    }
+
     .pagination ul {
         list-style-type: none;
     }
@@ -201,6 +204,10 @@
     }
 
     @media (max-width: 576px) {
+        .pagination {
+            margin-left: 0%;
+            margin-right: 16%;
+        }
         .pagination li.ais-pagination__item {
             display: none;
         }

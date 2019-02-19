@@ -70833,7 +70833,7 @@ exports = module.exports = __webpack_require__(163)(false);
 
 
 // module
-exports.push([module.i, "\nhtml,\nbody {\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  overflow-x: hidden;\n}\n.sidebar {\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n}\n.checkbox {\n  padding-bottom: 17px;\n  padding-right: 2px;\n}\n.ais-refinement-list__value {\n  font-size: 14px;\n  padding-left: 10px;\n}\n.ais-refinement-list__item--active {\n  margin-left: -20px;\n  margin-right: -20px;\n  margin-bottom: 10px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n  background-color: rgba(232, 74, 99, .41);\n}\n.badge {\n  background-color: #cf2f49;\n  padding: 2%;\n  border-radius: 20px;\n  float: right;\n  font-size: 10px;\n  color: white;\n}\n.pagination ul {\n  list-style-type: none;\n}\n.pagination li {\n  font-size: 14px;\n  display: inline;\n  color: white;\n  padding: .3rem;\n  background-color: #20243f;\n}\n.pagination a {\n  padding: .5rem;\n  text-decoration: none;\n  color: white;\n}\n.pagination li:first-child {\n  border-radius: 4px 0 0 4px;\n}\n.pagination li:last-child {\n  border-radius: 0 4px 4px 0;\n}\n.pagination li.ais-pagination__item--active {\n  background: #e84a63;\n}\n.pagination li.ais-pagination__item--disabled {\n  background: #394166;\n}\n.pagination li.ais-pagination__item:hover {\n  background: #e84a63;\n}\n.pagination li.ais-pagination__item--disabled:hover {\n  background: #394166;\n}\n@media (max-width: 576px) {\n.pagination li.ais-pagination__item {\n    display: none;\n}\n.pagination li.ais-pagination__item--next {\n    display: block;\n    border-radius: 0 4px 4px 0;\n}\n.pagination li.ais-pagination__item--previous {\n    display: block;\n    border-radius: 4px 0 0 4px;\n}\n.pagination li.ais-pagination__item--disabled {\n    background: #929292;\n}\n.pagination li.ais-pagination__item--disabled:hover {\n    background: #929292;\n}\n.small-height {\n    height: -webkit-fit-content !important;\n    height: -moz-fit-content !important;\n    height: fit-content !important;\n}\n}\n", ""]);
+exports.push([module.i, "\nhtml,\nbody {\n  width: 100%;\n  height: 100%;\n  margin: 0;\n  padding: 0;\n  overflow-x: hidden;\n}\n.sidebar {\n  height: -webkit-fit-content;\n  height: -moz-fit-content;\n  height: fit-content;\n}\n.checkbox {\n  padding-bottom: 17px;\n  padding-right: 2px;\n}\n.ais-refinement-list__value {\n  font-size: 14px;\n  padding-left: 10px;\n}\n.ais-refinement-list__item--active {\n  margin-left: -20px;\n  margin-right: -20px;\n  margin-bottom: 10px;\n  padding-left: 20px;\n  padding-right: 20px;\n  padding-top: 10px;\n  background-color: rgba(232, 74, 99, .41);\n}\n.badge {\n  background-color: #cf2f49;\n  padding: 2%;\n  border-radius: 20px;\n  float: right;\n  font-size: 10px;\n  color: white;\n}\n.pagination {\n  margin-left: 16%;\n}\n.pagination ul {\n  list-style-type: none;\n}\n.pagination li {\n  font-size: 14px;\n  display: inline;\n  color: white;\n  padding: .3rem;\n  background-color: #20243f;\n}\n.pagination a {\n  padding: .5rem;\n  text-decoration: none;\n  color: white;\n}\n.pagination li:first-child {\n  border-radius: 4px 0 0 4px;\n}\n.pagination li:last-child {\n  border-radius: 0 4px 4px 0;\n}\n.pagination li.ais-pagination__item--active {\n  background: #e84a63;\n}\n.pagination li.ais-pagination__item--disabled {\n  background: #394166;\n}\n.pagination li.ais-pagination__item:hover {\n  background: #e84a63;\n}\n.pagination li.ais-pagination__item--disabled:hover {\n  background: #394166;\n}\n@media (max-width: 576px) {\n.pagination {\n    margin-left: 0%;\n    margin-right: 16%;\n}\n.pagination li.ais-pagination__item {\n    display: none;\n}\n.pagination li.ais-pagination__item--next {\n    display: block;\n    border-radius: 0 4px 4px 0;\n}\n.pagination li.ais-pagination__item--previous {\n    display: block;\n    border-radius: 4px 0 0 4px;\n}\n.pagination li.ais-pagination__item--disabled {\n    background: #929292;\n}\n.pagination li.ais-pagination__item--disabled:hover {\n    background: #929292;\n}\n.small-height {\n    height: -webkit-fit-content !important;\n    height: -moz-fit-content !important;\n    height: fit-content !important;\n}\n}\n", ""]);
 
 // exports
 
@@ -70978,8 +70978,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -70990,6 +70988,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     methods: {
         onPageChange: function onPageChange(page) {
+            console.log('page');
             window.scrollTo(0, 520);
         }
     }
@@ -71209,7 +71208,7 @@ var render = function() {
                 "div",
                 {
                   staticClass:
-                    "flex-row lg:w-4/5 md:w-4/5 sm:w-4/5 lg:px-4 md:px-4 sm:px-4 lg:ml-4 lg:border-l border-grey md:ml-4 md:border-l"
+                    "flex-row lg:w-4/5 md:w-4/5 sm:w-4/5 lg:px-4 md:px-4 sm:px-4 lg:ml-4 md:ml-4"
                 },
                 [
                   _c(
@@ -71309,7 +71308,7 @@ var render = function() {
                                             "div",
                                             {
                                               staticClass:
-                                                "text-xs items-center my-2 text-pink-darkest leading-normal"
+                                                "text-xs font-thin tracking-tight truncate items-center my-2 text-pink-darkest leading-normal"
                                             },
                                             [
                                               _c("span", [
@@ -71332,20 +71331,30 @@ var render = function() {
                                       ),
                                       _vm._v(" "),
                                       _c(
-                                        "div",
+                                        "a",
                                         {
                                           staticClass:
-                                            "text-md items-center my-2 leading-normal font-bold"
+                                            "no-underline text-purple-darkest",
+                                          attrs: { href: result.url }
                                         },
                                         [
-                                          _c("ais-highlight", {
-                                            attrs: {
-                                              result: result,
-                                              "attribute-name": "headline"
-                                            }
-                                          })
-                                        ],
-                                        1
+                                          _c(
+                                            "div",
+                                            {
+                                              staticClass:
+                                                "text-md items-center my-2 leading-normal font-bold"
+                                            },
+                                            [
+                                              _c("ais-highlight", {
+                                                attrs: {
+                                                  result: result,
+                                                  "attribute-name": "headline"
+                                                }
+                                              })
+                                            ],
+                                            1
+                                          )
+                                        ]
                                       )
                                     ]
                                   ),
@@ -71392,7 +71401,10 @@ var render = function() {
           _vm._v(" "),
           _c(
             "div",
-            { staticClass: "flex items-center justify-center -ml-8 mr-2 mb-8" },
+            {
+              staticClass:
+                "flex items-center justify-center ml-8 pl-8 mr-2 mb-8 "
+            },
             [
               _c("ais-pagination", {
                 staticClass: "inline-flex pagination",
