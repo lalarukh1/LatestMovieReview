@@ -58,7 +58,8 @@
                     <ais-results
                             class="text-purple-darkest flex flex-wrap lg:-mr-8 md:-mr-8 items-center justify-center">
                         <template slot-scope="{ result }">
-                            <div class="xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full w-full bg-white lg:mx-8 md:mx-4 sm:mx-1 mx-4 mb-8 shadow-md rounded">
+                            <div class="xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full w-full bg-white lg:mx-8 md:mx-4 sm:mx-1 mx-4 mb-8 shadow-md"
+                                 data-balloon-length="fit" :data-balloon="result.summary_short" data-balloon-pos="up">
                                 <div>
                                     <img :src="result.src" class="shadow-md w-full">
                                     <div class="small-height overflow-hidden mx-4 my-2 h-32 mb-4 pb-2">
@@ -128,6 +129,10 @@
     }
     .ais-highlight em {
         color: #CE2F49;
+    }
+
+    data-balloon {
+        height: 200px;
     }
 
     .checkbox {
