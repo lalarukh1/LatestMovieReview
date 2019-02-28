@@ -71580,6 +71580,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
 //
 //
 //
+//
 
 
 
@@ -72514,13 +72515,7 @@ var render = function() {
             "div",
             {
               staticClass:
-                "p-2 bg-purple-darkest items-center text-indigo-lightest leading-normal lg:rounded md:rounded flex px-4 lg:inline-flex md:inline-flex lg:py-3 md:py-3 sm:py-8 py-8",
-              attrs: {
-                role: "alert",
-                "data-balloon-length": "xlarge",
-                "data-balloon": _vm.results.results[this.index].summary_short,
-                "data-balloon-pos": "up-left"
-              }
+                "p-2 bg-purple-darkest items-center text-indigo-lightest leading-normal lg:rounded md:rounded flex px-4 lg:inline-flex md:inline-flex lg:py-3 md:py-3 sm:py-8 py-8"
             },
             [
               _vm.results.results

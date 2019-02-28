@@ -101,8 +101,8 @@ button[data-balloon] {
     -ms-transform: translate(-50%, 0);
     transform: translate(-50%, 0); }
   [data-balloon][data-balloon-pos="up-left"]:after {
-    bottom: 120%;
-    left: 20%;
+    bottom: 300%;
+    left: 30%;
     margin-bottom: 11px;
     -webkit-transform: translate(0, 10px);
     -moz-transform: translate(0, 10px);
@@ -329,7 +329,7 @@ button[data-balloon] {
     width: 260px; }
   [data-balloon][data-balloon-length='xlarge']:after {
     white-space: normal;
-    width: 380px; }
+    width: 300px; }
     @media screen and (max-width: 768px) {
       [data-balloon][data-balloon-length='xlarge']:after {
         white-space: normal;
