@@ -49,6 +49,7 @@ class MainController extends Controller
 
         //First Api call with offset 20
         $curl = curl_init();
+        curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
         $query = array(
             "api-key" => "B4M0PyBla9l9HJKQ9aVro4Fux05rahlH",
@@ -57,6 +58,7 @@ class MainController extends Controller
         curl_setopt($curl, CURLOPT_URL,
             "https://api.nytimes.com/svc/movies/v2/reviews/search.json" . "?" . http_build_query($query)
         );
+
         $response = json_decode(curl_exec($curl));
 
         for ($x = 0; $x <= 19; $x++) {
@@ -74,6 +76,7 @@ class MainController extends Controller
 
         //Second Api call with offset 40
         $curl = curl_init();
+        curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
         $query = array(
             "api-key" => "B4M0PyBla9l9HJKQ9aVro4Fux05rahlH",
@@ -99,6 +102,7 @@ class MainController extends Controller
 
         //Third Api call with offset 60
         $curl = curl_init();
+        curl_setopt($curl, CURLOPT_SSL_VERIFYPEER, false);
         curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
         $query = array(
             "api-key" => "B4M0PyBla9l9HJKQ9aVro4Fux05rahlH",
