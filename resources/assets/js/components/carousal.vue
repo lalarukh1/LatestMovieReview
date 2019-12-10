@@ -1,12 +1,12 @@
 <template>
     <div id="app">
-        <carousel-3d :controls-visible="true" :clickable="true" :on-slide-change="onSlideChanged"
+        <carousel-3d :controls-visible="true" :clickable="true" :autoplay="true" :autoplay-timeout="5000" :display="7" :on-slide-change="onSlideChanged"
                      :on-main-slide-click="onMainSlideClick" class="mx-8">
             <slide v-for="(slide, i) in slides" :index="i">
                 <figure>
                     <a :href="results.results[i].link.url" v-if="results.results">
-                        <img v-if="results.results" v-bind:src="results.results[i].multimedia.src" class="carousel-img"></a>
-                    <figcaption>
+                        <img v-if="results.results" v-bind:src="results.results[i].multimedia.src" class="carousel-img rounded-lg"></a>
+                    <figcaption class="rounded-b-lg">
                         <a :href="results.results[i].link.url" v-if="results.results" class="no-underline text-white">
                             <p v-if="results.results">{{results.results[i].display_title}}
                                 <span class="mx-2 hover:text-pink-darkest text-white text-lg shadow-md">
@@ -17,13 +17,11 @@
             </slide>
         </carousel-3d>
         <div class="bg-purple-darker text-center py-4 mt-8 shadow-md">
-            <!--<div class="p-2 bg-purple-darkest items-center text-indigo-lightest leading-normal lg:rounded md:rounded flex px-4 lg:inline-flex md:inline-flex lg:py-3 md:py-3 sm:py-8 py-8"-->
-                 <!--role="alert" data-balloon-length="xlarge" :data-balloon="results.results[this.index].summary_short" data-balloon-pos="up-left">-->
-            <div class="p-2 bg-purple-darkest items-center text-indigo-lightest leading-normal lg:rounded md:rounded flex px-4 lg:inline-flex md:inline-flex lg:py-3 md:py-3 sm:py-8 py-8">
+            <div class="p-3 bg-purple-darkest items-center text-indigo-lightest leading-normal lg:rounded md:rounded flex px-4 lg:inline-flex md:inline-flex lg:py-3 md:py-3 sm:py-8 py-8">
                 <span v-if="results.results"
                       class="lg:flex md:flex sm:flex hidden font-sans rounded bg-white text-purple-darkest border-2 border-pink-darkest px-2 py-1 text-xs font-bold mr-3"
                      >{{results.results[this.index].byline}}</span>
-                <span v-if="results.results" class="font-semibold font-sans mr-2 text-left flex-auto">
+                <span v-if="results.results" class="font-semibold font-sans mr-2 text-left flex-auto text-lg">
                     <a :href="results.results[this.index].link.url" class="no-underline text-white">
                     {{results.results[this.index].headline}}
                     <span class="mx-2 hover:text-pink-darkest text-white text-lg shadow-md">
@@ -54,7 +52,7 @@
             await axios.get('https://api.nytimes.com/svc/movies/v2/reviews/search.json', {
                 params: {
                     'api-key': "B4M0PyBla9l9HJKQ9aVro4Fux05rahlH",
-                    'offset': 40,
+                    'offset': 20,
                     'critics-pick': "Y"
                 },
             }).then(response => {
@@ -86,6 +84,10 @@
         text-align: center;
         border-radius: 40px;
         color: #21183C;
+    }
+
+    .carousel-3d-slide {
+        background-color: #f3ebff !important;
     }
 
     .carousel-3d-container a.prev, .carousel-3d-container a.next {

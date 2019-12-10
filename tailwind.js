@@ -201,8 +201,7 @@ module.exports = {
 
     fonts: {
         'sans': [
-            'Marmelad'
-
+            'Dancing Script', 'cursive',
         ],
         'serif': [
             'Holtwood One SC',

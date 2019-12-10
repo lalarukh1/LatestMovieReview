@@ -70979,6 +70979,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -70989,8 +70993,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
     methods: {
         onPageChange: function onPageChange(page) {
-            console.log('page');
-            window.scrollTo(0, 520);
+            $('html, body').animate({ scrollTop: 540 }, 500);
         }
     }
 });
@@ -71272,7 +71275,7 @@ var render = function() {
                               "div",
                               {
                                 staticClass:
-                                  "xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full w-full bg-white lg:mx-8 md:mx-4 sm:mx-1 mx-4 mb-8 shadow-md",
+                                  "xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full w-full bg-white lg:mx-8 md:mx-4 sm:mx-1 mx-4 mb-8",
                                 attrs: {
                                   "data-balloon-length": "fit",
                                   "data-balloon": result.summary_short,
@@ -71281,10 +71284,12 @@ var render = function() {
                               },
                               [
                                 _c("div", [
-                                  _c("img", {
-                                    staticClass: "shadow-md w-full",
-                                    attrs: { src: result.src }
-                                  }),
+                                  _c("div", { staticClass: "bg-grey-custom" }, [
+                                    _c("img", {
+                                      staticClass: "w-full rounded-t-lg",
+                                      attrs: { src: result.src }
+                                    })
+                                  ]),
                                   _vm._v(" "),
                                   _c(
                                     "div",
@@ -71370,32 +71375,34 @@ var render = function() {
                                     ]
                                   ),
                                   _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    {
-                                      staticClass:
-                                        "w-full items-center lg:p-3 md:p-3 sm:p-2 p-2 bg-purple-darkest hover:bg-pink-darkest text-center"
-                                    },
-                                    [
-                                      _c("span", [
-                                        _c(
-                                          "a",
-                                          {
-                                            staticClass:
-                                              "no-underline text-white text-md",
-                                            attrs: { href: result.url }
-                                          },
-                                          [
-                                            _c("i", {
+                                  _c("div", { staticClass: "bg-grey-custom" }, [
+                                    _c(
+                                      "div",
+                                      {
+                                        staticClass:
+                                          "w-full items-center lg:p-3 md:p-3 sm:p-2 p-2 bg-purple-darkest hover:bg-pink-darkest text-center rounded-b-lg"
+                                      },
+                                      [
+                                        _c("span", [
+                                          _c(
+                                            "a",
+                                            {
                                               staticClass:
-                                                "fab fa-readme px-2 items-end"
-                                            }),
-                                            _vm._v("Read Review")
-                                          ]
-                                        )
-                                      ])
-                                    ]
-                                  )
+                                                "no-underline text-white text-md",
+                                              attrs: { href: result.url }
+                                            },
+                                            [
+                                              _c("i", {
+                                                staticClass:
+                                                  "fab fa-readme px-2 items-end"
+                                              }),
+                                              _vm._v("Read Review")
+                                            ]
+                                          )
+                                        ])
+                                      ]
+                                    )
+                                  ])
                                 ])
                               ]
                             )
@@ -71526,7 +71533,7 @@ exports = module.exports = __webpack_require__(163)(false);
 
 
 // module
-exports.push([module.i, "\n#app .carousel-img {\n  width: 100%;\n  height: 270px;\n}\n.carousel-3d-container .prev,\n.carousel-3d-container .next {\n  background-color: rgba(255, 255, 255, .4);\n  border: thin solid #21183c;\n  text-align: center;\n  border-radius: 40px;\n  color: #21183c;\n}\n.carousel-3d-container a.prev,\n.carousel-3d-container a.next {\n  line-height: 30px !important;\n}\n.carousel-3d-container figcaption {\n  font-family: Marmelad;\n  position: absolute;\n  background-color: rgba(33, 24, 60, .61);\n  color: #fff;\n  bottom: 0;\n  padding: 15px;\n  font-size: 12pt;\n  min-width: 100%;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n.carousel-3d-container figcaption p {\n  font-size: 16pt;\n  padding-bottom: 10px;\n}\n.carousel-3d-slide {\n  border: thin solid rgba(255, 255, 255, 0) !important;\n}\n@media (max-width: 576px) {\n.carousel-3d-container .prev,\n  .carousel-3d-container .next {\n    display: none;\n}\n}\n", ""]);
+exports.push([module.i, "\n#app .carousel-img {\n  width: 100%;\n  height: 270px;\n}\n.carousel-3d-container .prev,\n.carousel-3d-container .next {\n  background-color: rgba(255, 255, 255, .4);\n  border: thin solid #21183c;\n  text-align: center;\n  border-radius: 40px;\n  color: #21183c;\n}\n.carousel-3d-slide {\n  background-color: #f3ebff !important;\n}\n.carousel-3d-container a.prev,\n.carousel-3d-container a.next {\n  line-height: 30px !important;\n}\n.carousel-3d-container figcaption {\n  font-family: Marmelad;\n  position: absolute;\n  background-color: rgba(33, 24, 60, .61);\n  color: #fff;\n  bottom: 0;\n  padding: 15px;\n  font-size: 12pt;\n  min-width: 100%;\n  -webkit-box-sizing: border-box;\n          box-sizing: border-box;\n}\n.carousel-3d-container figcaption p {\n  font-size: 16pt;\n  padding-bottom: 10px;\n}\n.carousel-3d-slide {\n  border: thin solid rgba(255, 255, 255, 0) !important;\n}\n@media (max-width: 576px) {\n.carousel-3d-container .prev,\n  .carousel-3d-container .next {\n    display: none;\n}\n}\n", ""]);
 
 // exports
 
@@ -71545,8 +71552,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
 
-//
-//
 //
 //
 //
@@ -71610,7 +71615,7 @@ function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, a
                             return axios.get('https://api.nytimes.com/svc/movies/v2/reviews/search.json', {
                                 params: {
                                     'api-key': "B4M0PyBla9l9HJKQ9aVro4Fux05rahlH",
-                                    'offset': 40,
+                                    'offset': 20,
                                     'critics-pick': "Y"
                                 }
                             }).then(function (response) {
@@ -72445,6 +72450,9 @@ var render = function() {
           attrs: {
             "controls-visible": true,
             clickable: true,
+            autoplay: true,
+            "autoplay-timeout": 5000,
+            display: 7,
             "on-slide-change": _vm.onSlideChanged,
             "on-main-slide-click": _vm.onMainSlideClick
           }
@@ -72459,7 +72467,7 @@ var render = function() {
                     [
                       _vm.results.results
                         ? _c("img", {
-                            staticClass: "carousel-img",
+                            staticClass: "carousel-img rounded-lg",
                             attrs: {
                               src: _vm.results.results[i].multimedia.src
                             }
@@ -72469,7 +72477,7 @@ var render = function() {
                   )
                 : _vm._e(),
               _vm._v(" "),
-              _c("figcaption", [
+              _c("figcaption", { staticClass: "rounded-b-lg" }, [
                 _vm.results.results
                   ? _c(
                       "a",
@@ -72515,7 +72523,7 @@ var render = function() {
             "div",
             {
               staticClass:
-                "p-2 bg-purple-darkest items-center text-indigo-lightest leading-normal lg:rounded md:rounded flex px-4 lg:inline-flex md:inline-flex lg:py-3 md:py-3 sm:py-8 py-8"
+                "p-3 bg-purple-darkest items-center text-indigo-lightest leading-normal lg:rounded md:rounded flex px-4 lg:inline-flex md:inline-flex lg:py-3 md:py-3 sm:py-8 py-8"
             },
             [
               _vm.results.results
@@ -72534,7 +72542,7 @@ var render = function() {
                     "span",
                     {
                       staticClass:
-                        "font-semibold font-sans mr-2 text-left flex-auto"
+                        "font-semibold font-sans mr-2 text-left flex-auto text-lg"
                     },
                     [
                       _c(

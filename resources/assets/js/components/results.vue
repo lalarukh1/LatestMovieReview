@@ -58,10 +58,12 @@
                     <ais-results
                             class="text-purple-darkest flex flex-wrap lg:-mr-8 md:-mr-8 items-center justify-center">
                         <template slot-scope="{ result }">
-                            <div class="xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full w-full bg-white lg:mx-8 md:mx-4 sm:mx-1 mx-4 mb-8 shadow-md"
+                            <div class="xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full w-full bg-white lg:mx-8 md:mx-4 sm:mx-1 mx-4 mb-8"
                                  data-balloon-length="fit" :data-balloon="result.summary_short" data-balloon-pos="up">
                                 <div>
-                                    <img :src="result.src" class="shadow-md w-full">
+                                    <div class="bg-grey-custom">
+                                    <img :src="result.src" class="w-full rounded-t-lg">
+                                    </div>
                                     <div class="small-height overflow-hidden mx-4 my-2 h-32 mb-4 pb-2">
                                         <div class="flex justify-between">
                                         <div class="text-xs items-center my-2 leading-normal">
@@ -83,9 +85,11 @@
                                         </div>
                                         </a>
                                     </div>
-                                    <div class="w-full items-center lg:p-3 md:p-3 sm:p-2 p-2 bg-purple-darkest hover:bg-pink-darkest text-center">
+                                    <div class="bg-grey-custom">
+                                    <div class="w-full items-center lg:p-3 md:p-3 sm:p-2 p-2 bg-purple-darkest hover:bg-pink-darkest text-center rounded-b-lg">
                                         <span> <a :href="result.url" class="no-underline text-white text-md"><i
                                                 class="fab fa-readme px-2 items-end"></i>Read Review</a> </span>
+                                    </div>
                                     </div>
                                 </div>
                             </div>
@@ -109,8 +113,7 @@
         },
         methods: {
             onPageChange(page) {
-                console.log('page');
-                window.scrollTo(0, 520);
+                $('html, body').animate({ scrollTop: 540 }, 500);
             },
         },
     }
