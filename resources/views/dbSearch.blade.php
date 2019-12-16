@@ -18,30 +18,15 @@
     <script src="//instant.page/1.2.0" type="module" integrity="sha384-0xWpXpkOUkAVETH+RMYJlSFIDNGlnPHgmqv2rP3uZS1BM48EMcxAZGW09n4pTGV4"></script>
 </head>
 
-<body class="sans w-screen bg-grey-custom">
+<body class="sans bg-grey-custom">
 <header class="bg-purple-darkest ">
     <div class="container mx-auto">
         <div class="flex w-full px-6 justify-between items-center py-2">
             <div class="w-1/2 text-md font-serif text-white px-2 py-2">
-                <h1 class="lg:text-2xl md:text-xl sm:text-xl text-lg"> <i class="text-3xl fas fa-film pr-2"></i> Movie Mag </h1>
+                <h1 class="lg:text-2xl md:text-xl sm:text-xl text-lg"> Movie Mag </h1>
             </div>
             <div class="flex font-sans leading-none">
-                <p class="mx-3 leading-none px-1 py-1">
-                    <a href="#" class="no-underline text-white">
-                        Home
-                    </a>
-                </p>
-                <p class="mx-3 leading-none px-1 py-1">
-                    <a href="#movies" class="no-underline text-white">
-                        Movies
-                    </a>
-                </p>
-                <p class="ml-3 mr-6 leading-none px-1 py-1">
-                    <a href="#subscribe" class="no-underline text-white">
-                       Subscribe
-                    </a>
-                </p>
-                <p class="ml=3 mr=1 shadow-md hover:bg-purple-darker rounded leading-none px-1 py-1 border-2 border-purple-darker" data-balloon="My Github" data-balloon-pos="down">
+                <p class="mx-1 shadow-md hover:bg-purple-darker rounded leading-none px-1 py-1 border-2 border-purple-darker" data-balloon="My Github" data-balloon-pos="down">
                     <a href="https://github.com/lalarukh1/LatestMovieReview" class="no-underline text-white">
                         <i class="fab fa-github"></i>
                     </a>
@@ -62,20 +47,13 @@
         </h2>
         <carousal></carousal>
     </div>
-    <results></results>
-    <div id="subscribe" class="py-6 font-sans px-6 bg-purple-darkest text-white text-sm text-right">
-        <h2 class="text-left text-purple-lightest px-2 py-3 font-sans leading-loose text-2xl tracking-widest font-bold">
-            Sign Up for Newsletter
-        </h2>
-        <form class="w-1/2 px-2 pb-6">
-            <div class="flex items-center py-2">
-                <input class="shadow appearance-none border rounded w-1/3 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Name">
-                <input class="mx-2 shadow appearance-none border rounded w-1/2 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="text" placeholder="Email">
-                <button class="w-1/4 shadow-md rounded appearance-none border-pink-custom px-2 pt-2 pb-3 bg-pink-custom text-purple-lightest">
-                    Sign Up
-                </button>
-            </div>
-        </form>
+    <div class="mx-auto p-4">
+        <div>
+            {{ $movies }}
+        </div>
+    </div>
+    <div class="font-sans px-4 py-4 bg-purple-darkest text-white text-sm text-right">
+        Lala Rukh
     </div>
 </div>
 </body>

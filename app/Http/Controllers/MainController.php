@@ -11,6 +11,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Support\Facades\DB;
 use App\Movies;
 use GuzzleHttp\Client;
+use Illuminate\Support\Facades\Cache;
 
 class MainController extends Controller
 {
@@ -27,7 +28,11 @@ class MainController extends Controller
      */
     public function show()
     {
-        //return view('search');
+        $movies = Cache::remember('movies', 60*60, function () {
+            return Movies::all();
+        });
+
+        return view('dbSearch', compact('movies'));
     }
 
     /**

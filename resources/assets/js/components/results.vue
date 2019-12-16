@@ -1,19 +1,23 @@
 <template>
-    <div id="app">
+    <div id="movies">
         <ais-index app-id="7VM1U74DCL" api-key="5af9433923da9f95516b8c7d6cfb3866" indexName="reviews">
-            <div class="lg:flex md:flex sm:flex lg:mx-8 md:mx-8 sm:mx-8 lg:my-4 md:my-4 sm:my-4 lg:py-4 md:py-4 sm:py-4 justify-between">
-                <div class="sidebar lg:w-1/6 md:w-1/4 sm:w-1/2 px-4 py-4 bg-purple-darker text-white overflow-hidden lg:mr-8 mb-8 lg:rounded md:rounded sm:rounded rounded-none">
-                    <div class="flex bg-purple-darkest -mx-4 -mt-4 mb-4 p-3 justify-between items-center lg:rounded-t md:rounded-t">
+            <div
+                class="lg:flex md:flex sm:flex lg:mx-8 md:mx-8 sm:mx-8 lg:my-4 md:my-4 sm:my-4 lg:py-4 md:py-4 sm:py-4 justify-between">
+                <div
+                    class="sidebar my-2 lg:w-1/6 md:w-1/4 sm:w-1/2 px-4 py-4 bg-purple-darker text-white overflow-hidden lg:mr-8 mb-8 lg:rounded-lg md:rounded-lg sm:rounded-lg rounded-none">
+                    <div
+                        class="flex bg-purple-darkest -mx-4 -mt-4 mb-4 p-3 justify-between items-center lg:rounded-t md:rounded-t">
                         <h1 class="text-base text-white text-center"> Search </h1>
                         <ais-clear
-                                :class-names="{'ais-clear': 'bg-pink hover:bg-pink-custom text-white text-sm px-2 py-1 rounded shadow-md font-bold'}"
-                                title="Clear search">Reset
+                            :class-names="{'ais-clear': 'bg-pink hover:bg-pink-custom text-white text-sm px-2 py-1 rounded shadow-md font-bold'}"
+                            title="Clear search">Reset
                         </ais-clear>
                     </div>
                     <div class="items-center text-center my-3">
                         <ais-input placeholder=" Search"
                                    :class-names="{'ais-input': 'form-control p-2 rounded w-full'}"></ais-input>
-                        <h4 class="text-md mt-6 lg:hidden md:hidden sm:hidden block" v-on:click="isHidden = !isHidden">Filter Results
+                        <h4 class="text-md mt-6 lg:hidden md:hidden sm:hidden block" v-on:click="isHidden = !isHidden">
+                            Filter Results
                             <i class="fas fa-chevron-circle-down mx-2" v-bind:class="{ hidden: !isHidden }"></i>
                             <i class="fas fa-chevron-circle-up" v-bind:class="{ hidden: isHidden }"></i>
                         </h4>
@@ -24,7 +28,7 @@
                         <ais-refinement-list attribute-name="opening_date" :sort-by="['isRefined:desc', 'name:desc']"
                                              :classNames="{'ais-refinement-list__count': 'badge','ais-refinement-list__item': 'checkbox'}">
                             <template slot="header"><h2
-                                    class="my-6 p-2 border-b border-pink-custom text-base -mx-4 shadow">Release
+                                class="my-6 p-2 border-b border-pink-custom text-base -mx-4 shadow">Release
                                 Date</h2></template>
                         </ais-refinement-list>
                     </div>
@@ -34,7 +38,7 @@
                         <ais-refinement-list attribute-name="byline" :sort-by="['name:asc']"
                                              :classNames="{'ais-refinement-list__count': 'badge','ais-refinement-list__item': 'checkbox'}">
                             <template slot="header"><h2
-                                    class="my-6 p-2 border-b border-pink-custom  text-base -mx-4 shadow">Reviewers</h2>
+                                class="my-6 p-2 border-b border-pink-custom  text-base -mx-4 shadow">Reviewers</h2>
                             </template>
                         </ais-refinement-list>
                     </div>
@@ -47,7 +51,8 @@
                     <div class="mx-auto items-center">
                         <ais-no-results>
                             <template slot-scope="props">
-                                <p class="text-lg text-purple-darkest">Sorry, No movies found for <i class="font-bold text-pink-darkest">{{
+                                <p class="text-lg text-purple-darkest">Sorry, No movies found for <i
+                                    class="font-bold text-pink-darkest">{{
                                     props.query }}</i></p>
                             </template>
                         </ais-no-results>
@@ -56,40 +61,43 @@
                         LATEST MOVIES
                     </h2>
                     <ais-results
-                            class="text-purple-darkest flex flex-wrap lg:-mr-8 md:-mr-8 items-center justify-center">
+                        class="text-purple-darkest flex flex-wrap lg:-mr-8 md:-mr-8 items-center justify-center">
                         <template slot-scope="{ result }">
-                            <div class="xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full w-full bg-white lg:mx-8 md:mx-4 sm:mx-1 mx-4 mb-8"
-                                 data-balloon-length="fit" :data-balloon="result.summary_short" data-balloon-pos="up">
+                            <div
+                                class="xl:1/6 lg:w-1/4 md:w-2/5 sm:w-full w-full bg-white lg:mx-8 md:mx-4 sm:mx-1 mx-4 mb-8"
+                                data-balloon-length="fit" :data-balloon="result.summary_short" data-balloon-pos="up">
                                 <div>
                                     <div class="bg-grey-custom">
-                                    <img :src="result.src" class="w-full rounded-t-lg">
+                                        <img :src="result.src" class="w-full rounded-t-lg">
                                     </div>
                                     <div class="small-height overflow-hidden mx-4 my-2 h-32 mb-4 pb-2">
                                         <div class="flex justify-between">
-                                        <div class="text-xs items-center my-2 leading-normal">
-                                            <ais-highlight :result="result"
-                                                           attribute-name="display_title"></ais-highlight>
-                                        </div>
-                                        <div class="text-xs font-thin tracking-tight truncate items-center my-2 text-pink-darkest leading-normal">
+                                            <div class="text-xs items-center my-2 leading-normal">
+                                                <ais-highlight :result="result"
+                                                               attribute-name="display_title"></ais-highlight>
+                                            </div>
+                                            <div
+                                                class="text-xs font-thin tracking-tight truncate items-center my-2 text-pink-darkest leading-normal">
                                             <span>
                                                 <i class="fas fa-user-edit text-pink-darkest shadow-md rounded-full"></i>
                                             </span>
-                                            <ais-highlight :result="result"
-                                                           attribute-name="byline"></ais-highlight>
-                                        </div>
+                                                <ais-highlight :result="result"
+                                                               attribute-name="byline"></ais-highlight>
+                                            </div>
                                         </div>
                                         <a :href="result.url" class="no-underline text-purple-darkest">
-                                        <div class="text-md items-center my-2 leading-normal font-bold">
-                                            <ais-highlight :result="result"
-                                                           attribute-name="headline"></ais-highlight>
-                                        </div>
+                                            <div class="text-md items-center my-2 leading-normal font-bold">
+                                                <ais-highlight :result="result"
+                                                               attribute-name="headline"></ais-highlight>
+                                            </div>
                                         </a>
                                     </div>
                                     <div class="bg-grey-custom">
-                                    <div class="w-full items-center lg:p-3 md:p-3 sm:p-2 p-2 bg-purple-darkest hover:bg-pink-darkest text-center rounded-b-lg">
+                                        <div
+                                            class="w-full items-center lg:p-3 md:p-3 sm:p-2 p-2 bg-purple-darkest hover:bg-pink-darkest text-center rounded-b-lg">
                                         <span> <a :href="result.url" class="no-underline text-white text-md"><i
-                                                class="fab fa-readme px-2 items-end"></i>Read Review</a> </span>
-                                    </div>
+                                            class="fab fa-readme px-2 items-end"></i>Read Review</a> </span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -105,7 +113,7 @@
     </div>
 </template>
 <script>
-    export default {
+export default {
         data() {
             return {
                 isHidden: true
@@ -113,23 +121,29 @@
         },
         methods: {
             onPageChange(page) {
-                $('html, body').animate({ scrollTop: 540 }, 500);
+                $('html, body').animate({scrollTop: 540}, 500);
             },
         },
+        created: {
+        }
     }
 </script>
 <style>
-    html,body
-    {
+    html, body {
         width: 100%;
         height: 100%;
         margin: 0px;
         padding: 0px;
         overflow-x: hidden;
+        scroll-behavior: smooth;
     }
+
     .sidebar {
+        position: sticky;
+        top: 0;
         height: fit-content;
     }
+
     .ais-highlight em {
         color: #CE2F49;
     }
@@ -215,6 +229,7 @@
             margin-left: 0%;
             margin-right: 16%;
         }
+
         .pagination li.ais-pagination__item {
             display: none;
         }
@@ -237,6 +252,7 @@
         .pagination li.ais-pagination__item--disabled:hover {
             background: #929292;
         }
+
         .small-height {
             height: fit-content !important;
         }

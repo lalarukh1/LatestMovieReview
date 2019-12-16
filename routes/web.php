@@ -12,5 +12,6 @@
 */
 
 Route::get('/', 'MainController@index');
+Route::get('/database', 'MainController@show');
 Route::get('/store', 'MainController@store');
 
