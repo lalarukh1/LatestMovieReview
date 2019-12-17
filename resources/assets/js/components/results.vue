@@ -224,6 +224,11 @@ export default {
         background: #394166;
     }
 
+    #subscribe {
+        background: rgb(32,36,63);
+        background: linear-gradient(90deg, rgba(32, 36, 63, 0.98) 37%, rgba(57, 65, 102, 0.8) 100%, rgba(194, 202, 208, 0.3) 100%), url("/img/movie.jpg") no-repeat center fixed;
+    }
+
     @media (max-width: 576px) {
         .pagination {
             margin-left: 0%;

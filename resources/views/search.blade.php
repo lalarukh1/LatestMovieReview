@@ -23,7 +23,7 @@
     <div class="container mx-auto">
         <div class="flex w-full px-6 justify-between items-center py-2">
             <div class="w-1/2 text-md font-serif text-white px-2 py-2">
-                <h1 class="lg:text-2xl md:text-xl sm:text-xl text-lg"> <i class="text-3xl fas fa-film pr-2"></i> Movie Mag </h1>
+                <h1 class="lg:text-2xl md:text-xl sm:text-sm text-xs"> <i class="lg:text-3xl md:text-2xl sm:text-lg text-lg fas fa-film pr-2"></i> Movie Mag </h1>
             </div>
             <div class="flex font-sans leading-none">
                 <p class="mx-3 leading-none px-1 py-1">
@@ -64,11 +64,12 @@
     </div>
     <results></results>
     <div id="subscribe" class="py-6 font-sans px-6 bg-purple-darkest text-white text-sm text-right">
-        <h2 class="text-left text-purple-lightest px-2 py-3 font-sans leading-loose text-2xl tracking-widest font-bold">
+        <div class="p-4">
+        <h2 class="text-left text-purple-lightest font-sans leading-loose text-2xl tracking-widest font-bold w-1/2">
             Sign Up for Newsletter
         </h2>
-        <form class="w-1/2 px-2 pb-6">
-            <div class="flex items-center py-2">
+        <form class="w-1/2">
+            <div class="flex items-center">
                 <input class="shadow appearance-none border rounded w-1/3 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Name">
                 <input class="mx-2 shadow appearance-none border rounded w-1/2 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="text" placeholder="Email">
                 <button class="w-1/4 shadow-md rounded appearance-none border-pink-custom px-2 pt-2 pb-3 bg-pink-custom text-purple-lightest">
@@ -76,6 +77,7 @@
                 </button>
             </div>
         </form>
+        </div>
     </div>
 </div>
 </body>
