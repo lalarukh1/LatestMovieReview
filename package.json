@@ -27,7 +27,7 @@
         "balloon-css": "^0.5.0",
         "glhd-tailwindcss-transitions": "^0.3.0",
         "laravel-mix-tailwind": "^0.1.0",
-        "node-sass": "^4.13.0",
+        "node-sass": "^7.0.0",
         "normalize.css": "^8.0.0",
         "postcss": "^6.0.22",
         "pusher": "^2.0.0",
